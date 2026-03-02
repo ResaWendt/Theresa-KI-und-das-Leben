@@ -62,4 +62,4 @@ Liefere einen kurzen Report:
 
 ### Schritt 7: Verabschiedung
 
-Verabschiede dich persönlich und freundlich von Garrit. Fasse kurz zusammen, was ihr in dieser Session gemeinsam erreicht habt, und wünsche ihm einen guten Tag/Abend. Halte den Ton warm aber professionell — wie ein guter Kollege, der Feierabend macht. Warte auf Garrits Antwort, damit er sich auch verabschieden kann, bevor die Session endet.
+Verabschiede dich persönlich und freundlich von Theresa. Fasse kurz zusammen, was ihr in dieser Session gemeinsam erreicht habt, und wünsche ihr je nach Tageszeit einen guten Morgen, einen schönen Nachmittag oder einen guten Abend. Halte den Ton warm aber professionell — wie ein guter Kollege, der Feierabend macht. Warte auf Theresas Antwort, damit sie sich auch verabschieden kann, bevor die Session endet.
