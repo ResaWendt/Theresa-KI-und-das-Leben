@@ -6,53 +6,26 @@ Fertige Texte + Empfehlungen zum direkten Übernehmen in LinkedIn.
 
 ## 1. Headline (Profil-Slogan)
 
-> **Ich sehe, wo es hakt. Prozessberatung & KI für inhabergeführte Unternehmen. | Intellenz Development**
-
-*95 Zeichen — kristallin, kein Wort zu viel.*
-
-**Warum so:** "Ich sehe, wo es hakt" ist deine Superpower in einem Satz. Kein Buzzword, kein Versprechen — eine Feststellung. Wer das liest, will wissen: Stimmt das? → Klick aufs Profil.
-
-**Alternativen:**
-
-> **Du erzählst mir dein Problem — ich sehe die Lösung. Prozessberatung & KI. | Intellenz Development**
-
-> **Prozesse in Gang bringen. Probleme lösen. KI als Turbo. | Theresa, KI und das Leben!**
+> **Prozess- & KI Beratung für Reiseveranstalter | Gründungsmitglied von Wir sind reisen | ehemals Reiseveranstalterin & Unternehmensberaterin | Theresa, KI und das Leben!**
 
 ---
 
 ## 2. Info / Über mich
 
 ```
-Du erzählst mir, wo es hakt — und noch bevor du fertig bist, sehe ich die Lösung. Lücken, Barrieren, lose Enden in Prozessen, die andere nicht sehen. Das war schon immer so. Mit KI ist jetzt der Turbo drin.
+Dein Problem hat ein Muster. Ich finde es. Zwischen Intuition und Analyse entsteht die Lösung.
 
-Ich bin Theresa. Prozessberaterin und KI-Beraterin bei Intellenz Development.
+Ich bin Theresa, Prozess- und KI-Beraterin. Ich arbeite mit Reiseveranstaltern und inhabergeführten Unternehmen, die spüren, dass ihre Abläufe nicht rund laufen, aber nicht greifen können, woran es liegt. Oder die wissen, dass KI etwas verändern kann, aber keinen Anfang finden.
 
-Ich arbeite mit inhabergeführten Unternehmen. Menschen, die ein echtes Business führen und spüren, dass irgendetwas nicht rund läuft — aber nicht greifen können, was genau. Oder die wissen, dass KI etwas verändern kann, aber keinen Anfang finden.
+Ich kenne eure Welt von innen. 10 Jahre habe ich ein Reisebüro mit Veranstaltertätigkeit und knapp 10 Mitarbeitern geführt. Selbst Reisen verkauft habe ich nie. Meine Aufgabe war, den Betrieb so zu bauen, dass mein Team im Flow arbeiten konnte. Prozesse sehen, Lücken schließen, lose Enden zusammenführen. Als Mitgründerin von "Wir sind reisen" (wirsindreisen.at) bin ich mit der Branche bis heute eng verbunden.
 
-Mein Weg:
-→ 10 Jahre eigenes Reisebüro mit Veranstaltertätigkeit und 10 Mitarbeitern geführt. Nie selbst Reisen verkauft — ich habe den Betrieb so gebaut, dass mein Team im Flow arbeiten konnte.
-→ 3 Jahre Unternehmensberatung — Organisation, Struktur, Prozesse.
-→ Heute: Prozessberatung & KI. Weil beides zusammengehört.
-
-Was mich antreibt: tief eintauchen, das Muster erkennen, die Lösung bauen. Pragmatisch, alltagstauglich, so dass es wirklich funktioniert — nicht nur auf dem Papier.
+Nach dem Verkauf meines Unternehmens folgten 3 Jahre Unternehmensberatung in Organisation und Struktur, und dann die Ausbildung zur KI-Expertin an der KI Pionier Akademie von Garrit Wilson. Heute bringe ich beides zusammen: Prozessdenken und KI. Erst verstehen, wo es wirklich klemmt, dann die Lösung bauen, pragmatisch, alltagstauglich und so, dass sie im Betrieb ankommt. KI ist dabei kein Selbstzweck, sondern der Turbo auf das, was ich sowieso kann.
 
 Hier teile ich: Theresa, KI und das Leben!
-Was mir auf diesem Weg begegnet. Was funktioniert und was nicht. Kein Bullshit, kein Smalltalk.
+Was mir auf diesem Weg begegnet, was funktioniert und was nicht. Kein Bullshit, kein Smalltalk.
 
-Du hast ein Problem in deinem Business, das dich schon zu lange nervt?
-Schreib mir. Ich höre zu — und meistens sehe ich die Lösung schneller, als du denkst.
+Du hast ein Problem in deinem Business, das dich schon zu lange nervt? Schreib mir. Ich höre zu, und meistens sehe ich die Lösung schneller, als du denkst.
 ```
-
-*Ca. 1.200 Zeichen — deine Stimme: klar, direkt, kein Wort zu viel.*
-
-**Aufbau erklärt:**
-- **Zeile 1–2:** Hook — deine Superpower, sofort greifbar, macht neugierig
-- **Absatz 2:** Wer du bist — zwei Wörter reichen
-- **Absatz 3:** Für wen — beschreibt das Gefühl der Zielgruppe, nicht nur die Branche
-- **"Mein Weg":** Credibility — aber als Geschichte mit Substanz. "Nie selbst Reisen verkauft" ist ein starkes Detail, das sofort zeigt: Du bist Prozessdenkerin, nicht Verkäuferin
-- **"Was mich antreibt":** Dein Denkprozess — tief eintauchen, Muster erkennen
-- **"Theresa, KI und das Leben!":** Verankert den Blog-Charakter direkt im Profil
-- **CTA:** Direkt, selbstbewusst, niedrigschwellig
 
 ---
 
@@ -184,12 +157,31 @@ Der analytische Blick auf Abläufe und Strukturen, den ich hier weiter geschärf
 - Authentisch — darf Persönlichkeit zeigen, muss nicht perfekt sein
 
 ### Banner (Hintergrundbild)
-- Eigenes Banner erstellen (Canva reicht)
-- Empfohlene Varianten:
-  - **Option A:** Schlicht — "Theresa, KI und das Leben!" als Claim, klare Schrift, ruhiger Hintergrund
-  - **Option B:** Mit Positionierung — "Prozessberatung & KI für inhabergeführte Unternehmen"
-- Maße: 1584 x 396 Pixel
-- Ton: Klar, reduziert, nicht verspielt. Passt zu "kristallin".
+
+**Design:** Dunkelblau, weiße Schrift, reduziert, kristallin.
+**Maße:** 1584 x 396 Pixel
+
+**Slogan auf dem Banner:**
+- Groß: "Dein Problem hat ein Muster. Ich finde es."
+- Kleiner darunter: "Theresa, KI und das Leben!"
+
+**Canva Schritt-für-Schritt:**
+
+1. **Canva öffnen** → "Design erstellen" → "Benutzerdefinierte Größe" → 1584 x 396 Pixel
+2. **Hintergrund:** Klick auf den Hintergrund → Farbe ändern → Hex-Code eingeben: `#1B2A4A` (dunkles Marineblau) oder `#0F1F3D` (noch tiefer). Ausprobieren, was dir gefällt.
+3. **Haupttext:** Links auf "Text" → "Überschrift hinzufügen"
+   - Text: "Dein Problem hat ein Muster. Ich finde es."
+   - Schriftart: Montserrat Bold oder Poppins SemiBold
+   - Farbe: Weiß (`#FFFFFF`)
+   - Größe: ca. 36–42pt (so groß wie möglich, aber mit Luft)
+4. **Claim darunter:** Neues Textfeld → "Theresa, KI und das Leben!"
+   - Schriftart: Gleiche Schrift, aber Light oder Regular
+   - Farbe: Weiß oder leicht abgetönt (`#D4D9E0` für ein weiches Silber)
+   - Größe: ca. 20–24pt
+5. **Positionierung:** Beide Texte **links platzieren, vertikal mittig**. Rechte Hälfte freilassen, dort überlappt dein Profilbild.
+6. **Freiraum:** Keine Icons, keine Grafiken, keine Linien. Nur Text auf Farbe. Das ist die Stärke.
+7. **Prüfen:** Vorschau anschauen und sicherstellen, dass der Text nicht vom Profilbild verdeckt wird. Auf Mobile testen (Canva zeigt eine Vorschau).
+8. **Exportieren:** Download als PNG, hohe Qualität.
 
 ### Custom URL
 - Anpassen auf: `linkedin.com/in/theresawendt`
@@ -239,6 +231,7 @@ Du hast einen starken Hintergrund in Geomantie, Cranio Sacraler Körperarbeit un
 - [ ] Banner erstellen und hochladen
 - [ ] Creator Mode aktivieren
 - [ ] Featured Section vorbereiten (nach erstem Post)
+- [ ] LinkedIn-Profil verifizieren
 
 ---
 

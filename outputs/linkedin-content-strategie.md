@@ -40,10 +40,10 @@ Das hier ist das Wichtigste in dieser ganzen Strategie. Wenn deine Stimme stimmt
 - **Keine Weichspüler am Schluss.** Nicht jeder Post braucht ein "Was meint ihr?" Manchmal reicht ein Punkt.
 
 ### Worte, die zu dir passen
-Klar. Tief. Muster. Lücke. Engpass. Im Flow. In Gang bringen. Hakt. Lose Enden. Stimmt nicht. Passt. Funktioniert. Ehrlich gesagt. Wirklich.
+Klar. Tief. Muster. Lücke. Im Flow. In Gang bringen. Lose Enden. Passt. Funktioniert. Paradox. Sowohl als auch. Gefühl. Intuition. Schlüsselsatz. Kernaussage. Genius Zone. Fokus.
 
 ### Worte, die du nie benutzen würdest
-Synergie. Mehrwert. Game-Changer. Disruptiv. Innovative Lösungen. Leveragen. Best Practice. Ganzheitlicher Ansatz (auf LinkedIn — zu inflationär). Paradigmenwechsel (im Post — zu abgehoben).
+Game-Changer. Leveragen. Ganzheitlicher Ansatz (auf LinkedIn — zu inflationär).
 
 ---
 

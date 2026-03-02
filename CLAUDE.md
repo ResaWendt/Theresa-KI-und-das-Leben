@@ -40,12 +40,14 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── business-info.md   # Intellenz Development, Zielgruppen, Angebote
 │   ├── strategy.md        # Strategische Prioritäten und Erfolgskriterien
 │   ├── current-data.md    # Aktueller Stand, Meilensteine, Kennzahlen
-│   └── workshop-insights.md # Kernaussagen von Workshops/Vorträgen (IN ARBEIT)
+│   └── workshop-insights.md # Kernaussagen von Workshops/Vorträgen (Folien-Review + Leitplanken ausstehend)
 ├── plans/                 # Implementierungspläne erstellt von /create-plan
 ├── outputs/               # Arbeitsergebnisse und Deliverables
-│   ├── linkedin-profil.md          # LinkedIn-Profiltexte (Headline, Info, Berufserfahrung, Skills)
-│   ├── linkedin-content-strategie.md # Content-Strategie "Theresa, KI und das Leben!"
-│   └── linkedin-post-01-neuanfang.md # Erster LinkedIn-Post (Entwurf)
+│   ├── linkedin-profil.md              # LinkedIn-Profiltexte + Banner-Anleitung + Checkliste (in Überarbeitung)
+│   ├── linkedin-content-strategie.md   # Content-Strategie "Theresa, KI und das Leben!"
+│   ├── linkedin-post-01-neuanfang.md   # LinkedIn-Post "Neuanfang" (Entwurf)
+│   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
+│   └── linkedin-post-ideen-pipeline.md # Post-Ideen Pipeline
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
 │   └── shell-aliases.md   # Shell-Aliase für Claude Code Start (cs/cr)
 └── scripts/               # Automatisierungsskripte (falls zutreffend)
@@ -103,9 +105,11 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 
 | Datei | Inhalt | Stand |
 |---|---|---|
-| `outputs/linkedin-profil.md` | Fertige LinkedIn-Profiltexte: Headline, Info/Über mich, Berufserfahrung, Skills, Ausbildung, Empfehlungen + Checkliste | 2026-02-27 |
-| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-02-27 |
-| `outputs/linkedin-post-01-neuanfang.md` | Erster LinkedIn-Post "Ende 40. Neuanfang." (Post #12, Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
+| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Headline, Info, Berufserfahrung, Skills, Ausbildung, Banner-Anleitung, Checkliste — in Überarbeitung (Reiseveranstalter-Fokus) | 2026-03-02 |
+| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-03-02 |
+| `outputs/linkedin-post-01-neuanfang.md` | LinkedIn-Post "Ende 40. Neuanfang." (Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
+| `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, bereit zum Posten | 2026-03-02 |
+| `outputs/linkedin-post-ideen-pipeline.md` | Post-Ideen Pipeline: KI-Pioniere, Tool + Testkunden-Pattern | 2026-03-02 |
 
 ---
 
