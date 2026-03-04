@@ -49,7 +49,8 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
 │   └── linkedin-post-ideen-pipeline.md # Post-Ideen Pipeline
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
-│   └── shell-aliases.md   # Shell-Aliase für Claude Code Start (cs/cr)
+│   ├── shell-aliases.md   # Shell-Aliase für Claude Code Start (cs/cr)
+│   └── video-tools.md     # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
 └── scripts/               # Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien)
 ```
 
