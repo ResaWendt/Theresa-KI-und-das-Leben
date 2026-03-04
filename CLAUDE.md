@@ -50,7 +50,7 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   └── linkedin-post-ideen-pipeline.md # Post-Ideen Pipeline
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
 │   └── shell-aliases.md   # Shell-Aliase für Claude Code Start (cs/cr)
-└── scripts/               # Automatisierungsskripte (falls zutreffend)
+└── scripts/               # Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien)
 ```
 
 **Verzeichnisse:**
@@ -61,7 +61,7 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 | `plans/`     | Detaillierte Implementierungspläne. Erstellt mit `/create-plan`, umgesetzt mit `/implement`. |
 | `outputs/`   | Deliverables, Analysen, Reports und Arbeitsergebnisse.                                 |
 | `reference/` | Hilfreiche Dokumentation, Vorlagen und Patterns für verschiedene Workflows.            |
-| `scripts/`   | Automatisierungs- und Tooling-Skripte.                                                 |
+| `scripts/`   | Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien).     |
 
 ---
 
