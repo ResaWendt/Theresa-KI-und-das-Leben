@@ -106,11 +106,11 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 
 | Datei | Inhalt | Stand |
 |---|---|---|
-| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Headline, Info, Berufserfahrung, Skills, Ausbildung, Banner-Anleitung, Checkliste — in Überarbeitung (Reiseveranstalter-Fokus) | 2026-03-02 |
-| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-03-02 |
+| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner (Wendy Whitfield Framework), Headline, Info/Über mich (Golden Circle), Berufserfahrung, Skills, Ausbildung, Checkliste | 2026-03-05 |
+| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-03-05 |
 | `outputs/linkedin-post-01-neuanfang.md` | LinkedIn-Post "Ende 40. Neuanfang." (Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
 | `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, bereit zum Posten | 2026-03-02 |
-| `outputs/linkedin-post-ideen-pipeline.md` | Post-Ideen Pipeline: KI-Pioniere, Tool + Testkunden-Pattern | 2026-03-02 |
+| `outputs/linkedin-post-ideen-pipeline.md` | Post-Ideen Pipeline: 5 Ideen (KI-Pioniere, Tool-Pattern, Strategielose Authentizität, Potentialanalyse, Sichtbarkeit) | 2026-03-05 |
 
 ---
 

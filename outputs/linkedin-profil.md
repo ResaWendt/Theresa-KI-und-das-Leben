@@ -12,19 +12,28 @@ Fertige Texte + Empfehlungen zum direkten Übernehmen in LinkedIn.
 
 ## 2. Info / Über mich
 
+**Aufbau:** Golden Circle (Simon Sinek) — WHY → HOW → WHAT
+
 ```
-Dein Problem hat ein Muster. Ich finde es. Zwischen Intuition und Analyse entsteht die Lösung.
+Geht nicht, gibt's nicht.
 
-Ich bin Theresa, Prozess- und KI-Beraterin. Ich arbeite mit Reiseveranstaltern und inhabergeführten Unternehmen, die spüren, dass ihre Abläufe nicht rund laufen, aber nicht greifen können, woran es liegt. Oder die wissen, dass KI etwas verändern kann, aber keinen Anfang finden.
+Klingt nach Kalenderspruch. Für mich ist es eine Gewissheit, die ich schon immer in mir trage: Egal wie chaotisch, verfahren oder „unlösbar" etwas wirkt, es gibt immer eine Lösung. Wirklich immer. Und oft sehe ich sie, noch bevor mir jemand das Problem zu Ende erzählt hat.
 
-Ich kenne eure Welt von innen. 10 Jahre habe ich ein Reisebüro mit Veranstaltertätigkeit und knapp 10 Mitarbeitern geführt. Selbst Reisen verkauft habe ich nie. Meine Aufgabe war, den Betrieb so zu bauen, dass mein Team im Flow arbeiten konnte. Prozesse sehen, Lücken schließen, lose Enden zusammenführen. Als Mitgründerin von "Wir sind reisen" (wirsindreisen.at) bin ich mit der Branche bis heute eng verbunden.
+Diese Haltung hat mich auch durch über 10 Jahre als Geschäftsführerin eines Reisebüros mit knapp 10 Mitarbeiter:innen getragen. Was bei uns ungewöhnlich war: Wir hatten ein eigenes Backoffice, das sich ausschließlich um die Umsetzung der Reisen kümmerte. Und ich war eine Chefin, die nicht selbst verkaufen musste, um Umsatzziele zu erreichen, weil mein Fokus darauf lag, unsere internen Prozesse zu optimieren. Gemeinsam mit meinem Team haben wir Struktur und Abläufe so lange geschärft, bis wir intern eine 0-Fehler-Quote erreicht haben.
 
-Nach dem Verkauf meines Unternehmens folgten 3 Jahre Unternehmensberatung in Organisation und Struktur, und dann die Ausbildung zur KI-Expertin an der KI Pionier Akademie von Garrit Wilson. Heute bringe ich beides zusammen: Prozessdenken und KI. Erst verstehen, wo es wirklich klemmt, dann die Lösung bauen, pragmatisch, alltagstauglich und so, dass sie im Betrieb ankommt. KI ist dabei kein Selbstzweck, sondern der Turbo auf das, was ich sowieso kann.
+Die Konsequenz: Mein Team konnte sich auf das konzentrieren, was es richtig gut konnte. Menschen beraten und begeistern!
 
-Hier teile ich: Theresa, KI und das Leben!
-Was mir auf diesem Weg begegnet, was funktioniert und was nicht. Kein Bullshit, kein Smalltalk.
+Ich war stolz darauf und gleichzeitig hat es mich wahnsinnig gemacht, wie mühsam Umsetzung oft war. Die Lösung war im Kopf da, aber der Weg dorthin: zu langsam, zu umständlich, zu viele Zwischenschritte. Aufgegeben habe ich trotzdem nie. Aber ja: Manchmal habe ich dafür mehr Zeit investiert, als gut für mich und mein Business war.
 
-Du hast ein Problem in deinem Business, das dich schon zu lange nervt? Schreib mir. Ich höre zu, und meistens sehe ich die Lösung schneller, als du denkst.
+Dann kam KI. Und plötzlich lassen sich Lösungen für komplexe, repetitive und zeitfressende Aufgaben im digitalen Bereich nicht nur denken, sondern auch schnell umsetzen. Für mich ist das eine Offenbarung. Nicht weil KI alles kann, sondern weil sie genau die Lücke schließt, die mich früher ausgebremst hat.
+
+Heute helfe ich Reiseveranstaltern und inhabergeführten Unternehmen, ihre Prozesse zu optimieren und mit KI zu automatisieren. Warum Reiseveranstalter? Weil die Reisebranche eines der schönsten Dinge verkauft, die es gibt: (Vor-)Freude. Warum inhabergeführt? Weil hinter diesem Unternehmen ein Mensch steht. Mit Haltung und Handschrift. Genau das gibt einem Unternehmen Persönlichkeit. Und genau das mag ich.
+
+Manche nehmen mich als zu kritisch wahr, weil ich immer etwas finde, das noch besser geht. Ja, stimmt. Gleichzeitig ist genau das mein Job. Was für andere schon sehr gut ist, geht für mich immer noch viel besser. Das Optimierungspotential springt mich förmlich an.
+
+Mein schönster Moment: Wenn eine Lösung greift und ich sehe, wie sich Erleichterung einstellt. Wenn der Aha-Effekt kommt, weil Menschen merken, wie gut ein Prozess plötzlich funktioniert und wie viel leichter dadurch Arbeiten wird (und manchmal auch das Leben).
+
+Du ahnst, da geht noch mehr? Schreib mir.
 ```
 
 ---
@@ -161,9 +170,11 @@ Der analytische Blick auf Abläufe und Strukturen, den ich hier weiter geschärf
 **Design:** Dunkelblau, weiße Schrift, reduziert, kristallin.
 **Maße:** 1584 x 396 Pixel
 
-**Slogan auf dem Banner:**
-- Groß: "Dein Problem hat ein Muster. Ich finde es."
-- Kleiner darunter: "Theresa, KI und das Leben!"
+**Konzept (nach Wendy Whitfield):** Banner = Persönlichkeit (wer ist Theresa), Header = Nutzen (was für wen). Keine Wiederholungen zwischen beiden.
+
+**Texte auf dem Banner:**
+- Hauptzeile: "Theresa, KI und das Leben!" (Schriftart: Red Hat Display)
+- Subheader: "Klar. Fokussiert. One-way only." (Schriftart: Red Hat Text, Light oder Regular)
 
 **Canva Schritt-für-Schritt:**
 

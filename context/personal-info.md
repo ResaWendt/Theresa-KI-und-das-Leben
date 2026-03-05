@@ -17,7 +17,7 @@
 
 - Klar und direkt, nicht blumig und umschreibend
 - Empathisch, aber mit Fokus auf das Wesentliche
-- **"Kristallin mit einem Schuss schwarzem Humor"** (Zitat Weggefährten)
+- **"Kristallin mit einem Schuss Humor"** (Zitat Weggefährten)
 - Wahrhaftig: Was gesagt werden muss, wird gesagt — auch wenn es unbequem ist
 - Hohes Maß an Reflexion rundet die vermeintliche Härte ab
 - Nichts ist zementiert — "wir wissen nur das, was wir heute wissen"

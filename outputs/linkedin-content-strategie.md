@@ -25,7 +25,7 @@ Das hier ist das Wichtigste in dieser ganzen Strategie. Wenn deine Stimme stimmt
 | Kristallin — klar, direkt, jedes Wort sitzt | Blumig, umschreibend, weichgespült |
 | Selbstbewusst, aber reflektiert — "wir wissen nur das, was wir heute wissen" | Allwissend, belehrend, Guru-Ton |
 | Empathisch mit Fokus auf das Wesentliche | Endlos einfühlsam ohne Punkt zu kommen |
-| Schwarzer Humor, trockene Beobachtungen | Motivations-Poster-Sprache, "Du schaffst das!" |
+| Humor, trockene Beobachtungen | Motivations-Poster-Sprache, "Du schaffst das!" |
 | Ehrlich über Stolpern und Fehler | Perfekte Inszenierung, alles läuft super |
 | Kurze Sätze. Manchmal nur ein Wort. Punkt. | Verschachtelte Endlos-Sätze mit drei Nebensätzen |
 | "Sowohl als auch" — Widersprüche aushalten | Schwarz-Weiß, absolute Wahrheiten |
@@ -260,4 +260,4 @@ Geomantie, Cranio Sacral, energetische Arbeit, Traumaarbeit, polyvagales Nervens
 ---
 
 *Erstellt am 2026-02-27 | "Theresa, KI und das Leben!"*
-*Stimme: Kristallin mit schwarzem Humor. Klar, direkt, reflektiert. Kein Smalltalk.*
+*Stimme: Kristallin mit Humor. Klar, direkt, reflektiert. Kein Smalltalk.*

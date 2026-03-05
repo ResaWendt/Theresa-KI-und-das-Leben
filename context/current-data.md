@@ -11,10 +11,12 @@
 ## Aktueller Stand
 
 - **Phase:** Aufbau — noch keine Kundengespräche
-- **LinkedIn:** Profil großteils umgesetzt. Offen: Banner-Optimierung, Info/Über mich finalisieren, Beitragsplanung. Content-Strategie + Tonalität-Guide aktualisiert (2026-03-02). KIPA-Recap-Post FINAL und bereit zum Posten. Post "Neuanfang" Entwurf 2, noch nicht final.
+- **LinkedIn:** Profil in Überarbeitung. Info/Über mich FINAL (Golden Circle, 2026-03-05). Banner: "Theresa, KI und das Leben!" + "Klar. Fokussiert. One-way only." (Wendy Whitfield Framework). Headline neu: Nutzen-orientiert ohne Blognamen. Offen: Banner in Canva umsetzen, Headline in LinkedIn ändern, Info-Text einfügen. KIPA-Recap-Post FINAL und bereit zum Posten. Post "Neuanfang" Entwurf 2, noch nicht final.
 - **Positionierung:** Primär Reiseveranstalter, untergeordnet inhabergeführte Unternehmen allgemein. Mitgründerin von "Wir sind reisen" (wirsindreisen.at) als Credibility.
 - **Workshop-Insights:** Sophie Schenk, Marco Bednarz, Adrian Kraft erfasst. Eigene Leitplanken definiert (Spezifisches Wissen, Echtheit, Genius Zone). Offen: Alle Folien nochmal durchgehen, persönliche Leitplanken herausarbeiten.
 - **Automatisierungen (angefangen):** Trainerabrechnung, Aktualisierung Vermögensübersicht, Chatbot für UFC-Wien — alle noch fertigzustellen.
+- **Akquise-Ansatz:** Potentialanalyse pitchen — vor dem Erstgespräch KI-Anwendungsfälle für die Branche recherchieren, dann konkret zeigen wo der Hebel liegt
+- **Website:** TODO — Onepager mit Heldenreise, um Kunden zu pitchen
 - **Angebotspakete:** Noch nicht entwickelt (kommt nach ersten Beratungen)
 - **Multiplikatoren:** Noch nicht kontaktiert
 - **Kunden:** 0
