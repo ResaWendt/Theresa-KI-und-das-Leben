@@ -11,9 +11,9 @@
 ## Aktueller Stand
 
 - **Phase:** Aufbau — noch keine Kundengespräche
-- **LinkedIn:** Profil-Kerndaten umgesetzt (2026-03-10): Banner (Canva, #000b3d, Red Hat Display/Text), Headline (Nutzen-orientiert) und Info/Über mich (Golden Circle) sind live. Offen: Berufserfahrung, Skills, Ausbildung, Sprachen, Branche, Custom URL, Profilbild, Creator Mode, Featured Section. KIPA-Recap-Post FINAL und bereit zum Posten. Post "Neuanfang" Entwurf 2, noch nicht final.
+- **LinkedIn:** Profil weitgehend umgesetzt (2026-03-11): Banner, Headline, Info/Über mich, Berufserfahrung, Skills, Ausbildung, Sprachen sind live. Offen: Custom URL, Creator Mode, Featured Section. KIPA-Recap-Post veröffentlicht (2026-03-10). Post "Neuanfang" Entwurf 2, noch nicht final. Posting-Rhythmus: Mittwoch, 8:30 Uhr.
 - **Positionierung:** Primär Reiseveranstalter, untergeordnet inhabergeführte Unternehmen allgemein. Mitgründerin von "Wir sind reisen" (wirsindreisen.at) als Credibility.
-- **Workshop-Insights:** Sophie Schenk, Marco Bednarz, Adrian Kraft erfasst. Eigene Leitplanken definiert (Spezifisches Wissen, Echtheit, Genius Zone). Offen: Alle Folien nochmal durchgehen, persönliche Leitplanken herausarbeiten.
+- **Workshop-Insights:** Aufgelöst und verteilt nach `reference/` (positionierung.md, social-media.md, produktentwicklung.md). Leitplanken in eigener Datei `context/leitplanken.md` (5 Leitplanken inkl. Strategielose Authentizität). Offen: Alle Folien nochmal durchgehen.
 - **Automatisierungen (angefangen):** Trainerabrechnung, Aktualisierung Vermögensübersicht, Chatbot für UFC-Wien — alle noch fertigzustellen.
 - **Akquise-Ansatz:** Potentialanalyse pitchen — vor dem Erstgespräch KI-Anwendungsfälle für die Branche recherchieren, dann konkret zeigen wo der Hebel liegt
 - **Website:** TODO — Onepager mit Heldenreise, um Kunden zu pitchen
@@ -22,15 +22,60 @@
 - **Kunden:** 0
 - **Umsatz:** 0
 
-## Nächste Meilensteine
+## TODOs nach Priorität
 
-1. ~~LinkedIn-Texte erstellen~~ (erledigt — siehe `outputs/`)
-2. ~~LinkedIn-Profil in LinkedIn umsetzen~~ (Banner, Headline, Info/Über mich umgesetzt 2026-03-10 — offen: Berufserfahrung, Skills, Ausbildung, weitere Profilfelder)
-3. ~~KIPA-Recap-Post veröffentlichen~~ (veröffentlicht 2026-03-10)
-4. Ersten LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen
-5. Workshop-Folien durchgehen, persönliche Leitplanken herausarbeiten
-6. Automatisierungen fertigstellen: Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien
-7. ~~Business-Plan erstellen~~ (erstellt 2026-03-10, siehe `outputs/business-plan.md`) — laufend weiterentwickeln
-8. Erste Beratungsgespräche geführt
-9. Erste zahlende Kunden
-10. Angebotspakete definiert
+> Wird bei jedem `/prime` ausgegeben und bei jedem `/shutdown` aktualisiert.
+
+### PRIO 1 — Sofort / Diese Woche
+
+| # | TODO | Bereich | Deadline | Status |
+|---|---|---|---|---|
+| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | offen |
+| 1.2 | WKÖ-Förderungen für KI bei Reiseveranstaltern recherchieren | Akquise | diese Woche | offen |
+| 1.3 | LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen | LinkedIn | diese Woche | Entwurf 2 |
+| 1.4 | LinkedIn-Profil vervollständigen: Custom URL, Creator Mode, Featured Section | LinkedIn | diese Woche | offen (Berufserfahrung, Skills, Ausbildung, Sprachen erledigt) |
+| 1.5 | LinkedIn: Reiseveranstalter identifizieren, vernetzen, Ansprache mit Förderungs-Pitch | Akquise | laufend | offen |
+| 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
+
+### PRIO 2 — Kurzfristig (März/April)
+
+| # | TODO | Bereich | Status |
+|---|---|---|---|
+| 2.1 | Gewerbe-Erkundigungen: Unternehmensberatung anmelden, SVS-Ausnahme, Firmenwortlaut | Gewerbe | offen |
+| 2.2 | Gewerbe-Erkundigungen: Wechsel auf Lehre & Training prüfen | Gewerbe | offen |
+| 2.3 | Gewerbe-Erkundigungen: Zweites Gewerbe IT-Umsetzung prüfen | Gewerbe | offen |
+| 2.4 | Business Development Phasenplan: Aufbau → erste Kunden → Standardisierung mit Meilensteinen | Strategie | offen |
+| 2.5 | Workshop-Folien durchgehen (Sophie, Marco, Adrian), Leitplanken vertiefen | Positionierung | offen |
+| 2.6 | Content-Wissensbasis aufbauen (Copywriting, Storytelling, Hooks) | Content | offen |
+| 2.7 | Website: Onepager mit Heldenreise konzipieren | Marketing | offen |
+
+### PRIO 3 — Laufend / Untergeordnet
+
+| # | TODO | Bereich | Status |
+|---|---|---|---|
+| 3.1 | Automatisierungen fertigstellen: Trainerabrechnung, Vermögensübersicht | Automatisierung | angefangen |
+| 3.2 | Social Media Automatisierung: Partyfechten + UFC Wien | KI-Projekt | offen |
+| 3.3 | ChatBot für UFC Wien: Anforderungen, Technologie, Prototyp | KI-Projekt | offen |
+| 3.4 | KIPA-Feedback an Garrit: Skool → Claude Code | KIPA | offen |
+| 3.5 | KIPA-Anregung an Garrit: Positionierung/Mindset erweitern auf EiS | KIPA | offen |
+| 3.6 | System-Wartung: Windows, n8n, ESET — monatlich | Wartung | laufend |
+
+### Erledigt
+
+- [x] LinkedIn-Texte erstellen (erledigt)
+- [x] LinkedIn-Profil Kerndaten umsetzen: Banner, Headline, Info/Über mich (2026-03-10)
+- [x] KIPA-Recap-Post veröffentlichen (2026-03-10)
+- [x] Business-Plan erstellen (2026-03-10, siehe `outputs/business-plan.md`)
+- [x] LinkedIn-Profil: Berufserfahrung, Skills, Ausbildung, Sprachen umgesetzt (2026-03-11)
+- [x] Posting-Rhythmus festgelegt: Mittwoch, 8:30 Uhr (2026-03-11)
+- [x] Post-Ideen Pipeline aufgelöst und verteilt (2026-03-11)
+- [x] Workshop-Insights aufgelöst → `reference/` + `context/leitplanken.md` (2026-03-11)
+- [x] Leitplanke "Strategielose Authentizität" ergänzt (2026-03-11)
+- [x] Akquise-Strategien in Business-Plan ergänzt: Testkunden + Potentialanalyse (2026-03-11)
+
+### Meilensteine (mittelfristig)
+
+1. Erste Beratungsgespräche geführt
+2. Erste zahlende Kunden
+3. Angebotspakete definiert
+4. 15–20k netto/Monat bei max. 20h/Woche

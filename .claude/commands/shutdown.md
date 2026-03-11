@@ -44,6 +44,14 @@ Prüfe jede Datei in `context/`:
 
 Falls ja: Aktualisiere die betreffenden Dateien.
 
+### Schritt 4b: TODO-Liste aktualisieren
+
+Aktualisiere den Abschnitt "TODOs nach Priorität" in `context/current-data.md`:
+- Erledigte Punkte in den "Erledigt"-Abschnitt verschieben (mit Datum)
+- Neue TODOs ergänzen, die in der Session entstanden sind
+- Status-Änderungen eintragen (z.B. "offen" → "in Arbeit", Deadlines anpassen)
+- Prio-Verschiebungen vornehmen, wenn sich Prioritäten geändert haben
+
 ### Schritt 5: Git — Committen und Pushen
 
 1. `git status` — Was hat sich geändert?

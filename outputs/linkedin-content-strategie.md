@@ -259,5 +259,25 @@ Geomantie, Cranio Sacral, energetische Arbeit, Traumaarbeit, polyvagales Nervens
 
 ---
 
-*Erstellt am 2026-02-27 | "Theresa, KI und das Leben!"*
+## Post-Ideen Pipeline
+
+> Zusätzliche Ideen, die noch ausgearbeitet werden sollen.
+
+### 26. KI-Pioniere — und warum das auf mich zutrifft
+
+**Thema:** Was bedeutet es, KI-Pionierin zu sein? Warum trifft das auf mich zu? Verbindung zu meinem Werdegang, meiner Denkweise, meiner Herangehensweise.
+
+**Status:** Idee
+
+### 27. Sichtbarkeit — Unterschriftenaktion für den Regenwald
+
+**Thema:** Mit 12 Jahren eine Unterschriftenaktion für den Regenwald gemacht. Keine Scheu, in die Sichtbarkeit zu gehen, weil es für einen guten Zweck war. Heute dasselbe Gefühl: Was ich anbiete, ist richtig hilfreich. Wenn du weißt, dass es einen echten Unterschied macht, fällt Sichtbarkeit leicht.
+
+**Säule:** Der Weg / Haltung
+
+**Status:** Idee
+
+---
+
+*Erstellt am 2026-02-27 | Pipeline integriert am 2026-03-11 | "Theresa, KI und das Leben!"*
 *Stimme: Kristallin mit Humor. Klar, direkt, reflektiert. Kein Smalltalk.*

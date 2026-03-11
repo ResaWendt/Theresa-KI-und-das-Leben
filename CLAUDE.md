@@ -40,17 +40,20 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── business-info.md   # Intellenz Development, Zielgruppen, Angebote
 │   ├── strategy.md        # Strategische Prioritäten und Erfolgskriterien
 │   ├── current-data.md    # Aktueller Stand, Meilensteine, Kennzahlen
-│   └── workshop-insights.md # Kernaussagen von Workshops/Vorträgen (Folien-Review + Leitplanken ausstehend)
+│   └── leitplanken.md      # Persönliche Leitplanken für Business, Positionierung und Content
 ├── plans/                 # Implementierungspläne erstellt von /create-plan
 ├── outputs/               # Arbeitsergebnisse und Deliverables
 │   ├── linkedin-profil.md              # LinkedIn-Profiltexte + Banner-Anleitung + Checkliste (in Überarbeitung)
 │   ├── linkedin-content-strategie.md   # Content-Strategie "Theresa, KI und das Leben!"
 │   ├── linkedin-post-01-neuanfang.md   # LinkedIn-Post "Neuanfang" (Entwurf)
 │   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
-│   └── linkedin-post-ideen-pipeline.md # Post-Ideen Pipeline
+│   └── business-plan.md               # Business-Plan & TODOs
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
-│   ├── shell-aliases.md   # Shell-Aliase für Claude Code Start (cs/cr)
-│   └── video-tools.md     # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
+│   ├── shell-aliases.md       # Shell-Aliase für Claude Code Start (cs/cr)
+│   ├── video-tools.md         # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
+│   ├── positionierung.md      # Adrian Kraft: Echtheit, Kernkompetenz, KI im Mittelstand
+│   ├── social-media.md        # Marco Bednarz: Content-Strategie, Wiederverwertung, Customer Journey
+│   └── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
 └── scripts/               # Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien)
 ```
 
@@ -106,13 +109,12 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 
 | Datei | Inhalt | Stand |
 |---|---|---|
-| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner (UMGESETZT), Headline (UMGESETZT), Info/Über mich (UMGESETZT), Berufserfahrung, Skills, Ausbildung, Checkliste | 2026-03-10 |
-| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-03-05 |
+| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner, Headline, Info/Über mich (alle UMGESETZT), Berufserfahrung, Skills, Ausbildung, Sprachen (UMGESETZT), Checkliste | 2026-03-11 |
+| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25+2 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie, Post-Ideen Pipeline | 2026-03-11 |
 | `outputs/linkedin-post-01-neuanfang.md` | LinkedIn-Post "Ende 40. Neuanfang." (Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
-| `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, bereit zum Posten | 2026-03-02 |
+| `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, veröffentlicht | 2026-03-10 |
 | `outputs/linkedin-post-03-perfekter-tag.md` | LinkedIn-Post "Mein perfekter Tag" (Visionsarbeit, Genius Zone, Kinder/Jugendliche) — FINAL | 2026-03-10 |
-| `outputs/linkedin-post-ideen-pipeline.md` | Post-Ideen Pipeline: 5 Ideen (KI-Pioniere, Tool-Pattern, Strategielose Authentizität, Potentialanalyse, Sichtbarkeit) | 2026-03-05 |
-| `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, KI-Projekte, KIPA-Feedback, System-Wartung, Gewerbe-Erkundigungen | 2026-03-10 |
+| `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, Akquise-Strategien, KI-Projekte, KIPA-Feedback, System-Wartung | 2026-03-11 |
 
 ---
 

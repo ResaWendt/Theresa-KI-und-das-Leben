@@ -63,6 +63,31 @@
 
 ---
 
+## PRIO 2b — Akquise-Strategien
+
+### Testkunden gegen Bezahlung gewinnen
+Ein vielversprechendes, nutzbringendes Tool weiterentwickeln und dafür Testkunden gegen Bezahlung gewinnen. Begrenzte Testplätze, Invest gegen ehrliches Feedback und Testimonial.
+
+**Pattern:**
+1. Problem benennen (Frage als Hook)
+2. Kontext geben (woher kommt die Lösung)
+3. Tool/Lösung vorstellen
+4. Konkrete Ergebnisse zeigen
+5. Begrenztes Angebot mit klarem Invest
+
+- [ ] Eigenes Tool identifizieren/entwickeln, das dieses Pattern nutzen kann
+- [ ] Testangebot formulieren (Preis, Umfang, Gegenleistung)
+- [ ] Über LinkedIn pitchen
+
+### Potentialanalyse als Akquise-Werkzeug
+Vor dem Erstgespräch bereits KI-Anwendungsfälle für die Branche/das Unternehmen recherchieren. Dann konkret pitchen, wo der Hebel liegt. Nicht mit leeren Händen kommen, sondern vorbereitet, mit konkreten Anwendungsfällen.
+
+- [ ] Potentialanalyse-Template erstellen (Branche → typische Prozesse → KI-Hebel)
+- [ ] Für Reiseveranstalter durchspielen (erste Zielgruppe)
+- [ ] Als Gesprächseinstieg für LinkedIn-Kontakte nutzen
+
+---
+
 ## UNTERGEORDNET — KI-Projekte
 
 ### 3.1 Schulung Prompting für Michaela ⚡ ZEITLICH DRINGEND (20.03.2026)
