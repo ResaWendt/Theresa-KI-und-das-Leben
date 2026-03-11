@@ -106,11 +106,13 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 
 | Datei | Inhalt | Stand |
 |---|---|---|
-| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner (Wendy Whitfield Framework), Headline, Info/Über mich (Golden Circle), Berufserfahrung, Skills, Ausbildung, Checkliste | 2026-03-05 |
+| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner (UMGESETZT), Headline (UMGESETZT), Info/Über mich (UMGESETZT), Berufserfahrung, Skills, Ausbildung, Checkliste | 2026-03-10 |
 | `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie | 2026-03-05 |
 | `outputs/linkedin-post-01-neuanfang.md` | LinkedIn-Post "Ende 40. Neuanfang." (Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
 | `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, bereit zum Posten | 2026-03-02 |
+| `outputs/linkedin-post-03-perfekter-tag.md` | LinkedIn-Post "Mein perfekter Tag" (Visionsarbeit, Genius Zone, Kinder/Jugendliche) — FINAL | 2026-03-10 |
 | `outputs/linkedin-post-ideen-pipeline.md` | Post-Ideen Pipeline: 5 Ideen (KI-Pioniere, Tool-Pattern, Strategielose Authentizität, Potentialanalyse, Sichtbarkeit) | 2026-03-05 |
+| `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, KI-Projekte, KIPA-Feedback, System-Wartung, Gewerbe-Erkundigungen | 2026-03-10 |
 
 ---
 

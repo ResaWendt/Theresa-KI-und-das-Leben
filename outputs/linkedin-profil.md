@@ -4,13 +4,13 @@ Fertige Texte + Empfehlungen zum direkten Übernehmen in LinkedIn.
 
 ---
 
-## 1. Headline (Profil-Slogan)
+## 1. Headline (Profil-Slogan) — UMGESETZT
 
-> **Prozess- & KI Beratung für Reiseveranstalter | Gründungsmitglied von Wir sind reisen | ehemals Reiseveranstalterin & Unternehmensberaterin | Theresa, KI und das Leben!**
+> **Prozesse optimieren & mit KI automatisieren • für Reiseveranstalter & inhabergeführte KMUs • Unternehmensberaterin • Gründungsmitglied von Wir sind reisen • ehemals Reiseveranstalterin & Inhaberin eines Reisebüros**
 
 ---
 
-## 2. Info / Über mich
+## 2. Info / Über mich — UMGESETZT
 
 **Aufbau:** Golden Circle (Simon Sinek) — WHY → HOW → WHAT
 
@@ -23,11 +23,11 @@ Diese Haltung hat mich auch durch über 10 Jahre als Geschäftsführerin eines R
 
 Die Konsequenz: Mein Team konnte sich auf das konzentrieren, was es richtig gut konnte. Menschen beraten und begeistern!
 
-Ich war stolz darauf und gleichzeitig hat es mich wahnsinnig gemacht, wie mühsam Umsetzung oft war. Die Lösung war im Kopf da, aber der Weg dorthin: zu langsam, zu umständlich, zu viele Zwischenschritte. Aufgegeben habe ich trotzdem nie. Aber ja: Manchmal habe ich dafür mehr Zeit investiert, als gut für mich und mein Business war.
+Ich war stolz darauf und gleichzeitig hat es mich wahnsinnig gemacht, wie mühsam Umsetzung oft war. Die Lösung war im Kopf da, aber der Weg dorthin: zu langsam, zu umständlich, zu viele Zwischenschritte. Aufgegeben habe ich trotzdem nie. Aber ja: Manchmal habe ich dafür mehr Zeit investiert, als gut für mich war.
 
 Dann kam KI. Und plötzlich lassen sich Lösungen für komplexe, repetitive und zeitfressende Aufgaben im digitalen Bereich nicht nur denken, sondern auch schnell umsetzen. Für mich ist das eine Offenbarung. Nicht weil KI alles kann, sondern weil sie genau die Lücke schließt, die mich früher ausgebremst hat.
 
-Heute helfe ich Reiseveranstaltern und inhabergeführten Unternehmen, ihre Prozesse zu optimieren und mit KI zu automatisieren. Warum Reiseveranstalter? Weil die Reisebranche eines der schönsten Dinge verkauft, die es gibt: (Vor-)Freude. Warum inhabergeführt? Weil hinter diesem Unternehmen ein Mensch steht. Mit Haltung und Handschrift. Genau das gibt einem Unternehmen Persönlichkeit. Und genau das mag ich.
+Heute helfe ich Reiseveranstaltern und inhabergeführten Unternehmen, ihre Prozesse zu optimieren und mit KI zu automatisieren. Warum Reiseveranstalter? Weil die Reisebranche eines der schönsten Dinge verkauft, die es gibt: (Vor-)Freude. Warum inhabergeführt? Weil hinter diesen Unternehmen ein Mensch steht. Mit Haltung und Handschrift. Genau das gibt einem Unternehmen Persönlichkeit. Und genau das mag ich.
 
 Manche nehmen mich als zu kritisch wahr, weil ich immer etwas finde, das noch besser geht. Ja, stimmt. Gleichzeitig ist genau das mein Job. Was für andere schon sehr gut ist, geht für mich immer noch viel besser. Das Optimierungspotential springt mich förmlich an.
 
@@ -165,34 +165,15 @@ Der analytische Blick auf Abläufe und Strukturen, den ich hier weiter geschärf
 - Gute Ausleuchtung, ruhiger Hintergrund
 - Authentisch — darf Persönlichkeit zeigen, muss nicht perfekt sein
 
-### Banner (Hintergrundbild)
+### Banner (Hintergrundbild) — UMGESETZT
 
-**Design:** Dunkelblau, weiße Schrift, reduziert, kristallin.
 **Maße:** 1584 x 396 Pixel
+**Konzept (nach Wendy Whitfield):** Banner = Persönlichkeit (wer ist Theresa), Header = Nutzen (was für wen).
 
-**Konzept (nach Wendy Whitfield):** Banner = Persönlichkeit (wer ist Theresa), Header = Nutzen (was für wen). Keine Wiederholungen zwischen beiden.
-
-**Texte auf dem Banner:**
-- Hauptzeile: "Theresa, KI und das Leben!" (Schriftart: Red Hat Display)
-- Subheader: "Klar. Fokussiert. One-way only." (Schriftart: Red Hat Text, Light oder Regular)
-
-**Canva Schritt-für-Schritt:**
-
-1. **Canva öffnen** → "Design erstellen" → "Benutzerdefinierte Größe" → 1584 x 396 Pixel
-2. **Hintergrund:** Klick auf den Hintergrund → Farbe ändern → Hex-Code eingeben: `#1B2A4A` (dunkles Marineblau) oder `#0F1F3D` (noch tiefer). Ausprobieren, was dir gefällt.
-3. **Haupttext:** Links auf "Text" → "Überschrift hinzufügen"
-   - Text: "Dein Problem hat ein Muster. Ich finde es."
-   - Schriftart: Montserrat Bold oder Poppins SemiBold
-   - Farbe: Weiß (`#FFFFFF`)
-   - Größe: ca. 36–42pt (so groß wie möglich, aber mit Luft)
-4. **Claim darunter:** Neues Textfeld → "Theresa, KI und das Leben!"
-   - Schriftart: Gleiche Schrift, aber Light oder Regular
-   - Farbe: Weiß oder leicht abgetönt (`#D4D9E0` für ein weiches Silber)
-   - Größe: ca. 20–24pt
-5. **Positionierung:** Beide Texte **links platzieren, vertikal mittig**. Rechte Hälfte freilassen, dort überlappt dein Profilbild.
-6. **Freiraum:** Keine Icons, keine Grafiken, keine Linien. Nur Text auf Farbe. Das ist die Stärke.
-7. **Prüfen:** Vorschau anschauen und sicherstellen, dass der Text nicht vom Profilbild verdeckt wird. Auf Mobile testen (Canva zeigt eine Vorschau).
-8. **Exportieren:** Download als PNG, hohe Qualität.
+**Finales Design:**
+- **Hintergrundfarbe:** `#000b3d` (tiefes Dunkelblau)
+- **Schrift 1 (Überschrift):** Weiß (`#FFFFFF`), Red Hat Display — "Theresa, KI und das Leben!"
+- **Schrift 2 (Subüberschrift):** Pink `#e8279e`, Red Hat Text — "klar. fokussiert. one-way only."
 
 ### Custom URL
 - Anpassen auf: `linkedin.com/in/theresawendt`
@@ -228,8 +209,8 @@ Du hast einen starken Hintergrund in Geomantie, Cranio Sacraler Körperarbeit un
 
 ## Checkliste zum Umsetzen
 
-- [ ] Headline ändern
-- [ ] Info-Text einfügen
+- [x] Headline ändern (umgesetzt 2026-03-10)
+- [x] Info-Text einfügen (umgesetzt 2026-03-10)
 - [ ] Neue Position "Intellenz Development" anlegen
 - [ ] Corso Reisen Beschreibung überarbeiten
 - [ ] Unternehmensberatung Beschreibung überarbeiten
@@ -239,7 +220,7 @@ Du hast einen starken Hintergrund in Geomantie, Cranio Sacraler Körperarbeit un
 - [ ] Branche aktualisieren
 - [ ] Custom URL setzen
 - [ ] Profilbild prüfen / aktualisieren
-- [ ] Banner erstellen und hochladen
+- [x] Banner erstellen und hochladen (umgesetzt 2026-03-10)
 - [ ] Creator Mode aktivieren
 - [ ] Featured Section vorbereiten (nach erstem Post)
 - [ ] LinkedIn-Profil verifizieren

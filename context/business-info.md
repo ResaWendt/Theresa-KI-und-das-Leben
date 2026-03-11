@@ -30,6 +30,8 @@ Geplant: Sobald genug Beratungserfahrung gesammelt ist, werden Angebotspakete un
 ## Hintergrund & Kontext
 
 - **Phase:** Neuausrichtung — Aufbau vor dem ersten Kunden
+- **Anstellung:** In der Firma des Mannes (Werbeagentur, freies Gewerbe)
+- **Selbständigkeit:** Geplant als geringfügige Selbständigkeit (Unternehmensberatung) unter SVS-Versicherungsgrenze (Gewinn < 6.613€/Jahr)
 - **Teamgröße:** Solo-Selbständige mit Partnernetzwerk bei Bedarf
 - **Erfahrung:**
   - 10 Jahre Unternehmerin (Reisebüro mit Veranstaltertätigkeit, ~10 Mitarbeiter, 2022 verkauft)

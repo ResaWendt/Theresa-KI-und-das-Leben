@@ -37,7 +37,7 @@ Sieht Lücken, Barrieren und lose Enden in Prozessen, die andere nicht sehen. We
 
 ### Ganzheitlicher Hintergrund
 
-Neben der beruflichen Tätigkeit: ausgebildete Geomantin, Praktikerin in Cranio Sacraler Körperarbeit, verschiedene energetische Techniken. Schwerpunkte: Traumaarbeit, Soziales/Polyvagales Nervensystem, Potentialentfaltung, Entgiftung. Dieser Hintergrund prägt ihre ganzheitliche Wahrnehmung und Kontextfähigkeit.
+Neben der beruflichen Tätigkeit: ausgebildete Geomantin, Praktikerin in Cranio Sacraler Körperarbeit, verschiedene energetische Techniken. Schwerpunkte: Traumaarbeit, Soziales/Polyvagales Nervensystem, Potentialentfaltung, Entgiftung. Aktuell: Ausbildung EiS (Erlöser im Seelengefüge) — therapeutischer Ansatz. Dieser Hintergrund prägt ihre ganzheitliche Wahrnehmung und Kontextfähigkeit.
 
 ## Kernfähigkeiten
 

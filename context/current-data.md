@@ -11,7 +11,7 @@
 ## Aktueller Stand
 
 - **Phase:** Aufbau — noch keine Kundengespräche
-- **LinkedIn:** Profil in Überarbeitung. Info/Über mich FINAL (Golden Circle, 2026-03-05). Banner: "Theresa, KI und das Leben!" + "Klar. Fokussiert. One-way only." (Wendy Whitfield Framework). Headline neu: Nutzen-orientiert ohne Blognamen. Offen: Banner in Canva umsetzen, Headline in LinkedIn ändern, Info-Text einfügen. KIPA-Recap-Post FINAL und bereit zum Posten. Post "Neuanfang" Entwurf 2, noch nicht final.
+- **LinkedIn:** Profil-Kerndaten umgesetzt (2026-03-10): Banner (Canva, #000b3d, Red Hat Display/Text), Headline (Nutzen-orientiert) und Info/Über mich (Golden Circle) sind live. Offen: Berufserfahrung, Skills, Ausbildung, Sprachen, Branche, Custom URL, Profilbild, Creator Mode, Featured Section. KIPA-Recap-Post FINAL und bereit zum Posten. Post "Neuanfang" Entwurf 2, noch nicht final.
 - **Positionierung:** Primär Reiseveranstalter, untergeordnet inhabergeführte Unternehmen allgemein. Mitgründerin von "Wir sind reisen" (wirsindreisen.at) als Credibility.
 - **Workshop-Insights:** Sophie Schenk, Marco Bednarz, Adrian Kraft erfasst. Eigene Leitplanken definiert (Spezifisches Wissen, Echtheit, Genius Zone). Offen: Alle Folien nochmal durchgehen, persönliche Leitplanken herausarbeiten.
 - **Automatisierungen (angefangen):** Trainerabrechnung, Aktualisierung Vermögensübersicht, Chatbot für UFC-Wien — alle noch fertigzustellen.
@@ -25,12 +25,12 @@
 ## Nächste Meilensteine
 
 1. ~~LinkedIn-Texte erstellen~~ (erledigt — siehe `outputs/`)
-2. ~~LinkedIn-Profil in LinkedIn umsetzen~~ (großteils erledigt — offen: Banner, Info/Über mich, Beitragsplanung)
-3. KIPA-Recap-Post veröffentlichen (FINAL in `outputs/linkedin-post-02-kipa-recap.md`)
+2. ~~LinkedIn-Profil in LinkedIn umsetzen~~ (Banner, Headline, Info/Über mich umgesetzt 2026-03-10 — offen: Berufserfahrung, Skills, Ausbildung, weitere Profilfelder)
+3. ~~KIPA-Recap-Post veröffentlichen~~ (veröffentlicht 2026-03-10)
 4. Ersten LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen
 5. Workshop-Folien durchgehen, persönliche Leitplanken herausarbeiten
 6. Automatisierungen fertigstellen: Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien
-7. Business-Aufbau-Plan erstellen: Phasen und konkrete TODOs definieren
+7. ~~Business-Plan erstellen~~ (erstellt 2026-03-10, siehe `outputs/business-plan.md`) — laufend weiterentwickeln
 8. Erste Beratungsgespräche geführt
 9. Erste zahlende Kunden
 10. Angebotspakete definiert
