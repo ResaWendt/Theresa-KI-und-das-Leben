@@ -34,7 +34,8 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   └── commands/          # Slash-Commands, die Claude ausführen kann
 │       ├── prime.md       # /prime — Session-Initialisierung
 │       ├── create-plan.md  # /create-plan — Implementierungspläne erstellen
-│       └── implement.md   # /implement — Pläne umsetzen
+│       ├── implement.md   # /implement — Pläne umsetzen
+│       └── shutdown.md    # /shutdown — Session sauber beenden
 ├── context/               # Hintergrund-Kontext über Theresa und das Business
 │   ├── personal-info.md   # Persönlichkeit, Werdegang, Fähigkeiten, Sprache
 │   ├── business-info.md   # Intellenz Development, Zielgruppen, Angebote
@@ -47,13 +48,15 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── linkedin-content-strategie.md   # Content-Strategie "Theresa, KI und das Leben!"
 │   ├── linkedin-post-01-neuanfang.md   # LinkedIn-Post "Neuanfang" (Entwurf)
 │   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
+│   ├── linkedin-post-03-perfekter-tag.md  # LinkedIn-Post "Mein perfekter Tag" (FINAL)
 │   └── business-plan.md               # Business-Plan & TODOs
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
 │   ├── shell-aliases.md       # Shell-Aliase für Claude Code Start (cs/cr)
 │   ├── video-tools.md         # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
 │   ├── positionierung.md      # Adrian Kraft: Echtheit, Kernkompetenz, KI im Mittelstand
 │   ├── social-media.md        # Marco Bednarz: Content-Strategie, Wiederverwertung, Customer Journey
-│   └── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
+│   ├── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
+│   └── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö: KMU.DIGITAL, AIM AT, aws, FFG
 └── scripts/               # Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien)
 ```
 
