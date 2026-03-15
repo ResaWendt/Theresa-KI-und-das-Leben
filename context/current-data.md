@@ -30,7 +30,7 @@
 
 | # | TODO | Bereich | Deadline | Status |
 |---|---|---|---|---|
-| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | offen |
+| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept steht (5 Blöcke, 90 Min), Schulungsdokument noch erstellen |
 | 1.3 | LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen | LinkedIn | diese Woche | Entwurf 2 |
 | 1.4 | LinkedIn-Profil vervollständigen: Custom URL, Creator Mode, Featured Section | LinkedIn | diese Woche | offen (Berufserfahrung, Skills, Ausbildung, Sprachen erledigt) |
 | 1.5 | LinkedIn: Reiseveranstalter identifizieren, vernetzen, Ansprache mit Förderungs-Pitch | Akquise | laufend | offen |
