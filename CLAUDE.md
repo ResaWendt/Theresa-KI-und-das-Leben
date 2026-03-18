@@ -49,15 +49,20 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── linkedin-post-01-neuanfang.md   # LinkedIn-Post "Neuanfang" (Entwurf)
 │   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
 │   ├── linkedin-post-03-perfekter-tag.md  # LinkedIn-Post "Mein perfekter Tag" (FINAL)
-│   └── business-plan.md               # Business-Plan & TODOs
+│   ├── business-plan.md               # Business-Plan & TODOs
+│   ├── schulung-michaela-prompting.md # Schulungskonzept Prompting für Michaela (5 Blöcke, 90 Min)
+│   └── schulung-michaela-praesentation.html # HTML-Präsentation zur Schulung (32 Slides, IN ARBEIT)
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
 │   ├── shell-aliases.md       # Shell-Aliase für Claude Code Start (cs/cr)
 │   ├── video-tools.md         # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
 │   ├── positionierung.md      # Adrian Kraft: Echtheit, Kernkompetenz, KI im Mittelstand
 │   ├── social-media.md        # Marco Bednarz: Content-Strategie, Wiederverwertung, Customer Journey
 │   ├── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
-│   └── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö: KMU.DIGITAL, AIM AT, aws, FFG
-└── scripts/               # Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien)
+│   ├── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö: KMU.DIGITAL, AIM AT, aws, FFG
+│   └── ki-llms-wissensbasis.md # KIPA-Ausbildungsinhalte: KI/LLMs/Prompting komplett
+├── scripts/               # Automatisierungsskripte
+│   └── transcribe_audio.py    # Audio-Transkription mit Whisper (m4a, ogg, mp3, wav)
+└── Wie KI Modelle funktionieren/  # Überblicksgrafik + Sprachmemo (Erklärvideo KI-Modelle)
 ```
 
 **Verzeichnisse:**
@@ -118,6 +123,8 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 | `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, veröffentlicht | 2026-03-10 |
 | `outputs/linkedin-post-03-perfekter-tag.md` | LinkedIn-Post "Mein perfekter Tag" (Visionsarbeit, Genius Zone, Kinder/Jugendliche) — FINAL | 2026-03-10 |
 | `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, Akquise-Strategien, KI-Projekte, KIPA-Feedback, System-Wartung | 2026-03-11 |
+| `outputs/schulung-michaela-prompting.md` | Schulungskonzept Prompting für Michaela: 5 Blöcke, 90 Min, inkl. Prompt-Vorlage und Checkliste | 2026-03-18 |
+| `outputs/schulung-michaela-praesentation.html` | HTML-Präsentation zur Schulung: 32 Slides, Dark Theme, auf Michaela personalisiert, inkl. Interaktionspunkte. IN ARBEIT — Feedback von Theresa wird in nächster Session eingearbeitet | 2026-03-18 |
 
 ---
 

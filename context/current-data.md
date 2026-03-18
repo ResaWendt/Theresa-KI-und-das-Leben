@@ -30,7 +30,7 @@
 
 | # | TODO | Bereich | Deadline | Status |
 |---|---|---|---|---|
-| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept steht (5 Blöcke, 90 Min), Schulungsdokument noch erstellen |
+| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept steht, HTML-Präsentation (32 Slides) IN ARBEIT — Feedback-Runde mit Theresa noch offen, Feinschliff nötig |
 | 1.3 | LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen | LinkedIn | diese Woche | Entwurf 2 |
 | 1.4 | LinkedIn-Profil vervollständigen: Custom URL, Creator Mode, Featured Section | LinkedIn | diese Woche | offen (Berufserfahrung, Skills, Ausbildung, Sprachen erledigt) |
 | 1.5 | LinkedIn: Reiseveranstalter identifizieren, vernetzen, Ansprache mit Förderungs-Pitch | Akquise | laufend | offen |
@@ -90,6 +90,10 @@
 - [x] KI-Förderungen Österreich recherchiert → `reference/ki-foerderungen-oesterreich.md` (2026-03-12)
 - [x] KI-Projekte Übersicht angelegt in current-data.md (2026-03-12)
 - [x] Nächster LinkedIn-Post thematisch festgelegt: "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." (2026-03-12)
+- [x] Schulungskonzept Michaela: HTML-Präsentation erstellt (32 Slides, Dark Theme, personalisiert auf Michaela) — IN ARBEIT, Feinschliff nächste Session (2026-03-18)
+- [x] Recherche: Aktuelle LLM-Architektur 2026 (GPT-5.4, Claude Opus 4.6, Context Windows 1M, Sora 2) für Schulungsinhalte verifiziert (2026-03-18)
+- [x] Recherche: Best Practices Schulungspräsentationen (Slide-Design, 20/80 Theorie/Praxis, Interaktionspunkte) (2026-03-18)
+- [x] Michaela-Profil dokumentiert: Senior Account Managerin, Handwerk/Garten/Landwirtschaft, nutzt ChatGPT + Sora (2026-03-18)
 
 ### Meilensteine (mittelfristig)
 
