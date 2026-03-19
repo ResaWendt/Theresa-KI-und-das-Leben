@@ -51,7 +51,8 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── linkedin-post-03-perfekter-tag.md  # LinkedIn-Post "Mein perfekter Tag" (FINAL)
 │   ├── business-plan.md               # Business-Plan & TODOs
 │   ├── schulung-michaela-prompting.md # Schulungskonzept Prompting für Michaela (5 Blöcke, 90 Min)
-│   └── schulung-michaela-praesentation.html # HTML-Präsentation zur Schulung (32 Slides, IN ARBEIT)
+│   ├── schulung-michaela-praesentation.html # HTML-Präsentation zur Schulung (36 Slides, überarbeitet)
+│   └── grafik-wie-ki-fragen-beantwortet.html # SVG-Grafik: Wie KI Fragen beantwortet (Clean Rebuild KIPA-Grafik)
 ├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
 │   ├── shell-aliases.md       # Shell-Aliase für Claude Code Start (cs/cr)
 │   ├── video-tools.md         # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
@@ -123,8 +124,9 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 | `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, veröffentlicht | 2026-03-10 |
 | `outputs/linkedin-post-03-perfekter-tag.md` | LinkedIn-Post "Mein perfekter Tag" (Visionsarbeit, Genius Zone, Kinder/Jugendliche) — FINAL | 2026-03-10 |
 | `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, Akquise-Strategien, KI-Projekte, KIPA-Feedback, System-Wartung | 2026-03-11 |
-| `outputs/schulung-michaela-prompting.md` | Schulungskonzept Prompting für Michaela: 5 Blöcke, 90 Min, inkl. Prompt-Vorlage und Checkliste | 2026-03-18 |
-| `outputs/schulung-michaela-praesentation.html` | HTML-Präsentation zur Schulung: 32 Slides, Dark Theme, auf Michaela personalisiert, inkl. Interaktionspunkte. IN ARBEIT — Feedback von Theresa wird in nächster Session eingearbeitet | 2026-03-18 |
+| `outputs/schulung-michaela-prompting.md` | Schulungskonzept Prompting für Michaela: 5 Blöcke, 90 Min, inkl. Prompt-Vorlage und Checkliste. Aktualisiert: KIPA-Slide-Inhalte eingearbeitet, Trainieren vs. Merken, Deep Research/Canvas/Sora/Agenten, Sora-Status korrigiert | 2026-03-19 |
+| `outputs/schulung-michaela-praesentation.html` | HTML-Präsentation zur Schulung: 36 Slides, Dark Theme, auf Michaela personalisiert. Überarbeitet: KIPA-Slide-Grafiken als CSS-Diagramme, Trainieren vs. Merken Slide, Stärken erweitert (Deep Research, Canvas, Sora, Agenten), Schwächen mit Pfeil-Zuordnung zu Lösungen, Prompt Dev Zyklus, GPTs-Ausblick mit Praktikant/Mitarbeiter-Vergleich | 2026-03-19 |
+| `outputs/grafik-wie-ki-fragen-beantwortet.html` | SVG-Grafik "Wie KI-Modelle Fragen beantworten" — Clean Rebuild der KIPA-Überblicksgrafik in Theresas Brandfarben, mit PNG-Export-Button | 2026-03-19 |
 
 ---
 

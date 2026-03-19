@@ -29,7 +29,7 @@
   .accent{color:var(--pk);font-weight:700}
   .wb{color:var(--w);font-weight:700}
 
-  /* SECTION BADGE — top of every body slide */
+  /* SECTION BADGE */
   .sec{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
   .sec-badge{font-size:.85em;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--pk);opacity:.7}
   .sec h2{margin:0}
@@ -75,10 +75,33 @@
   .l-or{background:rgba(243,156,18,.1);border:1px solid rgba(243,156,18,.35)}.l-or .ln{color:var(--org)}
   .l-gn{background:rgba(46,204,113,.1);border:1px solid rgba(46,204,113,.35)}.l-gn .ln{color:var(--grn)}
 
-  /* FLOW */
-  .flow{display:flex;align-items:center;justify-content:center;gap:10px;font-size:1.25em;font-weight:700}
+  /* FLOW DIAGRAMS */
+  .flow{display:flex;align-items:center;justify-content:center;gap:12px;font-size:1.1em;font-weight:700}
   .fb{padding:18px 28px;border-radius:14px;text-align:center}
   .fa{font-size:1.8em;color:var(--pk)}
+  .flow-box{background:var(--w10);border:2px solid var(--w20);border-radius:12px;padding:14px 24px;text-align:center;font-family:'Red Hat Display';font-weight:700;font-size:1em}
+  .flow-box.highlight{border-color:var(--pk);background:rgba(232,39,158,.1)}
+  .flow-arrow{font-size:1.6em;color:var(--pk);margin:0 4px}
+
+  /* PILLAR DIAGRAM */
+  .pillars{display:flex;justify-content:center;gap:40px;align-items:flex-end;margin:15px 0}
+  .pillar{display:flex;flex-direction:column;align-items:center;gap:0}
+  .pillar-top{background:var(--pk);color:var(--w);font-family:'Red Hat Display';font-weight:900;font-size:1.3em;padding:18px 30px;border-radius:14px 14px 0 0;text-align:center;min-width:200px}
+  .pillar-body{background:linear-gradient(180deg,rgba(232,39,158,.15),rgba(232,39,158,.05));border-left:3px solid var(--pk);border-right:3px solid var(--pk);padding:15px 20px;min-width:200px;text-align:center;font-size:.95em;color:var(--w80);min-height:80px;display:flex;align-items:center;justify-content:center}
+  .pillar-base{background:rgba(232,39,158,.2);border:3px solid var(--pk);border-top:none;border-radius:0 0 8px 8px;padding:8px;min-width:200px}
+
+  /* BELL CURVE */
+  .bell-curve-container{display:flex;justify-content:center;align-items:center;margin:10px 0}
+  .bell-curve{position:relative;width:400px;height:180px}
+  .bell-svg{width:100%;height:100%}
+
+  /* CYCLE DIAGRAM */
+  .cycle{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+  .cycle-step{background:var(--w10);border:2px solid var(--pk);border-radius:14px;padding:16px 22px;text-align:center;min-width:140px}
+  .cycle-step h3{margin-bottom:4px;font-size:1.1em}
+  .cycle-step p{font-size:.85em;color:var(--w60)}
+  .cycle-arrow{font-size:2em;color:var(--pk);margin:0 8px}
+  .cycle-loop{display:flex;align-items:center;gap:8px;margin-top:10px}
 
   /* TABLE */
   table{width:100%;border-collapse:collapse;font-size:1.05em}
@@ -99,6 +122,15 @@
   .tech{background:var(--w10);border-radius:14px;padding:25px;margin:8px 0}
   .tech h3{margin-bottom:8px}
   .tech-example{background:rgba(0,0,0,.3);border-radius:8px;padding:14px 18px;margin-top:10px;font-family:'Consolas',monospace;font-size:.9em;color:var(--w60);white-space:pre-wrap;line-height:1.5}
+
+  /* ICON CIRCLE */
+  .icon-circle{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8em;margin:0 auto 10px}
+  .ic-pk{background:rgba(232,39,158,.15);border:2px solid var(--pk)}
+  .ic-or{background:rgba(243,156,18,.15);border:2px solid var(--org)}
+  .ic-bl{background:rgba(52,152,219,.15);border:2px solid var(--blu)}
+  .ic-gn{background:rgba(46,204,113,.15);border:2px solid var(--grn)}
+  .ic-rd{background:rgba(231,76,60,.15);border:2px solid var(--red)}
+  .ic-pu{background:rgba(155,89,182,.15);border:2px solid var(--pur)}
 </style>
 </head>
 <body>
@@ -108,7 +140,7 @@
   <h1>Prompting<br>Schulung</h1>
   <div class="sub">Theresa, KI und das Leben!</div>
   <div class="tag">klar. fokussiert. one-way only.</div>
-  <p style="margin-top:45px;font-size:1.1em;color:var(--w60)">Für dich, Michaela | 90 Minuten | 20.03.2026</p>
+  <p style="margin-top:45px;font-size:1.1em;color:var(--w60)">Speziell für dich, Michaela | 90 Minuten | 20.03.2026</p>
 </div>
 
 <!-- ===== 2: VISION ===== -->
@@ -142,7 +174,7 @@
   <div class="interact-badge">INTERAKTION</div>
   <h1 style="font-size:2.8em;margin-bottom:30px">Kurzer Check-in, Michaela</h1>
   <p style="font-size:1.5em;max-width:800px;margin-bottom:20px">Du nutzt ChatGPT schon für Mails und Sora-Videoprompts.</p>
-  <p style="font-size:1.5em;max-width:800px;margin-bottom:30px">Was klappt gut — und wo wünschst du dir bessere Ergebnisse?</p>
+  <p style="font-size:1.5em;max-width:800px;margin-bottom:30px">Was klappt gut, und wo wünschst du dir bessere Ergebnisse?</p>
   <p style="font-size:1.1em;color:var(--w60)">2 Minuten</p>
 </div>
 
@@ -156,27 +188,88 @@
 <!-- ===== 6: GRUNDPRINZIP ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Das Grundprinzip</h2><div class="sec-badge">Block 1 — Wie KI funktioniert</div></div>
-  <div class="grow" style="gap:20px">
-    <p style="font-size:1.3em;color:var(--w90)">Wenn du ChatGPT eine Frage stellst, passiert unter der Haube deutlich mehr als du siehst. Das Modell hat zwei "Gedächtnisse":</p>
-    <div class="two" style="margin:10px 0">
-      <div class="col col-n" style="text-align:center">
-        <h3 style="font-size:1.5em;color:var(--org)">Langzeitgedächtnis</h3>
-        <p style="font-size:1.5em;margin:15px 0">&#129504;</p>
-        <p style="font-size:1.15em">Das antrainierte Wissen. Milliarden Texte aus dem Internet. <span class="wb">Fix und nicht veränderbar.</span> Hat ein Ablaufdatum (Knowledge Cutoff, Anfang 2025).</p>
+  <div class="grow" style="gap:15px">
+    <!-- Input → Modell → Output Flow -->
+    <div class="flow" style="margin:10px 0 20px;gap:0">
+      <div class="flow-box highlight" style="min-width:180px">
+        <div style="font-size:1.6em;margin-bottom:4px">&#9997;&#65039;</div>
+        <div style="font-size:1.1em">Input</div>
+        <div style="font-size:.75em;color:var(--w60);font-weight:400;margin-top:4px">Dein Prompt +<br>dein Kontext</div>
       </div>
-      <div class="col col-n" style="text-align:center;border:2px solid var(--pk)">
-        <h3 style="font-size:1.5em">Kurzzeitgedächtnis</h3>
-        <p style="font-size:1.5em;margin:15px 0">&#9997;&#65039;</p>
-        <p style="font-size:1.15em">Alles, was du ihm <span class="accent">jetzt</span> mitgibst: Dein Prompt, dein Kontext, deine Beispiele, hochgeladene Dateien.</p>
+      <div class="flow-arrow">&#10132;</div>
+      <div class="flow-box" style="min-width:200px;border-color:var(--org);background:rgba(243,156,18,.08)">
+        <div style="font-size:1.6em;margin-bottom:4px">&#129504;</div>
+        <div style="font-size:1.1em;color:var(--org)">KI-Modell</div>
+        <div style="font-size:.75em;color:var(--w60);font-weight:400;margin-top:4px">Antrainiertes Wissen<br>(Langzeitgedächtnis)</div>
+      </div>
+      <div class="flow-arrow">&#10132;</div>
+      <div class="flow-box" style="min-width:180px;border-color:var(--grn);background:rgba(46,204,113,.08)">
+        <div style="font-size:1.6em;margin-bottom:4px">&#128196;</div>
+        <div style="font-size:1.1em;color:var(--grn)">Output</div>
+        <div style="font-size:.75em;color:var(--w60);font-weight:400;margin-top:4px">Die generierte<br>Antwort</div>
       </div>
     </div>
-    <div class="box-pk" style="font-size:1.35em;text-align:center">
+    <!-- Zwei Gedächtnisse -->
+    <div class="two" style="margin:0">
+      <div class="col col-n" style="text-align:center;padding:20px">
+        <h3 style="font-size:1.4em;color:var(--org)">&#129504; Langzeitgedächtnis</h3>
+        <p style="font-size:1.1em">Das antrainierte Wissen. Milliarden Texte aus dem Internet. <span class="wb">Fix und nicht veränderbar.</span></p>
+        <p style="font-size:.95em;color:var(--w60);margin-top:8px">Hat ein Ablaufdatum (Knowledge Cutoff). Was danach passiert ist, weiß das Modell nur übers Internet.</p>
+      </div>
+      <div class="col col-n" style="text-align:center;border:2px solid var(--pk);padding:20px">
+        <h3 style="font-size:1.4em">&#9997;&#65039; Kurzzeitgedächtnis</h3>
+        <p style="font-size:1.1em">Alles, was du ihm <span class="accent">jetzt</span> mitgibst: Dein Prompt, dein Kontext, deine Beispiele, hochgeladene Dateien.</p>
+        <p style="font-size:.95em;color:var(--w60);margin-top:8px">Neues Chatfenster = sauberer Start für deinen Prompt. Aber: Erinnerungen + Chat-Historie bleiben (Einstellungen).</p>
+      </div>
+    </div>
+    <div class="box-pk" style="font-size:1.3em;text-align:center;margin-top:5px">
       <strong style="color:var(--w)">Deine Aufgabe:</strong> Das Kurzzeitgedächtnis so gut füllen, dass die Antwort genau das ist, was du brauchst.
     </div>
   </div>
 </div>
 
-<!-- ===== 7: ARCHITEKTUR ===== -->
+<!-- ===== 7: DETERMINISTISCH VS. PROBABILISTISCH ===== -->
+<div class="slide s-body">
+  <div class="sec"><h2>Warum KI anders tickt als Software</h2><div class="sec-badge">Block 1 — Wie KI funktioniert</div></div>
+  <div class="grow" style="gap:15px">
+    <div class="two" style="gap:40px">
+      <div class="col col-n" style="text-align:center;padding:25px">
+        <h3 style="color:var(--blu);font-size:1.3em">Traditionelle Software</h3>
+        <div style="margin:15px 0">
+          <div class="flow" style="gap:8px">
+            <div class="flow-box" style="padding:10px 18px;font-size:.9em;border-color:var(--blu)">A</div>
+            <span class="flow-arrow" style="color:var(--blu);font-size:1.3em">&#10132;</span>
+            <div class="flow-box" style="padding:10px 18px;font-size:.9em;border-color:var(--blu)">B</div>
+          </div>
+        </div>
+        <p style="font-size:1.3em;font-weight:700;color:var(--blu)">Deterministisch</p>
+        <p style="font-size:1em;color:var(--w60);margin-top:8px">Gleicher Input = <span class="wb">immer</span> gleiches Ergebnis.<br>Wenn/Dann-Logik, 100% vorhersagbar.</p>
+      </div>
+      <div class="col col-n" style="text-align:center;border:2px solid var(--pk);padding:25px">
+        <h3 style="font-size:1.3em">KI-Modelle</h3>
+        <div style="margin:15px 0">
+          <div class="flow" style="gap:6px;flex-wrap:wrap;justify-content:center">
+            <div class="flow-box highlight" style="padding:10px 18px;font-size:.9em">A</div>
+            <span class="flow-arrow" style="font-size:1.3em">&#10132;</span>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <div class="flow-box" style="padding:5px 14px;font-size:.8em;border-color:var(--grn)">B</div>
+              <div class="flow-box" style="padding:5px 14px;font-size:.8em;border-color:var(--org)">C</div>
+              <div class="flow-box" style="padding:5px 14px;font-size:.8em;border-color:var(--red)">D</div>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:1.3em;font-weight:700;color:var(--pk)">Probabilistisch</p>
+        <p style="font-size:1em;color:var(--w60);margin-top:8px">Gleicher Input = <span class="accent">verschiedene</span> mögliche Ergebnisse. Basiert auf Wahrscheinlichkeit.</p>
+      </div>
+    </div>
+    <div class="box-pk" style="font-size:1.3em;text-align:center;margin-top:10px">
+      <span style="font-size:1.1em">&#10067;</span> Die Frage ist: <span class="accent">Wie kriegen wir vorhersagbar gute Ergebnisse?</span>
+    </div>
+    <p style="text-align:center;font-size:1.05em;color:var(--w60);margin-top:5px">Das wahrscheinlichste Ergebnis ist per Definition der Durchschnitt. Unsere Aufgabe: Diesen Durchschnitt nach oben verschieben.</p>
+  </div>
+</div>
+
+<!-- ===== 8: ARCHITEKTUR — SCHICHTEN ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Was alles die Antwort beeinflusst</h2><div class="sec-badge">Block 1 — Wie KI funktioniert</div></div>
   <div class="grow">
@@ -200,16 +293,34 @@
   </div>
 </div>
 
-<!-- ===== 8: MISSVERSTÄNDNIS ===== -->
-<div class="slide s-center">
-  <div style="position:absolute;top:20px;right:25px" class="sec-badge" style="color:var(--w40);font-size:.8em">Block 1 — Wie KI funktioniert</div>
-  <p style="font-size:1.5em;color:var(--w60);margin-bottom:15px">Das wichtigste Missverständnis</p>
-  <h1 style="font-size:4em;color:var(--pk)">Wir trainieren<br>ChatGPT nicht.</h1>
-  <p style="margin-top:30px;font-size:1.35em;max-width:700px">Neues Chatfenster = bei null anfangen.</p>
-  <p style="margin-top:15px;font-size:1.05em;color:var(--w40)">Ausnahme: Erinnerungen, die ChatGPT automatisch speichert (Einstellungen &rarr; Personalisierung)</p>
+<!-- ===== 9: TRAINIEREN VS. MERKEN ===== -->
+<div class="slide s-body">
+  <div class="sec"><h2>Trainieren vs. Merken</h2><div class="sec-badge">Block 1 — Wie KI funktioniert</div></div>
+  <div class="grow" style="gap:15px">
+    <p style="font-size:1.2em;color:var(--w80);text-align:center">Das wichtigste Missverständnis: <span class="accent">"Je mehr ich chatte, desto besser wird ChatGPT."</span></p>
+    <div class="two" style="gap:30px">
+      <div class="col col-r" style="text-align:center;padding:25px">
+        <div style="font-size:2.5em;margin-bottom:8px">&#10060;</div>
+        <h3 style="color:var(--red);font-size:1.3em">Trainieren</h3>
+        <p style="font-size:1.5em;font-weight:700;margin:10px 0">Geht nicht.</p>
+        <p style="font-size:1.05em">Das Modell (das "Gehirn") wurde von OpenAI trainiert. Das ist abgeschlossen. Deine Chats verändern das Modell nicht. Es wird nicht schlauer durch dich.</p>
+      </div>
+      <div class="col col-g" style="text-align:center;padding:25px">
+        <div style="font-size:2.5em;margin-bottom:8px">&#9989;</div>
+        <h3 style="color:var(--grn);font-size:1.3em">Merken</h3>
+        <p style="font-size:1.5em;font-weight:700;margin:10px 0">Passiert.</p>
+        <p style="font-size:1.05em">ChatGPT speichert <span class="wb">Notizzettel</span> über dich: Erinnerungen, Personalisierung, Erkenntnisse aus alten Chats. Die werden bei jedem Chat mitgeschickt.</p>
+      </div>
+    </div>
+    <div class="box-pk" style="font-size:1.2em;text-align:center;margin-top:5px">
+      <strong style="color:var(--w)">Merken &ne; Trainieren.</strong> Das Gehirn bleibt gleich, es bekommt nur einen Spickzettel dazu.<br>
+      <span style="color:var(--w60)">Aber: Dieser Spickzettel ist nicht zuverlässig. Deshalb alle Infos immer im Prompt mitgeben.</span>
+    </div>
+    <p style="text-align:center;font-size:.95em;color:var(--w40)">Einstellungen &rarr; Personalisierung &rarr; Erinnerungen: Dort siehst und steuerst du, was ChatGPT sich gemerkt hat.</p>
+  </div>
 </div>
 
-<!-- ===== 9: PRAKTIKANT ===== -->
+<!-- ===== 10: PRAKTIKANT ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Denk an einen hochbegabten Praktikanten</h2><div class="sec-badge">Block 1 — Wie KI funktioniert</div></div>
   <div class="grow" style="gap:15px">
@@ -240,24 +351,23 @@
   <div class="tag" style="color:var(--w80)">Die richtige Erwartung</div>
 </div>
 
-<!-- ===== 11: STÄRKEN ===== -->
+<!-- ===== 12: STÄRKEN ===== -->
 <div class="slide s-body">
-  <div class="sec"><h2>Was KI dir bringt, Michaela</h2><div class="sec-badge">Block 2 — Stärken & Schwächen von KI</div></div>
+  <div class="sec"><h2>Was KI dir bringt, Michaela</h2><div class="sec-badge">Block 2 — Stärken & Schwächen</div></div>
   <div class="grow">
     <div class="two" style="gap:30px;align-items:start">
       <div>
-        <ul style="font-size:1.15em">
-          <li><span class="wb">Kunden-Mails in Sekunden</span><br><span style="color:var(--w60)">Für deine Handwerk-, Garten- und Landwirtschaftskunden</span></li>
-          <li><span class="wb">Kampagnen-Briefings strukturieren</span><br><span style="color:var(--w60)">Aus deinen Notizen ein sauberes Dokument</span></li>
-          <li><span class="wb">Texte skalieren</span><br><span style="color:var(--w60)">Ein Prompt, verschiedene Kunden und Branchen</span></li>
-          <li><span class="wb">Zusammenfassungen</span><br><span style="color:var(--w60)">Kunden-Briefing in 30 Sekunden auf den Punkt</span></li>
-          <li><span class="wb">Sora-Videoprompts</span><br><span style="color:var(--w60)">Das machst du schon! Jetzt noch gezielter.</span></li>
+        <ul style="font-size:1.1em">
+          <li><span class="wb">Kreativität & Schnelligkeit</span><br><span style="color:var(--w60)">20 Headline-Varianten in unter einer Minute. 2-3 Ansätze zum Weiterarbeiten sind fast immer dabei.</span></li>
+          <li><span class="wb">Skalierbare Personalisierung</span><br><span style="color:var(--w60)">Einen guten Prompt einmal bauen, dann nur Kunden und Inhalte austauschen. Gleicher Qualitätsstandard.</span></li>
+          <li><span class="wb">Strategische Impulse</span><br><span style="color:var(--w60)">"Wie reagiert ein Marketingleiter in der Handwerkerbranche?" Das Modell simuliert verschiedene Perspektiven.</span></li>
+          <li><span class="wb">Analyse</span><br><span style="color:var(--w60)">20-seitiges Briefing hochladen: "Fasse die Key Messages zusammen." Spart eine Stunde Lesen.</span></li>
         </ul>
       </div>
       <div style="display:flex;align-items:center;justify-content:center;height:100%">
         <div style="text-align:center">
           <div style="font-size:5em;margin-bottom:15px">&#9889;</div>
-          <p style="font-size:1.4em;font-weight:700;color:var(--pk)">80% in 2 Minuten<br>statt 2 Stunden</p>
+          <p style="font-size:1.4em;font-weight:700;color:var(--pk)">80% in 20 Minuten<br>statt 2 Stunden</p>
           <p style="font-size:1.05em;color:var(--w60);margin-top:10px">Die letzten 20% sind dein Job:<br>Feinschliff, Markenstimme, das gewisse Etwas.</p>
         </div>
       </div>
@@ -265,34 +375,88 @@
   </div>
 </div>
 
-<!-- ===== 12: SCHWÄCHEN ===== -->
+<!-- ===== 12b: STÄRKEN — WAS HEUTE NOCH DAZUKOMMT ===== -->
 <div class="slide s-body">
-  <div class="sec"><h2>Schwächen von KI — wo du aufpassen musst</h2><div class="sec-badge">Block 2 — Stärken & Schwächen von KI</div></div>
+  <div class="sec"><h2>Was heute noch dazukommt</h2><div class="sec-badge">Block 2 — Stärken & Schwächen</div></div>
   <div class="grow" style="gap:15px">
-    <div class="three">
-      <div class="card" style="border:2px solid var(--red)">
-        <p style="font-size:2em;margin-bottom:8px">&#9888;&#65039;</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <div class="card" style="border:2px solid var(--blu);padding:18px;text-align:left">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+          <div class="icon-circle ic-bl" style="margin:0;width:45px;height:45px;font-size:1.3em;flex-shrink:0">&#128269;</div>
+          <h3 style="color:var(--blu);font-size:1.1em;margin:0">Deep Research</h3>
+        </div>
+        <p style="font-size:.95em">"Recherchiere Wettbewerber in der Gartengerätebranche." ChatGPT durchsucht das Internet und liefert einen strukturierten Report mit Quellen.</p>
+      </div>
+      <div class="card" style="border:2px solid var(--org);padding:18px;text-align:left">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+          <div class="icon-circle ic-or" style="margin:0;width:45px;height:45px;font-size:1.3em;flex-shrink:0">&#9997;&#65039;</div>
+          <h3 style="color:var(--org);font-size:1.1em;margin:0">Canvas</h3>
+        </div>
+        <p style="font-size:.95em">Texte direkt in ChatGPT bearbeiten, umstellen, versionieren. Kein Hin-und-her-Kopieren. Wie ein Dokument mit KI-Assistent.</p>
+      </div>
+      <div class="card" style="border:2px solid var(--pur);padding:18px;text-align:left">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+          <div class="icon-circle ic-pu" style="margin:0;width:45px;height:45px;font-size:1.3em;flex-shrink:0">&#127909;</div>
+          <h3 style="color:var(--pur);font-size:1.1em;margin:0">Sora Video</h3>
+        </div>
+        <p style="font-size:.95em">Sora 2 liefert deutlich bessere Qualität. Aktuell noch als separate App (sora.com), Integration in ChatGPT ist angekündigt. Gleiche Prompting-Prinzipien.</p>
+      </div>
+      <div class="card" style="border:2px solid var(--pk);padding:18px;text-align:left">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+          <div class="icon-circle ic-pk" style="margin:0;width:45px;height:45px;font-size:1.3em;flex-shrink:0">&#129302;</div>
+          <h3 style="font-size:1.1em;margin:0">KI-Agenten</h3>
+        </div>
+        <p style="font-size:.95em">KI arbeitet autonom: Kampagnen steuern, Reports erstellen, Plattformen verknüpfen (Google Ads, Meta, Slack). Der Mensch gibt die Richtung vor, der Agent führt aus.</p>
+      </div>
+    </div>
+    <div class="box-pk" style="font-size:1.1em;text-align:center;margin-top:8px">
+      Deep Research und Canvas sind in <span class="accent">ChatGPT Plus</span> enthalten. Sora ist separat (sora.com). Agenten sind der nächste große Schritt: KI die nicht nur antwortet, sondern <span class="accent">selbständig handelt</span>.
+    </div>
+  </div>
+</div>
+
+<!-- ===== 13: SCHWÄCHEN + LIMITATIONEN ===== -->
+<div class="slide s-body">
+  <div class="sec"><h2>Schwächen & Limitationen</h2><div class="sec-badge">Block 2 — Stärken & Schwächen</div></div>
+  <div class="grow" style="gap:0">
+    <!-- Schwächen -->
+    <div class="three" style="margin-bottom:0">
+      <div class="card" style="border:2px solid var(--red);border-bottom:none;border-radius:14px 14px 0 0;padding:18px">
+        <div class="icon-circle ic-rd">&#9888;&#65039;</div>
         <h3 style="color:var(--red)">Halluzination</h3>
-        <p>Erfindet Fakten mit vollem Selbstbewusstsein. Zahlen und Daten <span class="accent">IMMER</span> prüfen.</p>
+        <p style="font-size:.95em">Erfindet Fakten mit vollem Selbstbewusstsein.</p>
       </div>
-      <div class="card" style="border:2px solid var(--org)">
-        <p style="font-size:2em;margin-bottom:8px">&#128172;</p>
+      <div class="card" style="border:2px solid var(--org);border-bottom:none;border-radius:14px 14px 0 0;padding:18px">
+        <div class="icon-circle ic-or">&#128172;</div>
         <h3 style="color:var(--org)">Generisch</h3>
-        <p>Ohne guten Prompt kommt Durchschnitt. Austauschbar. Klingt "nach KI".</p>
+        <p style="font-size:.95em">Ohne guten Prompt kommt Durchschnitt. Austauschbar.</p>
       </div>
-      <div class="card" style="border:2px solid var(--w40)">
-        <p style="font-size:2em;margin-bottom:8px">&#128270;</p>
+      <div class="card" style="border:2px solid var(--w40);border-bottom:none;border-radius:14px 14px 0 0;padding:18px">
+        <div class="icon-circle" style="background:var(--w10);border:2px solid var(--w40)">&#128270;</div>
         <h3 style="color:var(--w60)">Recherche</h3>
-        <p>Für den Einstieg okay. OpenAI bevorzugt bestimmte Quellen. Immer selbst checken.</p>
+        <p style="font-size:.95em">OpenAI bevorzugt bestimmte Quellen. Nicht objektiv.</p>
       </div>
     </div>
-    <div class="box-pk" style="font-size:1.25em;text-align:center">
-      KI liefert die <span class="accent">wahrscheinlichste</span> Antwort. Das ist per Definition der Durchschnitt.
+    <!-- Pfeile -->
+    <div class="three" style="margin:0">
+      <div style="text-align:center;font-size:1.8em;color:var(--pk);line-height:1">&#11015;</div>
+      <div style="text-align:center;font-size:1.8em;color:var(--pk);line-height:1">&#11015;</div>
+      <div style="text-align:center;font-size:1.8em;color:var(--pk);line-height:1">&#11015;</div>
     </div>
-    <div class="three" style="gap:20px">
-      <div class="card"><h3 style="color:var(--grn)">&#10003; Du bist der Check</h3><p style="font-size:.95em">KI entwirft. Du prüfst.</p></div>
-      <div class="card"><h3 style="color:var(--grn)">&#10003; 3x generieren</h3><p style="font-size:.95em">Bestes Ergebnis nehmen.</p></div>
-      <div class="card"><h3 style="color:var(--grn)">&#10003; Nie blind vertrauen</h3><p style="font-size:.95em">Fakten immer prüfen.</p></div>
+    <!-- Lösungen -->
+    <div class="three" style="margin-top:0">
+      <div class="card" style="border:2px solid var(--grn);border-radius:0 0 14px 14px;padding:16px">
+        <h3 style="color:var(--grn);font-size:1.1em">&#9989; Human-in-the-Loop</h3>
+        <p style="font-size:.95em">Du bist der letzte Check. KI entwirft, du prüfst und finalisierst.</p>
+      </div>
+      <div class="card" style="border:2px solid var(--grn);border-radius:0 0 14px 14px;padding:16px">
+        <h3 style="color:var(--grn);font-size:1.1em">&#9989; Resampling</h3>
+        <p style="font-size:.95em">3x generieren, bestes Ergebnis nehmen. Jeder Durchlauf ist anders.</p>
+      </div>
+      <div class="card" style="border:2px solid var(--grn);border-radius:0 0 14px 14px;padding:16px">
+        <h3 style="color:var(--grn);font-size:1.1em">&#9989; Nie blind vertrauen</h3>
+        <p style="font-size:.95em">Fakten, Zahlen und Zitate immer gegenchecken.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -304,55 +468,91 @@
   <div class="tag" style="color:var(--w80)">+ Live-Demo</div>
 </div>
 
-<!-- ===== 14: KERNAUSSAGE ===== -->
-<div class="slide s-center">
-  <div style="position:absolute;top:20px;right:25px;font-size:.8em;color:var(--w40);font-weight:700;letter-spacing:1.5px">BLOCK 3 — PROMPTING-PRINZIPIEN</div>
-  <p style="font-size:1.3em;color:var(--w60);margin-bottom:15px">Michaela, du bekommst schon gute Ergebnisse mit ChatGPT. Aber:</p>
-  <h1 style="font-size:2.8em;max-width:950px">Ein <span class="accent">hochwertiges, zuverlässiges<br>und wiederholbares</span> Ergebnis<br>braucht System.</h1>
-  <p style="margin-top:30px;font-size:1.2em;color:var(--w80);max-width:700px">Ohne System ist es Glückssache. Mal gut, mal nicht. Nicht reproduzierbar. Nicht weitergebbar.</p>
-  <p style="margin-top:15px;font-size:1.2em;color:var(--w80)">Das System: <span class="accent">Drei Prinzipien.</span></p>
-</div>
-
-<!-- ===== 15: DREI PRINZIPIEN ===== -->
+<!-- ===== 15: DIE ZWEI PROBLEME ===== -->
 <div class="slide s-body">
-  <div class="sec"><h2>Struktur. Spezifizität. Kontext.</h2><div class="sec-badge">Block 3 — Prompting-Prinzipien</div></div>
-  <div class="grow">
-    <div class="three" style="margin:10px 0">
-      <div class="card" style="border:2px solid var(--pk);padding:30px">
-        <div class="cn">1</div>
-        <h3 style="font-size:1.4em">Struktur</h3>
-        <p style="font-size:1.1em;color:var(--w80)">Wie ein Briefing aufgebaut. Überschriften, Abschnitte, klare Gliederung.</p>
-        <div style="margin-top:15px;background:rgba(0,0,0,.3);border-radius:8px;padding:12px;font-family:monospace;font-size:.85em;color:var(--w60);text-align:left">
-          <span style="color:var(--pk)"># Rolle</span><br>
-          <span style="color:var(--pk)"># Kontext</span><br>
-          <span style="color:var(--pk)"># Aufgabe</span>
+  <div class="sec"><h2>Die zwei Probleme beim Prompten</h2><div class="sec-badge">Block 3 — Prompting-Prinzipien</div></div>
+  <div class="grow" style="gap:15px">
+    <div class="two" style="gap:30px">
+      <!-- Problem I -->
+      <div class="col col-r" style="padding:25px">
+        <h3 style="color:var(--red);font-size:1.3em">Problem I: Schlechte Qualität</h3>
+        <div style="text-align:center;margin:15px 0">
+          <!-- Mini bell curve as visual -->
+          <svg width="240" height="100" viewBox="0 0 240 100" style="opacity:.8">
+            <defs><linearGradient id="bell1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e74c3c" stop-opacity=".3"/><stop offset="100%" stop-color="#e74c3c" stop-opacity=".05"/></linearGradient></defs>
+            <path d="M10,90 Q60,90 80,70 Q100,40 120,20 Q140,40 160,70 Q180,90 230,90" fill="url(#bell1)" stroke="#e74c3c" stroke-width="2"/>
+            <line x1="120" y1="15" x2="120" y2="90" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4"/>
+            <text x="120" y="98" text-anchor="middle" fill="rgba(255,255,255,.5)" font-size="10">Durchschnitt</text>
+          </svg>
         </div>
+        <p style="font-size:1.05em">KI liefert das <span style="color:var(--red);font-weight:700">wahrscheinlichste</span> Ergebnis. Das ist per Definition der Durchschnitt: generisch, austauschbar, ohne Charakter.</p>
       </div>
-      <div class="card" style="border:2px solid var(--pk);padding:30px">
-        <div class="cn">2</div>
-        <h3 style="font-size:1.4em">Spezifizität</h3>
-        <p style="font-size:1.1em;color:var(--w80)">Genau beschreiben: WAS, FÜR WEN, WIE, WOZU.</p>
-        <div style="margin-top:15px;background:rgba(0,0,0,.3);border-radius:8px;padding:12px;font-size:.9em;color:var(--w60);text-align:left">
-          &#10060; "Schreib eine Mail"<br>
-          &#9989; "Schreib eine Mail an Thomas Maier, GF Gartengeräte, wegen Mediaplan Q2"
+      <!-- Problem II -->
+      <div class="col" style="padding:25px;background:var(--w10);border:2px solid var(--org)">
+        <h3 style="color:var(--org);font-size:1.3em">Problem II: Skaliert nicht</h3>
+        <div style="text-align:center;margin:15px 0">
+          <!-- Flowchart: Prompt → Prompt → Prompt → Ergebnis with X -->
+          <div class="flow" style="gap:4px;flex-wrap:wrap;justify-content:center">
+            <div class="flow-box" style="padding:8px 14px;font-size:.8em;border-color:var(--org)">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em;color:var(--org)">&#10132;</span>
+            <div class="flow-box" style="padding:8px 14px;font-size:.8em;border-color:var(--org)">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em;color:var(--org)">&#10132;</span>
+            <div class="flow-box" style="padding:8px 14px;font-size:.8em;border-color:var(--org)">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em;color:var(--org)">&#10132;</span>
+            <div class="flow-box" style="padding:8px 14px;font-size:.8em;border-color:var(--grn)">Ergebnis</div>
+          </div>
+          <p style="font-size:1.5em;color:var(--red);margin-top:10px;font-weight:900">&#10060;</p>
         </div>
-      </div>
-      <div class="card" style="border:2px solid var(--pk);padding:30px">
-        <div class="cn">3</div>
-        <h3 style="font-size:1.4em">Kontext</h3>
-        <p style="font-size:1.1em;color:var(--w80)">Alle relevanten Infos. Besonders: <span class="accent">Beispiele</span>.</p>
-        <div style="margin-top:15px;background:rgba(0,0,0,.3);border-radius:8px;padding:12px;font-size:.9em;color:var(--w60);text-align:left">
-          &#128161; Bisherige Mail an den Kunden als Referenz &rarr; Modell trifft den Ton 10x besser
-        </div>
+        <p style="font-size:1.05em">Durch Hin- und Herschreiben <span style="color:var(--org);font-weight:700">irgendwann</span> ein brauchbares Ergebnis. Aber: nicht reproduzierbar, nicht weitergebbar.</p>
       </div>
     </div>
-    <div class="box-pk" style="font-size:1.25em;text-align:center;margin-top:15px">
+    <div class="box-pk" style="font-size:1.3em;text-align:center;margin-top:5px">
+      <span class="accent">Die Lösung für beide Probleme:</span> Drei Prinzipien, die deine Ergebnisse zuverlässig machen.
+    </div>
+  </div>
+</div>
+
+<!-- ===== 16: DREI PRINZIPIEN ALS SÄULEN ===== -->
+<div class="slide s-body">
+  <div class="sec"><h2>Struktur. Spezifizität. Kontext.</h2><div class="sec-badge">Block 3 — Prompting-Prinzipien</div></div>
+  <div class="grow" style="justify-content:center">
+    <!-- Säulen-Diagramm -->
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-top">
+          <div style="font-size:1.4em;margin-bottom:4px">&#127959;&#65039;</div>
+          Struktur
+        </div>
+        <div class="pillar-body">Prompt klar gliedern.<br>Überschriften, Abschnitte,<br>wie ein Briefing.</div>
+        <div class="pillar-base"></div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-top">
+          <div style="font-size:1.4em;margin-bottom:4px">&#127919;</div>
+          Spezifizität
+        </div>
+        <div class="pillar-body">Genau beschreiben:<br>WAS, FÜR WEN,<br>WIE, WOZU.</div>
+        <div class="pillar-base"></div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-top">
+          <div style="font-size:1.4em;margin-bottom:4px">&#128218;</div>
+          Kontext
+        </div>
+        <div class="pillar-body">Alle relevanten Infos.<br>Besonders: Beispiele<br>aus der Praxis.</div>
+        <div class="pillar-base"></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:20px">
+      <p style="font-size:1.15em;color:var(--w80)">Das Modell hat <span class="accent">keine Ahnung</span>, wer du bist, wer dein Kunde ist und worauf es bei <span class="accent">dieser</span> Aufgabe ankommt. All das musst du mitgeben.</p>
+    </div>
+    <div class="box-pk" style="font-size:1.25em;text-align:center;margin-top:10px">
       Alle drei fehlen &rarr; Durchschnitt. Alle drei da &rarr; <span class="accent">zuverlässig exzellent</span>.
     </div>
   </div>
 </div>
 
-<!-- ===== 16: VORHER / NACHHER ===== -->
+<!-- ===== 17: VORHER / NACHHER ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Der Unterschied in der Praxis</h2><div class="sec-badge">Block 3 — Prompting-Prinzipien</div></div>
   <div class="grow">
@@ -385,7 +585,7 @@ Professionell, freundlich, max. 150 Wörter.
   </div>
 </div>
 
-<!-- ===== 17: LIVE-DEMO ===== -->
+<!-- ===== 18: LIVE-DEMO ===== -->
 <div class="slide s-interact">
   <div class="interact-badge">LIVE-DEMO</div>
   <h1 style="font-size:2.8em;margin-bottom:25px">Jetzt live ausprobieren</h1>
@@ -400,73 +600,176 @@ Professionell, freundlich, max. 150 Wörter.
   <div class="tag" style="color:var(--w80)">Gemeinsam bauen</div>
 </div>
 
-<!-- ===== 19: DREI HERANGEHENSWEISEN ===== -->
+<!-- ===== 20: CONVERSATIONAL VS. SINGLE SHOT ===== -->
 <div class="slide s-body">
-  <div class="sec"><h2>Drei Herangehensweisen — und wann welche</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
-  <div class="grow">
-    <div class="three" style="gap:20px">
-      <div class="tech" style="border:2px solid var(--w40)">
-        <h3 style="color:var(--w90);font-size:1.2em">&#128172; Conversational</h3>
-        <p style="font-size:1em"><span class="accent">Wann:</span> Du weißt noch nicht, wie das Ergebnis aussehen soll.</p>
-        <p style="font-size:.95em;color:var(--w60);margin-top:8px">Schritt für Schritt im Dialog. Ideal für Brainstorming, Konzepte, Ideenfindung.</p>
-        <div class="tech-example">"Welche Kampagnenideen für einen Gartengeräte-Hersteller?"
-→ "Ansatz 2 vertiefen..."
-→ "5 Headlines dafür..."</div>
+  <div class="sec"><h2>Zwei Herangehensweisen</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
+  <div class="grow" style="gap:15px">
+    <div class="two" style="gap:30px">
+      <!-- Conversational -->
+      <div class="tech" style="border:2px solid var(--w40);padding:25px">
+        <h3 style="color:var(--w90);font-size:1.2em">&#128172; Conversational Prompting</h3>
+        <p style="font-size:1em;margin-bottom:12px"><span class="accent">Wann:</span> Du weißt noch nicht genau, wie das Ergebnis aussehen soll.</p>
+        <!-- Flow: Prompt → Prompt → Prompt → Ergebnis -->
+        <div style="text-align:center;margin:12px 0;padding:12px;background:rgba(0,0,0,.2);border-radius:10px">
+          <div class="flow" style="gap:4px;font-size:.85em;flex-wrap:wrap;justify-content:center">
+            <div class="flow-box" style="padding:8px 12px;font-size:.85em">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em">&#10132;</span>
+            <div class="flow-box" style="padding:8px 12px;font-size:.85em">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em">&#10132;</span>
+            <div class="flow-box" style="padding:8px 12px;font-size:.85em">Prompt</div>
+            <span class="flow-arrow" style="font-size:1em">&#10132;</span>
+            <div class="flow-box" style="padding:8px 12px;font-size:.85em;border-color:var(--grn)">Ergebnis</div>
+          </div>
+        </div>
+        <p style="font-size:.95em;color:var(--w60)">Ideal für Brainstorming, Konzepte, Ideenfindung. Schrittweise im Dialog.</p>
+        <p style="font-size:.9em;color:var(--org);margin-top:8px;font-weight:700">Für kreative Anwendungsfälle</p>
       </div>
-      <div class="tech" style="border:2px solid var(--pk)">
-        <h3 style="font-size:1.2em">&#127919; Single Shot</h3>
-        <p style="font-size:1em"><span class="accent">Wann:</span> Du weißt genau, was rauskommen soll.</p>
-        <p style="font-size:.95em;color:var(--w60);margin-top:8px">Ein Prompt, fertiges Ergebnis. Reproduzierbar, skalierbar, weitergebbar.</p>
-        <div class="tech-example">Ein Prompt mit allen Infos
-→ Auf Knopfdruck fertige Mail
-→ Für jeden Kunden wiederverwendbar</div>
-      </div>
-      <div class="tech" style="border:2px solid var(--org)">
-        <h3 style="color:var(--org);font-size:1.2em">&#129504; Meta Prompting</h3>
-        <p style="font-size:1em"><span class="accent">Wann:</span> Du willst, dass ChatGPT dir beim Prompten hilft.</p>
-        <p style="font-size:.95em;color:var(--w60);margin-top:8px">Du beschreibst WAS du brauchst, und ChatGPT baut den Prompt FÜR dich.</p>
-        <div class="tech-example">"Ich muss eine Mail an einen
-Gartengeräte-Kunden schreiben.
-Erstelle mir einen strukturierten
-Prompt dafür mit allen Bausteinen."</div>
+      <!-- Single Shot -->
+      <div class="tech" style="border:2px solid var(--pk);padding:25px">
+        <h3 style="font-size:1.2em">&#127919; Single Shot Prompting</h3>
+        <p style="font-size:1em;margin-bottom:12px"><span class="accent">Wann:</span> Du weißt genau, was rauskommen soll.</p>
+        <!-- Flow: Ein Prompt → Ergebnis -->
+        <div style="text-align:center;margin:12px 0;padding:12px;background:rgba(0,0,0,.2);border-radius:10px">
+          <div class="flow" style="gap:8px;font-size:.85em">
+            <div class="flow-box highlight" style="padding:8px 16px;font-size:.85em">Ein Prompt</div>
+            <span class="flow-arrow" style="font-size:1.2em">&#10132;</span>
+            <div class="flow-box" style="padding:8px 16px;font-size:.85em;border-color:var(--grn)">Fertiges Ergebnis</div>
+          </div>
+        </div>
+        <p style="font-size:.95em;color:var(--w60)">Reproduzierbar, skalierbar, weitergebbar. Für jeden Kunden wiederverwendbar.</p>
+        <p style="font-size:.9em;color:var(--pk);margin-top:8px;font-weight:700">Für produktive Anwendungsfälle</p>
       </div>
     </div>
-    <p style="text-align:center;font-size:1.1em;color:var(--w80);margin-top:10px"><span class="accent">Conversational</span> für die Kreativphase. <span class="accent">Single Shot</span> für den Alltag. <span class="accent">Meta Prompting</span> wenn du nicht weißt, wie du anfangen sollst.</p>
+    <div class="box-pk" style="font-size:1.15em;text-align:center;margin-top:5px">
+      <span class="accent">Conversational</span> für die Kreativphase. <span class="accent">Single Shot</span> für den Alltag. Beide haben ihre Berechtigung.
+    </div>
+    <p style="text-align:center;font-size:1em;color:var(--w60)"><strong style="color:var(--w)">Meta Prompting:</strong> Du beschreibst WAS du brauchst, und ChatGPT baut den Prompt FÜR dich. Gut wenn du nicht weißt, wie du anfangen sollst.</p>
   </div>
 </div>
 
-<!-- ===== 20: 8 BAUSTEINE (Teil 1) ===== -->
+<!-- ===== 21: 8 BAUSTEINE (Teil 1) ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Die 8 Prompt-Bausteine (1/2)</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
   <div class="grow">
-    <table style="font-size:1.05em">
-      <tr><th style="width:40px">#</th><th style="width:130px">Baustein</th><th style="width:230px">Frage</th><th>Beispiel</th></tr>
-      <tr><td class="accent">1</td><td><strong>Rolle</strong></td><td>Welche Expertise?</td><td style="color:var(--w60)"><em>"Du bist eine Senior Account Managerin in einer Marketingagentur in Österreich. Branchen: Handwerk, Garten, Landwirtschaft."</em></td></tr>
-      <tr><td class="accent">2</td><td><strong>Kontext</strong></td><td>Was muss es wissen?</td><td style="color:var(--w60)"><em>"Kunde: Firma Maier, Gartengeräte, OÖ. Duzen."</em></td></tr>
-      <tr><td class="accent">3</td><td><strong>Aufgabe</strong></td><td>Was soll rauskommen?</td><td style="color:var(--w60)"><em>"Schreibe eine Mail. 1. Bezug Telefonat 2. Zusammenfassung 3. Freigabe erbitten"</em></td></tr>
-      <tr><td class="accent">4</td><td><strong>Inhalt</strong></td><td>Welche Fakten rein?</td><td style="color:var(--w60)"><em>"Print: Grüner Daumen 1/1, April+Mai. Google Ads: 6 Wochen, € 3.500"</em></td></tr>
-    </table>
+    <div style="display:grid;grid-template-columns:50px 60px 140px 1fr 1fr;gap:0;align-items:stretch">
+      <!-- Header -->
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">#</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 4px;font-weight:700;border-bottom:2px solid var(--pk);text-align:center;font-size:.9em"></div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Baustein</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Was es tut</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Beispiel (Michaela)</div>
+      <!-- Row 1: Rolle -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">1</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#128100;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Rolle</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Identifikation mit der Kompetenz, die für die Aufgabe gebraucht wird. Grenzt Stil + Wissen ein.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Du bist eine Senior Account Managerin in einer Marketingagentur in Österreich."</div>
+      <!-- Row 2: Kontext -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">2</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#127912;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Kontext</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">"Setting the scene": Situation, Ziel, Zielgruppe, Kunde. Das Bühnenbild kreieren.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Kunde: Firma Maier, Gartengeräte, OÖ. Duzen."</div>
+      <!-- Row 3: Aufgabe -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">3</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#128203;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Aufgabe</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Konkret: Was soll gemacht werden? Schritt für Schritt anleiten (Chain of Thought).</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Schreibe eine Mail. 1. Bezug 2. Zusammenfassung 3. Freigabe"</div>
+      <!-- Row 4: Inhalt -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">4</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#8505;&#65039;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Inhalt</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Die konkreten Fakten. Je höher die Informationsdichte, desto besser.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Print: Grüner Daumen 1/1, April+Mai. Google Ads: 6 Wochen, 3.500"</div>
+    </div>
   </div>
 </div>
 
-<!-- ===== 21: 8 BAUSTEINE (Teil 2) ===== -->
+<!-- ===== 22: 8 BAUSTEINE (Teil 2) ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Die 8 Prompt-Bausteine (2/2)</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
   <div class="grow">
-    <table style="font-size:1.05em">
-      <tr><th style="width:40px">#</th><th style="width:130px">Baustein</th><th style="width:230px">Frage</th><th>Beispiel</th></tr>
-      <tr><td class="accent">5</td><td><strong>Beispiele</strong></td><td>Wie sieht "gut" aus?</td><td style="color:var(--w60)"><em>"Hier ist eine bisherige Mail an diesen Kunden. Verwende denselben Ton."</em></td></tr>
-      <tr><td class="accent">6</td><td><strong>Stil</strong></td><td>Wie soll es klingen?</td><td style="color:var(--w60)"><em>"Professionell, freundlich, lösungsorientiert, kurze Sätze."</em></td></tr>
-      <tr><td class="accent">7</td><td><strong>Format</strong></td><td>Wie lang? Struktur?</td><td style="color:var(--w60)"><em>"Max. 150 Wörter, kurze Absätze, Betreffzeile mitliefern."</em></td></tr>
-      <tr><td class="accent">8</td><td><strong>Anweisungen</strong></td><td>Was tun / NICHT tun?</td><td style="color:var(--w60)"><em>"Österr. Deutsch. KEIN 'Ich hoffe, es geht dir gut'. Duzen."</em></td></tr>
-    </table>
-    <div class="box-pk" style="margin-top:15px;font-size:1.15em;text-align:center">
+    <div style="display:grid;grid-template-columns:50px 60px 140px 1fr 1fr;gap:0;align-items:stretch">
+      <!-- Header -->
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">#</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 4px;font-weight:700;border-bottom:2px solid var(--pk);text-align:center;font-size:.9em"></div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Baustein</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Was es tut</div>
+      <div style="background:rgba(232,39,158,.12);padding:12px 8px;font-weight:700;border-bottom:2px solid var(--pk);font-size:.9em">Beispiel (Michaela)</div>
+      <!-- Row 5: Beispiele -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">5</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#128172;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Beispiele</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em"><span class="accent">Sehr mächtig!</span> KI lernt den Stil der Beispiele (In-Context Learning). 1-3 Beispiele ideal.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Hier ist eine bisherige Mail an diesen Kunden. Verwende denselben Ton."</div>
+      <!-- Row 6: Stil -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">6</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#127912;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Stil</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Qualität des Inhalts. Verwendet ausdrucksstarke Adjektive. Fokus auf WIE es klingt.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Professionell, freundlich, lösungsorientiert, kurze Sätze."</div>
+      <!-- Row 7: Format -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">7</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#128220;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Format</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Struktur + Formatierung: Satzlänge, Listen, Headlines, Wortanzahl.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Max. 150 Wörter, kurze Absätze, Betreffzeile mitliefern."</div>
+      <!-- Row 8: Anweisungen -->
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--pk);font-weight:700;font-size:1.1em">8</div>
+      <div style="padding:12px 4px;border-bottom:1px solid var(--w20);text-align:center;font-size:1.4em">&#128110;</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);font-weight:700">Anweisungen</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w80);font-size:.95em">Harte Regeln: Do's & Don'ts. Was erlaubt ist und was nicht.</div>
+      <div style="padding:12px 8px;border-bottom:1px solid var(--w20);color:var(--w60);font-size:.9em;font-style:italic">"Österr. Deutsch. KEIN 'Ich hoffe, es geht dir gut'. Duzen."</div>
+    </div>
+    <div class="box-pk" style="margin-top:12px;font-size:1.1em;text-align:center">
       <strong>Trick:</strong> Am Ende nochmal die 3 wichtigsten Punkte wiederholen (<span class="accent"># WICHTIG</span>). KI verarbeitet Anfang + Ende besser als die Mitte.
     </div>
   </div>
 </div>
 
-<!-- ===== 22: SELF EVALUATION & PROMPT CHAINING ===== -->
+<!-- ===== 23: PROMPT DEVELOPMENT ZYKLUS ===== -->
+<div class="slide s-body">
+  <div class="sec"><h2>Der Prompt Development Zyklus</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
+  <div class="grow" style="justify-content:center;gap:20px">
+    <p style="font-size:1.15em;color:var(--w80);text-align:center">Ein guter Prompt entsteht nicht beim ersten Versuch. So gehst du systematisch vor:</p>
+    <!-- Zyklus-Diagramm -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:15px;margin:15px 0;flex-wrap:wrap">
+      <!-- Step 1: Analyse -->
+      <div class="cycle-step" style="min-width:180px">
+        <div class="icon-circle ic-pk" style="width:50px;height:50px;font-size:1.4em">&#128269;</div>
+        <h3 style="font-size:1.1em">Analyse</h3>
+        <p style="font-size:.9em;color:var(--w60)">Anforderungsprofil:<br>Struktur, Format,<br>Tonalität, Stil</p>
+      </div>
+      <div class="cycle-arrow">&#10132;</div>
+      <!-- Step 2: Prompt Draft -->
+      <div class="cycle-step" style="min-width:180px">
+        <div class="icon-circle ic-or" style="width:50px;height:50px;font-size:1.4em">&#9997;&#65039;</div>
+        <h3 style="font-size:1.1em;color:var(--org)">Prompt Draft</h3>
+        <p style="font-size:.9em;color:var(--w60)">8 Bausteine<br>zusammensetzen,<br>Techniken anwenden</p>
+      </div>
+      <div class="cycle-arrow">&#10132;</div>
+      <!-- Step 3: Test -->
+      <div class="cycle-step" style="min-width:180px">
+        <div class="icon-circle ic-gn" style="width:50px;height:50px;font-size:1.4em">&#9989;</div>
+        <h3 style="font-size:1.1em;color:var(--grn)">Test</h3>
+        <p style="font-size:.9em;color:var(--w60)">Ergebnis prüfen,<br>bewerten, was<br>fehlt oder stört</p>
+      </div>
+    </div>
+    <!-- Iteration Loop -->
+    <div style="text-align:center;margin:5px 0">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(232,39,158,.1);border:1px solid var(--pk);border-radius:30px;padding:12px 25px">
+        <span style="font-size:1.4em">&#128260;</span>
+        <span style="font-size:1.1em;font-weight:700">Prompt anpassen &#8596; erneut testen</span>
+      </div>
+    </div>
+    <div class="box-pk" style="font-size:1.3em;text-align:center;margin-top:10px">
+      Normalfall: <span class="accent">3-4 Iterationen</span> bis zum optimalen Ergebnis.
+    </div>
+  </div>
+</div>
+
+<!-- ===== 24: SELF EVALUATION & PROMPT CHAINING ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Zwei Techniken, die den Unterschied machen</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
   <div class="grow">
@@ -490,11 +793,11 @@ basierend auf deiner Analyse."</div>
         <p style="font-size:1.05em;margin-bottom:10px">Komplexe Aufgaben in <span class="accent">kleine Schritte</span> aufteilen. Jede Antwort füttert den nächsten Prompt.</p>
         <div class="tech-example"><strong>Prompt 1:</strong> "Lies dieses Kunden-Briefing.
 Was sind die 3 Key Messages?"
-→ [Antwort: 3 Key Messages]
+&#10132; [Antwort: 3 Key Messages]
 
 <strong>Prompt 2:</strong> "Nutze diese Key Messages.
 Schreib einen PR-Text für Fachpresse."
-→ [Antwort: PR-Text]
+&#10132; [Antwort: PR-Text]
 
 <strong>Prompt 3:</strong> "Kürze den Text auf
 max. 200 Wörter, behalte den Ton."</div>
@@ -504,7 +807,7 @@ max. 200 Wörter, behalte den Ton."</div>
   </div>
 </div>
 
-<!-- ===== 23: GEMEINSAM BAUEN ===== -->
+<!-- ===== 25: GEMEINSAM BAUEN ===== -->
 <div class="slide s-interact">
   <div class="interact-badge">GEMEINSAM</div>
   <h1 style="font-size:2.4em;margin-bottom:25px">Wir bauen jetzt gemeinsam<br>einen Prompt</h1>
@@ -512,14 +815,14 @@ max. 200 Wörter, behalte den Ton."</div>
   <p style="font-size:1.1em;color:var(--w60)">15 Minuten</p>
 </div>
 
-<!-- ===== 24: PRAXIS-TIPPS ===== -->
+<!-- ===== 26: PRAXIS-TIPPS ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>5 Praxis-Tipps</h2><div class="sec-badge">Block 4 — Techniken & Bausteine</div></div>
   <div class="grow">
-    <div class="rule"><div class="rn">1</div><div class="rt"><strong>Neues Chatfenster</strong> für jeden neuen Prompt. Sauberer Start = sauberes Ergebnis.</div></div>
+    <div class="rule"><div class="rn">1</div><div class="rt"><strong>Neues Chatfenster</strong> für jeden neuen Prompt. Sauberer Start = keine Vermischung mit altem Chatverlauf.</div></div>
     <div class="rule"><div class="rn">2</div><div class="rt"><strong>3x generieren,</strong> bestes Ergebnis nehmen. Jeder Durchlauf ist anders.</div></div>
     <div class="rule"><div class="rn">3</div><div class="rt"><strong>Self Evaluation einbauen:</strong> Erst generieren, dann von ChatGPT prüfen lassen, dann überarbeiten.</div></div>
-    <div class="rule"><div class="rn">4</div><div class="rt"><strong>WICHTIG am Ende wiederholen.</strong> Gegen den Lost-in-the-Middle-Effekt.</div></div>
+    <div class="rule"><div class="rn">4</div><div class="rt"><strong>WICHTIG am Ende wiederholen.</strong> Gegen den Lost-in-the-Middle-Effekt: KI verarbeitet Anfang und Ende besser als die Mitte.</div></div>
     <div class="rule"><div class="rn">5</div><div class="rt"><strong>Canvas nutzen</strong> für längere Texte. Dort direkt bearbeiten und Feinschliff machen.</div></div>
   </div>
 </div>
@@ -531,7 +834,7 @@ max. 200 Wörter, behalte den Ton."</div>
   <div class="tag" style="color:var(--w80)">Dein Anwendungsfall</div>
 </div>
 
-<!-- ===== 26: ÜBUNG ===== -->
+<!-- ===== 28: ÜBUNG ===== -->
 <div class="slide s-interact">
   <div class="interact-badge">ÜBUNG</div>
   <h1 style="font-size:2.4em;margin-bottom:25px">Michaela, jetzt bist du dran</h1>
@@ -547,7 +850,7 @@ max. 200 Wörter, behalte den Ton."</div>
   <p style="font-size:1em;color:var(--w60);margin-top:15px">15 Minuten</p>
 </div>
 
-<!-- ===== 27: BEWERTEN ===== -->
+<!-- ===== 29: BEWERTEN ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Ergebnis bewerten und iterieren</h2><div class="sec-badge">Block 5 — Hands-on</div></div>
   <div class="grow">
@@ -580,7 +883,7 @@ max. 200 Wörter, behalte den Ton."</div>
 
 <!-- ===== ZUSAMMENFASSUNG ===== -->
 
-<!-- ===== 28: 5 REGELN ===== -->
+<!-- ===== 30: 5 REGELN ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Die 5 Regeln</h2><div class="sec-badge">Zusammenfassung</div></div>
   <div class="grow" style="justify-content:space-evenly">
@@ -588,11 +891,11 @@ max. 200 Wörter, behalte den Ton."</div>
     <div class="rule"><div class="rn">2</div><div class="rt"><strong>Struktur, Spezifizität, Kontext.</strong> Immer alle drei.</div></div>
     <div class="rule"><div class="rn">3</div><div class="rt"><strong>Generisch ist der Feind.</strong> Spezifische Prompts = zuverlässige Ergebnisse.</div></div>
     <div class="rule"><div class="rn">4</div><div class="rt"><strong>IMMER prüfen.</strong> Self Evaluation einbauen. Du bist der letzte Check.</div></div>
-    <div class="rule"><div class="rn">5</div><div class="rt"><strong>Iterieren.</strong> 3 Durchläufe sind normal. Prompt Chaining für komplexe Aufgaben.</div></div>
+    <div class="rule"><div class="rn">5</div><div class="rt"><strong>Iterieren.</strong> 3-4 Durchläufe sind normal. Prompt Chaining für komplexe Aufgaben.</div></div>
   </div>
 </div>
 
-<!-- ===== 29: MORGEN UMSETZEN ===== -->
+<!-- ===== 31: MORGEN UMSETZEN ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Morgen früh sofort umsetzen</h2><div class="sec-badge">Zusammenfassung</div></div>
   <div class="grow" style="justify-content:space-evenly">
@@ -606,29 +909,58 @@ max. 200 Wörter, behalte den Ton."</div>
   </div>
 </div>
 
-<!-- ===== 30: AUSBLICK ===== -->
+<!-- ===== 32: GPTs AUSBLICK ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Der nächste Schritt: GPTs</h2><div class="sec-badge">Ausblick</div></div>
-  <div class="grow">
-    <div class="two" style="align-items:center">
-      <div>
-        <p style="font-size:1.2em;margin-bottom:15px">Eigene ChatGPT-Versionen. Einmal einrichten, immer wieder nutzen.</p>
-        <ul style="font-size:1.1em">
-          <li><span class="wb">Instructions:</span> Dein Prompt (Rolle, Stil, Anweisungen)</li>
-          <li><span class="wb">Knowledge:</span> Kunden-Briefings, Leitfäden hochladen</li>
-        </ul>
-        <p style="margin-top:20px;font-size:1.1em;color:var(--w60)">Das können wir nächstes Mal machen.</p>
+  <div class="grow" style="gap:15px">
+    <!-- Praktikant vs Mitarbeiter Vergleich (aus KIPA) -->
+    <div class="two" style="gap:30px;align-items:stretch">
+      <div class="col col-n" style="text-align:center;padding:25px;border:2px solid var(--w40)">
+        <div style="font-size:3em;margin-bottom:10px">&#128100;</div>
+        <h3 style="color:var(--w80);font-size:1.2em">ChatGPT</h3>
+        <p style="font-size:1.5em;font-weight:700;color:var(--org);margin:10px 0">Praktikant<br>am ersten Tag</p>
+        <p style="font-size:.95em;color:var(--w60)">Weiß nichts über dich. Du musst bei jedem Chat alles neu erklären.</p>
       </div>
-      <div style="text-align:center">
-        <div style="font-size:4em;margin-bottom:12px">&#9881;&#65039;</div>
-        <p style="font-size:1.2em;color:var(--w80)">GPT "Mails für Firma Maier"</p>
-        <p style="font-size:1em;color:var(--w60);margin-top:8px">Thema eingeben &rarr; fertige Mail<br>im richtigen Ton, mit allen Infos</p>
+      <div class="col col-n" style="text-align:center;padding:25px;border:2px solid var(--pk)">
+        <div style="font-size:3em;margin-bottom:10px">&#9881;&#65039;</div>
+        <h3 style="font-size:1.2em">Custom GPTs</h3>
+        <p style="font-size:1.5em;font-weight:700;color:var(--pk);margin:10px 0">Eingearbeiteter<br>Mitarbeiter</p>
+        <p style="font-size:.95em;color:var(--w60)">Kennt deine Kunden, deinen Stil, deine Regeln. Thema eingeben, fertig.</p>
       </div>
     </div>
+    <div class="two" style="gap:30px;margin-top:5px">
+      <div style="text-align:center">
+        <p style="font-size:1em;color:var(--w60)">Bestandteile eines GPTs:</p>
+        <div style="display:flex;gap:15px;margin-top:8px;justify-content:center">
+          <div class="card" style="padding:12px;flex:1">
+            <p style="font-size:1.1em">&#128203;</p>
+            <p style="font-size:.9em;font-weight:700">Instructions</p>
+            <p style="font-size:.8em;color:var(--w60)">Dein Prompt</p>
+          </div>
+          <div class="card" style="padding:12px;flex:1">
+            <p style="font-size:1.1em">&#128218;</p>
+            <p style="font-size:.9em;font-weight:700">Knowledge</p>
+            <p style="font-size:.8em;color:var(--w60)">Deine Dokumente</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <p style="font-size:1em;color:var(--w60)">Workflow-Chaining:</p>
+        <div class="flow" style="margin-top:12px;gap:6px">
+          <div class="flow-box" style="padding:8px 14px;font-size:.85em;border-color:var(--pk)">GPT 1</div>
+          <span class="flow-arrow" style="font-size:1em">&#10132;</span>
+          <div class="flow-box" style="padding:8px 14px;font-size:.85em;border-color:var(--pk)">GPT 2</div>
+          <span class="flow-arrow" style="font-size:1em">&#10132;</span>
+          <div class="flow-box" style="padding:8px 14px;font-size:.85em;border-color:var(--pk)">GPT 3</div>
+        </div>
+        <p style="font-size:.85em;color:var(--w60);margin-top:8px">Spezialisierte GPTs, die zusammenarbeiten</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:1.05em;color:var(--w60);margin-top:5px">Das können wir nächstes Mal machen.</p>
   </div>
 </div>
 
-<!-- ===== 31: VORLAGE ===== -->
+<!-- ===== 33: VORLAGE ===== -->
 <div class="slide s-body">
   <div class="sec"><h2>Deine Prompt-Vorlage zum Mitnehmen</h2><div class="sec-badge">Zusammenfassung</div></div>
   <div class="grow">
@@ -669,7 +1001,7 @@ Erstelle [was genau].
   </div>
 </div>
 
-<!-- ===== 32: DANKE ===== -->
+<!-- ===== 34: DANKE ===== -->
 <div class="slide s-title">
   <h1 style="font-size:3.2em">Danke!</h1>
   <div class="sub" style="margin-top:20px">Theresa, KI und das Leben!</div>

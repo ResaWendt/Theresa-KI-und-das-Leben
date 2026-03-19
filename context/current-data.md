@@ -30,7 +30,7 @@
 
 | # | TODO | Bereich | Deadline | Status |
 |---|---|---|---|---|
-| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept steht, HTML-Präsentation (32 Slides) IN ARBEIT — Feedback-Runde mit Theresa noch offen, Feinschliff nötig |
+| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept + Präsentation (36 Slides) überarbeitet, KIPA-Bilder eingearbeitet, Grafik nachgebaut. Schulung morgen! |
 | 1.3 | LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen | LinkedIn | diese Woche | Entwurf 2 |
 | 1.4 | LinkedIn-Profil vervollständigen: Custom URL, Creator Mode, Featured Section | LinkedIn | diese Woche | offen (Berufserfahrung, Skills, Ausbildung, Sprachen erledigt) |
 | 1.5 | LinkedIn: Reiseveranstalter identifizieren, vernetzen, Ansprache mit Förderungs-Pitch | Akquise | laufend | offen |
@@ -66,7 +66,7 @@
 
 | # | Projekt | Beschreibung | Status |
 |---|---|---|---|
-| KI-1 | Schulung Prompting Michaela | Mini-Einschulung Prompting (siehe 1.1) | offen, Deadline 20.03.2026 |
+| KI-1 | Schulung Prompting Michaela | Mini-Einschulung Prompting (siehe 1.1) | Präsentation + Konzept überarbeitet, Grafik erstellt, Schulung morgen 20.03.2026 |
 | KI-2 | Website Onepager | Onepager mit Heldenreise konzipieren (ehem. 2.7) | offen |
 | KI-3 | Trainerabrechnung | Automatisierung der Abrechnung | angefangen |
 | KI-4 | Vermögensübersicht | Automatisierte Aktualisierung | angefangen |
@@ -94,6 +94,14 @@
 - [x] Recherche: Aktuelle LLM-Architektur 2026 (GPT-5.4, Claude Opus 4.6, Context Windows 1M, Sora 2) für Schulungsinhalte verifiziert (2026-03-18)
 - [x] Recherche: Best Practices Schulungspräsentationen (Slide-Design, 20/80 Theorie/Praxis, Interaktionspunkte) (2026-03-18)
 - [x] Michaela-Profil dokumentiert: Senior Account Managerin, Handwerk/Garten/Landwirtschaft, nutzt ChatGPT + Sora (2026-03-18)
+- [x] KIPA-Obsidian-Notizen: Alle 27 Bilder aus 9 Notizen ausgelesen und Inhalte dokumentiert (2026-03-19)
+- [x] Schulungspräsentation überarbeitet: 36 Slides, KIPA-Slide-Inhalte als CSS-Diagramme eingearbeitet (Glockenkurve, Säulen, Flowcharts, Prompt Dev Zyklus, Praktikant vs. Mitarbeiter) (2026-03-19)
+- [x] Neuer Slide "Trainieren vs. Merken": ChatGPT Memory-System recherchiert und korrekt dargestellt (2026-03-19)
+- [x] Neuer Slide "Was heute noch dazukommt": Deep Research, Canvas, Sora, KI-Agenten (2026-03-19)
+- [x] Sora-Status verifiziert: Noch NICHT in ChatGPT integriert, nur angekündigt — Präsentation + Konzept korrigiert (2026-03-19)
+- [x] Grafik "Wie KI-Modelle Fragen beantworten": Clean Rebuild der KIPA-Überblicksgrafik als SVG in Brandfarben, mit PNG-Export (2026-03-19)
+- [x] Schulungskonzept aktualisiert: Trainieren vs. Merken, Deep Research, Canvas, Sora, Agenten eingearbeitet (2026-03-19)
+- [x] Obsidian-KIPA-Notizen-Pfade in Memory gespeichert für zukünftige Sessions (2026-03-19)
 
 ### Meilensteine (mittelfristig)
 

@@ -98,9 +98,16 @@ Jetzt die Bilder der Überblicksgrafik nacheinander durchgehen. Jedes Bild erkl�
 
 **Grafik zeigen: Bild 6** — Context Window mit Chat-Verlauf.
 
-> Das Context Window ist das Kurzzeitgedächtnis. Alles, was in deinem aktuellen Chat steht, fließt da rein. Deine Fragen, die Antworten der KI, alles. Heute sind die Context Windows riesig, 400.000 Tokens bei ChatGPT, das sind ungefähr 300.000 Wörter, ein ganzes Buch.
+> Das Context Window ist das Kurzzeitgedächtnis. Alles, was in deinem aktuellen Chat steht, fließt da rein. Deine Fragen, die Antworten der KI, alles. Heute sind die Context Windows riesig, bis zu 1 Million Tokens bei ChatGPT, das ist ein ganzes Buch.
 >
-> **Aber Achtung, das ist ein ganz wichtiges Missverständnis:** Wir trainieren ChatGPT NICHT. Die Inhalte deines Chats gehen nicht in das Langzeitgedächtnis. Die bleiben nur in diesem einen Chat-Fenster. Wenn du ein neues Chat-Fenster öffnest, fängst du bei null an.
+> **Aber Achtung, das ist ein ganz wichtiges Missverständnis:** Wir trainieren ChatGPT NICHT. Die Inhalte deines Chats gehen nicht ins Langzeitgedächtnis des Modells. Neues Chatfenster = sauberer Start für deinen Prompt, das Context Window wird zurückgesetzt.
+>
+> **Aber:** Seit April 2025 hat ChatGPT ein Memory-System mit drei Ebenen:
+> 1. **Gespeicherte Erinnerungen (Saved Memories):** Dinge, die du ChatGPT explizit sagst ("Merke dir, dass ich..."). Bleiben über alle Chats erhalten.
+> 2. **Chat-Historie-Referenzierung:** ChatGPT kann automatisch Erkenntnisse aus vergangenen Chats heranziehen, wenn es sie als relevant erkennt. Funktioniert aber nicht immer zuverlässig.
+> 3. **Personalisierung:** Deine hinterlegten Infos (Name, Beruf, Präferenzen) werden bei jedem Chat mitgeschickt.
+>
+> Das heißt: Neues Chatfenster ist trotzdem empfohlen für saubere, reproduzierbare Ergebnisse. Aber ChatGPT "vergisst" dich nicht komplett. Alles kontrollierbar unter Einstellungen → Personalisierung → Erinnerungen.
 
 ### Schicht 5: Chat History
 
@@ -177,12 +184,23 @@ Jetzt die Bilder der Überblicksgrafik nacheinander durchgehen. Jedes Bild erkl�
 
 > Es ist total verführerisch, zu denken, dass ChatGPT dich versteht, dass es dir helfen WILL. Tut es nicht. Es hat keinen eigenen Willen und kein Interesse daran, dir das beste Ergebnis zu liefern. Es liefert das wahrscheinlichste Ergebnis. Das ist ein Unterschied. Die Verantwortung für das Ergebnis liegt immer bei dir.
 
+### Trainieren vs. Merken — das wichtigste Missverständnis
+
+> Viele glauben: "Je mehr ich mit ChatGPT chatte, desto besser wird es." Das stimmt nicht.
+>
+> **Trainieren = Geht nicht.** Das Modell (das "Gehirn") wurde von OpenAI trainiert. Dieses Training ist abgeschlossen. Deine Chats verändern das Modell nicht. Es wird nicht schlauer durch dich.
+>
+> **Merken = Passiert.** ChatGPT speichert "Notizzettel" über dich: Erinnerungen, Personalisierung, Erkenntnisse aus alten Chats. Diese Notizzettel werden bei jedem neuen Chat mitgeschickt. Das Gehirn bleibt gleich, es bekommt nur einen Spickzettel dazu.
+>
+> **Warum ist das wichtig?** Weil "Merken" nicht zuverlässig ist. Manchmal greift ChatGPT auf seine Notizen zu, manchmal nicht. Für reproduzierbare, professionelle Ergebnisse deshalb immer alle Infos im Prompt mitgeben, statt darauf zu hoffen, dass ChatGPT sich erinnert.
+
 ## Kernbotschaften Block 1
 
 - KI ist kein Mensch, kein Google, keine Datenbank
 - Verantwortung für das Ergebnis nie abgeben
 - Je besser dein Input, desto besser der Output
-- Wir trainieren ChatGPT nicht, wir füttern das Kurzzeitgedächtnis
+- Wir trainieren ChatGPT nicht — aber ChatGPT merkt sich Dinge (Trainieren ≠ Merken)
+- Trotzdem: Alle Infos immer im Prompt mitgeben, nicht auf Erinnerungen verlassen
 
 **Überleitung:** *"Jetzt wo du weißt wie das funktioniert, schauen wir uns an, was KI gut kann und wo du aufpassen musst."*
 
@@ -226,6 +244,28 @@ Michaela weiß, wofür sie KI im Werbe-Alltag einsetzen kann und wo Vorsicht geb
 ### 5. Analyse
 
 > Du bekommst ein 20-seitiges Briefing vom Kunden? Lade es hoch und sag: "Fasse die Key Messages zusammen und identifiziere die drei stärksten Selling Points." Das spart dir eine Stunde Lesen und Sortieren.
+
+### 6. Deep Research (NEU)
+
+> Das geht über Zusammenfassungen hinaus. ChatGPT kann eigenständig im Internet recherchieren und strukturierte Reports mit Quellenangaben erstellen. Zum Beispiel: "Recherchiere mir die wichtigsten Wettbewerber meines Kunden in der Gartengerätebranche und fasse deren Positionierung zusammen." ChatGPT durchsucht das Internet und liefert einen strukturierten Report mit Quellen. Nicht perfekt, aber ein solider Startpunkt für Kampagnenrecherche.
+
+### 7. Canvas (NEU)
+
+> Du arbeitest mit längeren Texten: Kampagnentexte, PR-Texte, Angebote. Canvas ist eine Dokument-Umgebung direkt in ChatGPT, in der du Texte bearbeiten, umstellen und versionieren kannst. Kein Hin-und-her-Kopieren zwischen Chat und Word mehr. Wie ein Dokument mit eingebautem KI-Assistenten. Ideal für alles, was mehr als ein kurzer Post ist.
+
+### 8. Sora Video (NEU)
+
+> Michaela, du nutzt Sora schon für Videoprompts. Sora 2 ist seit März 2026 aktiv und liefert deutlich bessere Qualität als die erste Version. Aktuell läuft Sora noch als separate App (sora.com), die Integration direkt in ChatGPT ist von OpenAI angekündigt, aber noch nicht umgesetzt. Trotzdem: Die Videoprompts, die du für Sora schreibst, profitieren von den gleichen Prompting-Prinzipien, die wir heute lernen. Je spezifischer dein Prompt, desto besser das Video.
+
+### 9. KI-Agenten (NEU — Ausblick)
+
+> Das ist die nächste Stufe: KI die nicht nur antwortet, sondern selbständig handelt. KI-Agenten können autonom Aufgaben ausführen: Kampagnen steuern, Reports erstellen, Plattformen verknüpfen (Google Ads, Meta, Slack, WordPress). Der Mensch gibt die Richtung vor, der Agent führt aus.
+>
+> Beispiel: Ein Marketing-Agent analysiert deine laufende Google-Ads-Kampagne, erkennt, dass eine Anzeigengruppe unterperformt, passt das Budget automatisch an und schickt dir eine Zusammenfassung per Slack. Oder: Claude Code (von Anthropic) kann ganze Software-Projekte eigenständig umsetzen, Code schreiben, testen und Dateien verwalten.
+>
+> **Für Michaela heute noch Zukunftsmusik, aber gut zu wissen:** Die Entwicklung geht rasant. Was heute noch Prompting ist, wird morgen Agenten-Steuerung sein. Wer Prompting versteht, hat die Grundlage für beides.
+
+**Hinweis:** Deep Research, Canvas und Sora sind in ChatGPT Plus (€ 20/Monat) enthalten. KI-Agenten sind der nächste große Schritt — teilweise schon verfügbar, aber noch in den Anfängen für den Marketingalltag.
 
 ## Schwächen -- wo du aufpassen musst (3 Min)
 
