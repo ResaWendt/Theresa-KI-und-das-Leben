@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt-Kette: Newsletter mit Self Evaluation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #1a1a2e;
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 3rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #000b3d;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #e8279e;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #000b3d;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .definition {
+            background: #f0f4ff;
+            border-left: 4px solid #000b3d;
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .definition strong {
+            color: #000b3d;
+        }
+
+        .meta-steps {
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-steps ol {
+            counter-reset: meta;
+            list-style: none;
+            padding: 0;
+        }
+
+        .meta-steps li {
+            counter-increment: meta;
+            padding: 0.3rem 0 0.3rem 2rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .meta-steps li::before {
+            content: counter(meta) ".";
+            position: absolute;
+            left: 0;
+            color: #e8279e;
+            font-weight: bold;
+        }
+
+        .meta-steps li strong {
+            color: #000b3d;
+        }
+
+        .phase-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.15rem 0.6rem;
+            border-radius: 3px;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .phase-wissen {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .phase-produktion {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .phase-evaluation {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+
+        .warning-box {
+            background: #fce4ec;
+            border: 1px solid #e8279e;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .warning-box strong {
+            color: #c2185b;
+        }
+
+        .divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #000b3d, #e8279e, transparent);
+            margin: 2.5rem 0;
+        }
+
+        /* Prompt Steps */
+        .prompt-step {
+            margin-bottom: 2rem;
+            page-break-inside: avoid;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-number {
+            width: 2.2rem;
+            height: 2.2rem;
+            background: #000b3d;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .step-title {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #000b3d;
+        }
+
+        .step-description {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            padding-left: 3rem;
+        }
+
+        .prompt-box {
+            background: #1a1a2e;
+            color: #e0e0e0;
+            border-radius: 10px;
+            padding: 1.2rem 1.5rem;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            position: relative;
+            margin-left: 3rem;
+        }
+
+        .prompt-box .placeholder {
+            color: #ffcc02;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.6rem;
+            right: 0.6rem;
+            background: #e8279e;
+            color: #fff;
+            border: none;
+            padding: 0.3rem 0.7rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-family: 'Segoe UI', sans-serif;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #c91e84;
+        }
+
+        .copy-btn.copied {
+            background: #4caf50;
+        }
+
+        .step-connector {
+            width: 2px;
+            height: 1.5rem;
+            background: #ddd;
+            margin-left: calc(1.1rem - 1px);
+        }
+
+        .example-note {
+            background: #f9f9f9;
+            border: 1px dashed #ccc;
+            border-radius: 8px;
+            padding: 0.8rem 1.2rem;
+            margin: 0.5rem 0 0 3rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .example-note strong {
+            color: #000b3d;
+        }
+
+        .placeholder-note {
+            background: #f0f4ff;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .placeholder-note code {
+            background: #e8e8f0;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                font-size: 11pt;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 1.5rem;
+                border-radius: 0;
+            }
+
+            .prompt-box {
+                background: #f5f5f5 !important;
+                color: #1a1a2e !important;
+                border: 2px solid #ccc;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .prompt-box .placeholder {
+                color: #b8860b !important;
+            }
+
+            .copy-btn {
+                display: none;
+            }
+
+            .prompt-step {
+                break-inside: avoid;
+            }
+
+            h1 {
+                border-bottom-color: #999;
+            }
+
+            .phase-label {
+                border: 1px solid #999;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Newsletter Prompt-Kette</h1>
+        <p class="subtitle">Conversational Prompting mit Self Evaluation — Beispiel: Produkt-Newsletter</p>
+
+        <div class="definition">
+            <strong>Idee:</strong> Du baust im Gespräch mit der KI schrittweise Wissen auf — über den Inhaltstyp (Newsletter), das Produkt und die Zielgruppe. Daraus lässt du eine Checkliste erstellen, dann den Newsletter schreiben, und am Ende bewertet die KI ihren eigenen Output systematisch gegen die Checkliste.
+        </div>
+
+        <h2>Die 6 Schritte</h2>
+        <div class="meta-steps">
+            <ol>
+                <li><strong>Parameter recherchieren</strong> — Was macht gute Newsletter aus? <span class="phase-label phase-wissen">Wissen</span></li>
+                <li><strong>Produkt &amp; Zielgruppe recherchieren</strong> — Website analysieren lassen <span class="phase-label phase-wissen">Wissen</span></li>
+                <li><strong>Checkliste erstellen</strong> — Bewertungskriterien generieren <span class="phase-label phase-wissen">Wissen</span></li>
+                <li><strong>Newsletter erstellen</strong> — Den eigentlichen Inhalt schreiben lassen <span class="phase-label phase-produktion">Produktion</span></li>
+                <li><strong>Self Evaluation</strong> — Output gegen Checkliste bewerten <span class="phase-label phase-evaluation">Evaluation</span></li>
+                <li><strong>Überarbeitung</strong> — Verbesserte Version erstellen <span class="phase-label phase-evaluation">Evaluation</span></li>
+            </ol>
+        </div>
+
+        <div class="warning-box">
+            <strong>Wichtig:</strong> Die gesamte Kette im selben Chatfenster durchführen, damit der aufgebaute Kontext erhalten bleibt.
+        </div>
+
+        <hr class="divider">
+
+        <h2>Die Prompt-Kette</h2>
+
+        <!-- Step 1 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <div class="step-title">Parameter recherchieren</div>
+            </div>
+            <p class="step-description">Frag die KI, worauf es bei deinem Inhaltstyp ankommt, bevor du irgendetwas schreiben lässt.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Ich möchte einen Newsletter erstellen. Worauf kommt es bei der Erstellung hochqualitativer Newsletter inhaltlich an?</span>
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- Step 2 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <div class="step-title">Produkt &amp; Zielgruppe recherchieren</div>
+            </div>
+            <p class="step-description">Lass die KI die relevanten Infos zum Produkt und zur Zielgruppe zusammentragen.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Gehe auf die folgende Seite und erstelle eine Übersicht über das Produkt (<span class="placeholder">[Produktart, z.B. "Notizbuch"]</span>) und die Zielgruppe (Demografie, Psychografie):
+<span class="placeholder">[URL der Produktseite einfügen]</span></span>
+            </div>
+            <div class="example-note">
+                <strong>Beispiel:</strong> "Gehe auf die folgende Seite und erstelle eine Übersicht über das Produkt (Notizbuch) und die Zielgruppe (Demografie, Psychografie): https://www.leuchtturm1917.de/"
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- Step 3 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <div class="step-title">Checkliste erstellen</div>
+            </div>
+            <p class="step-description">Aus dem aufgebauten Wissen (Newsletter-Merkmale + Produkt/Zielgruppe) eine Bewertungs-Checkliste generieren lassen.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Du hast hier im Chat eine Übersicht über die wichtigsten inhaltlichen und stilistischen Merkmale eines Newsletters. Erstelle darauf basierend nun eine Checkliste, anhand derer man fertige Newsletter bewerten kann.</span>
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- Step 4 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <div class="step-title">Newsletter erstellen</div>
+            </div>
+            <p class="step-description">Jetzt den eigentlichen Newsletter schreiben lassen — mit konkreten Angaben zu Inhalt, Ton und Call-to-Action.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Schreibe einen kurzen und überzeugenden Newsletter, der <span class="placeholder">[Produktbeschreibung, z.B. "ein neues wiederverwendbares Notizbuch"]</span> bewirbt. Hebe die Vorteile hervor, wie <span class="placeholder">[Vorteile, z.B. "Nachhaltigkeit, Vielseitigkeit und Kosteneffizienz"]</span>. Verwende eine freundliche und inspirierende Sprache, um Leser:innen dazu zu motivieren, das Produkt auszuprobieren. Schließe mit einem klaren Call-to-Action, der sie dazu einlädt, <span class="placeholder">[gewünschte Aktion, z.B. "das Notizbuch zu kaufen"]</span>.</span>
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- Step 5 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">5</div>
+                <div class="step-title">Self Evaluation</div>
+            </div>
+            <p class="step-description">Die KI bewertet ihren eigenen Output systematisch gegen die Checkliste aus Schritt 3.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Bewerte nun den von dir erstellten Newsletter anhand der Checkliste. Prüfe, ob alle Aspekte beachtet wurden. Arbeite am Ende konkrete Verbesserungsvorschläge aus.</span>
+            </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <!-- Step 6 -->
+        <div class="prompt-step">
+            <div class="step-header">
+                <div class="step-number">6</div>
+                <div class="step-title">Überarbeitete Version</div>
+            </div>
+            <p class="step-description">Auf Basis der Bewertung eine verbesserte Version erstellen lassen.</p>
+            <div class="prompt-box">
+                <button class="copy-btn" onclick="copyStep(this)">Kopieren</button>
+                <span class="prompt-text">Erstelle jetzt eine überarbeitete Version des Newsletters basierend auf deinen Verbesserungsvorschlägen.</span>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="placeholder-note">
+            <strong>So verwendest du diese Kette:</strong> Gib jeden Schritt nacheinander ein. Warte die Antwort ab, bevor du den nächsten Schritt eingibst. Ersetze die <code>[Platzhalter]</code> mit deinen konkreten Angaben. Diese Kette funktioniert für jedes Produkt — einfach URL und Produktbeschreibung anpassen.
+        </div>
+
+        <div class="footer">
+            Prompt-Kette: Newsletter mit Self Evaluation<br>
+            Quelle: KIPA (Garrit Wilson) | Aufbereitet von Theresa Wendt
+        </div>
+    </div>
+
+    <script>
+        function copyStep(btn) {
+            const promptBox = btn.closest('.prompt-box');
+            const textEl = promptBox.querySelector('.prompt-text');
+            let text = textEl.innerText || textEl.textContent;
+            text = text.replace(/^Kopieren\n?/, '').trim();
+
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Kopiert!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Kopieren';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

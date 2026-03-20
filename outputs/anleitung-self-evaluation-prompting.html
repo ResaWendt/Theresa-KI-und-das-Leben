@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anleitung: Self Evaluation Prompting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #1a1a2e;
+            line-height: 1.7;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 3rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #000b3d;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #e8279e;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #000b3d;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #000b3d;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .definition {
+            background: #f0f4ff;
+            border-left: 4px solid #000b3d;
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .wann-einsetzen {
+            margin-bottom: 1.5rem;
+        }
+
+        .wann-einsetzen ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .wann-einsetzen li {
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            position: relative;
+        }
+
+        .wann-einsetzen li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e8279e;
+            font-weight: bold;
+        }
+
+        .steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .steps li {
+            counter-increment: step;
+            padding: 0.8rem 1rem 0.8rem 3.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0.8rem;
+            top: 0.7rem;
+            width: 2rem;
+            height: 2rem;
+            background: #000b3d;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .steps li strong {
+            color: #000b3d;
+        }
+
+        .tip-box {
+            background: #fff8e1;
+            border: 1px solid #ffcc02;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .tip-box strong {
+            color: #b8860b;
+        }
+
+        .warning-box {
+            background: #fce4ec;
+            border: 1px solid #e8279e;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .warning-box strong {
+            color: #c2185b;
+        }
+
+        .divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #000b3d, #e8279e, transparent);
+            margin: 2.5rem 0;
+        }
+
+        .prompt-section {
+            background: #1a1a2e;
+            color: #e0e0e0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 1rem;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .prompt-section h2 {
+            color: #e8279e;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .prompt-section .prompt-heading {
+            color: #7eb8ff;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .prompt-section .prompt-subheading {
+            color: #82d9a5;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .prompt-section .placeholder {
+            color: #ffcc02;
+        }
+
+        .prompt-section .tag {
+            color: #e8279e;
+        }
+
+        .prompt-section ol, .prompt-section ul {
+            padding-left: 1.5rem;
+        }
+
+        .prompt-section li {
+            margin-bottom: 0.3rem;
+        }
+
+        .prompt-section .emoji {
+            font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #e8279e;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: 'Segoe UI', sans-serif;
+            transition: background 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: #c91e84;
+        }
+
+        .copy-btn.copied {
+            background: #4caf50;
+        }
+
+        .placeholder-note {
+            background: #f0f4ff;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-top: 1.5rem;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.95rem;
+            color: #1a1a2e;
+        }
+
+        .placeholder-note code {
+            background: #e8e8f0;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+                font-size: 11pt;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 1.5rem;
+                border-radius: 0;
+            }
+
+            .prompt-section {
+                background: #f5f5f5 !important;
+                color: #1a1a2e !important;
+                border: 2px solid #ccc;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .prompt-section .prompt-heading {
+                color: #000b3d !important;
+            }
+
+            .prompt-section .prompt-subheading {
+                color: #2e7d32 !important;
+            }
+
+            .prompt-section .placeholder {
+                color: #b8860b !important;
+            }
+
+            .prompt-section .tag {
+                color: #c2185b !important;
+            }
+
+            .prompt-section h2 {
+                color: #c2185b !important;
+            }
+
+            .copy-btn {
+                display: none;
+            }
+
+            .steps li {
+                break-inside: avoid;
+            }
+
+            h1 {
+                border-bottom-color: #999;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Self Evaluation Prompting</h1>
+        <p class="subtitle">Anleitung &amp; Prompt-Vorlage</p>
+
+        <h2>Was ist Self Evaluation Prompting?</h2>
+        <div class="definition">
+            Ein KI-Modell bewertet den Output eines anderen KI-Modells (oder den eigenen). Du baust dir im Gespräch mit der KI zuerst das Wissen auf, lässt dann das Ergebnis erstellen und schickst es danach durch eine systematische Qualitätsprüfung.
+        </div>
+
+        <h2>Wann einsetzen?</h2>
+        <div class="wann-einsetzen">
+            <ul>
+                <li>Nach jedem produktiven Prompt, wenn du hohe Qualität brauchst</li>
+            </ul>
+        </div>
+
+        <h2>Ablauf (Conversational Prompting)</h2>
+        <ol class="steps">
+            <li><strong>Parameter recherchieren</strong> — Frag das Modell, worauf es bei deinem Inhaltstyp ankommt (z.B. "Was macht einen guten Newsletter aus?")</li>
+            <li><strong>Produkt/Zielgruppe recherchieren</strong> — Lass das Modell die relevanten Infos zusammentragen (Website analysieren, Zielgruppe beschreiben)</li>
+            <li><strong>Checkliste erstellen</strong> — Auf Basis des gesammelten Wissens eine Bewertungs-Checkliste generieren lassen</li>
+            <li><strong>Inhalt erstellen</strong> — Das eigentliche Ergebnis produzieren lassen (z.B. Newsletter schreiben)</li>
+            <li><strong>Evaluierung</strong> — Das Modell bewertet seinen eigenen Output anhand der Checkliste, Punkt für Punkt</li>
+            <li><strong>Überarbeitung</strong> — Das Modell erstellt eine verbesserte Version basierend auf seinen eigenen Verbesserungsvorschlägen</li>
+        </ol>
+
+        <div class="tip-box">
+            <strong>Tipp aus der KIPA:</strong> Beim kreativen Prompting (z.B. LinkedIn-Posts) erst 3 Durchläufe über den "Erneut versuchen"-Button generieren, dann den besten Entwurf durch die Evaluierung schicken.
+        </div>
+
+        <div class="warning-box">
+            <strong>Wichtig:</strong> Immer ein neues Chatfenster für die Evaluierung öffnen — nicht im selben Chat durchprompten!
+        </div>
+
+        <hr class="divider">
+
+        <h2>Der Prompt (Markdown-Format, Copy-Paste-ready)</h2>
+
+        <div class="prompt-section" id="prompt-block">
+            <button class="copy-btn" onclick="copyPrompt()">Kopieren</button>
+
+            <div class="prompt-heading"># Self Evaluation</div>
+
+            <div class="prompt-subheading">## Rolle</div>
+            <p>Du bist ein erfahrener Qualitätsprüfer für <span class="placeholder">[Art des Inhalts, z.B. "Social-Media-Beiträge" / "Marketingtexte" / "Kundenkommunikation"]</span>.</p>
+
+            <div class="prompt-subheading">## Kontext</div>
+            <p>Ich habe folgenden <span class="placeholder">[Inhaltstyp, z.B. "LinkedIn-Post"]</span> erstellt und möchte ihn vor der Veröffentlichung systematisch bewerten und verbessern.</p>
+
+            <div class="prompt-subheading">## Aufgabe</div>
+            <p>Deine Aufgabe ist es, den folgenden Inhalt anhand der Checkliste zu bewerten. Gehe dabei wie folgt vor:</p>
+            <ol>
+                <li>Lies den Inhalt vollständig durch</li>
+                <li>Bewerte jeden Punkt der Checkliste einzeln (<span class="emoji">✅</span> erfüllt / <span class="emoji">❌</span> nicht erfüllt / <span class="emoji">⚠️</span> teilweise erfüllt)</li>
+                <li>Begründe jede Bewertung in einem Satz</li>
+                <li>Formuliere konkrete Verbesserungsvorschläge für alle Punkte, die nicht oder nur teilweise erfüllt sind</li>
+                <li>Erstelle eine überarbeitete Version, die alle Verbesserungen umsetzt</li>
+            </ol>
+
+            <div class="prompt-subheading">## Checkliste</div>
+            <p><span class="tag">&lt;checkliste&gt;</span></p>
+            <ul>
+                <li>[ ] <span class="placeholder">[Kriterium 1, z.B. "Hook: Erster Satz erzeugt Neugierde"]</span></li>
+                <li>[ ] <span class="placeholder">[Kriterium 2, z.B. "Zielgruppe wird direkt angesprochen"]</span></li>
+                <li>[ ] <span class="placeholder">[Kriterium 3, z.B. "Tonalität passt zur Marke"]</span></li>
+                <li>[ ] <span class="placeholder">[Kriterium 4, z.B. "Call-to-Action ist vorhanden"]</span></li>
+                <li>[ ] <span class="placeholder">[Kriterium 5, z.B. "Länge ist angemessen"]</span></li>
+            </ul>
+            <p><span class="tag">&lt;/checkliste&gt;</span></p>
+
+            <div class="prompt-subheading">## Inhalt zur Bewertung</div>
+            <p><span class="tag">&lt;inhalt&gt;</span></p>
+            <p><span class="placeholder">[Hier den zu bewertenden Text einfügen]</span></p>
+            <p><span class="tag">&lt;/inhalt&gt;</span></p>
+
+            <div class="prompt-subheading">## Format</div>
+            <p>Strukturiere deine Antwort in drei Abschnitte:</p>
+            <ol>
+                <li><strong>Bewertung:</strong> Checkliste Punkt für Punkt mit Begründung</li>
+                <li><strong>Verbesserungsvorschläge:</strong> Konkrete Änderungen</li>
+                <li><strong>Überarbeitete Version:</strong> Der verbesserte Inhalt</li>
+            </ol>
+        </div>
+
+        <div class="placeholder-note">
+            Die Platzhalter in eckigen Klammern <code>[...]</code> ersetzt du jeweils mit deinen konkreten Angaben. Die Checkliste ist das Herzstück — je spezifischer die Kriterien, desto besser die Evaluierung.
+        </div>
+
+        <div class="footer">
+            Self Evaluation Prompting — Anleitung für Michaela<br>
+            Quelle: KIPA (Garrit Wilson) | Aufbereitet von Theresa Wendt
+        </div>
+    </div>
+
+    <script>
+        function copyPrompt() {
+            const promptText = `# Self Evaluation
+
+## Rolle
+Du bist ein erfahrener Qualitätsprüfer für [Art des Inhalts, z.B. "Social-Media-Beiträge" / "Marketingtexte" / "Kundenkommunikation"].
+
+## Kontext
+Ich habe folgenden [Inhaltstyp, z.B. "LinkedIn-Post"] erstellt und möchte ihn vor der Veröffentlichung systematisch bewerten und verbessern.
+
+## Aufgabe
+Deine Aufgabe ist es, den folgenden Inhalt anhand der Checkliste zu bewerten. Gehe dabei wie folgt vor:
+
+1. Lies den Inhalt vollständig durch
+2. Bewerte jeden Punkt der Checkliste einzeln (✅ erfüllt / ❌ nicht erfüllt / ⚠️ teilweise erfüllt)
+3. Begründe jede Bewertung in einem Satz
+4. Formuliere konkrete Verbesserungsvorschläge für alle Punkte, die nicht oder nur teilweise erfüllt sind
+5. Erstelle eine überarbeitete Version, die alle Verbesserungen umsetzt
+
+## Checkliste
+<checkliste>
+- [ ] [Kriterium 1, z.B. "Hook: Erster Satz erzeugt Neugierde"]
+- [ ] [Kriterium 2, z.B. "Zielgruppe wird direkt angesprochen"]
+- [ ] [Kriterium 3, z.B. "Tonalität passt zur Marke"]
+- [ ] [Kriterium 4, z.B. "Call-to-Action ist vorhanden"]
+- [ ] [Kriterium 5, z.B. "Länge ist angemessen"]
+</checkliste>
+
+## Inhalt zur Bewertung
+<inhalt>
+[Hier den zu bewertenden Text einfügen]
+</inhalt>
+
+## Format
+Strukturiere deine Antwort in drei Abschnitte:
+1. **Bewertung:** Checkliste Punkt für Punkt mit Begründung
+2. **Verbesserungsvorschläge:** Konkrete Änderungen
+3. **Überarbeitete Version:** Der verbesserte Inhalt`;
+
+            navigator.clipboard.writeText(promptText).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.textContent = 'Kopiert!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Kopieren';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -127,6 +127,9 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 | `outputs/schulung-michaela-prompting.md` | Schulungskonzept Prompting für Michaela: 5 Blöcke, 90 Min, inkl. Prompt-Vorlage und Checkliste. Aktualisiert: KIPA-Slide-Inhalte eingearbeitet, Trainieren vs. Merken, Deep Research/Canvas/Sora/Agenten, Sora-Status korrigiert | 2026-03-19 |
 | `outputs/schulung-michaela-praesentation.html` | HTML-Präsentation zur Schulung: 36 Slides, Dark Theme, auf Michaela personalisiert. Überarbeitet: KIPA-Slide-Grafiken als CSS-Diagramme, Trainieren vs. Merken Slide, Stärken erweitert (Deep Research, Canvas, Sora, Agenten), Schwächen mit Pfeil-Zuordnung zu Lösungen, Prompt Dev Zyklus, GPTs-Ausblick mit Praktikant/Mitarbeiter-Vergleich | 2026-03-19 |
 | `outputs/grafik-wie-ki-fragen-beantwortet.html` | SVG-Grafik "Wie KI-Modelle Fragen beantworten" — Clean Rebuild der KIPA-Überblicksgrafik in Theresas Brandfarben, mit PNG-Export-Button | 2026-03-19 |
+| `outputs/anleitung-self-evaluation-prompting.html` | Prompting-Anleitung: Self Evaluation Technik (Checkliste → Erstellen → Bewerten → Verbessern), generisches Prompt-Template, Copy-Paste-ready | 2026-03-20 |
+| `outputs/anleitung-newsletter-self-evaluation.html` | Prompt-Kette: Newsletter mit Self Evaluation (6 Schritte, Conversational Prompting, Beispiel Leuchtturm1917) | 2026-03-20 |
+| `outputs/anleitung-linkedin-post-prompt-chain.html` | Prompt-Kette: LinkedIn-Post mit Self Evaluation (7 Schritte, Copywriting-Framework AIDA, Rolle, Post-Typ, Iteration) | 2026-03-20 |
 
 ---
 

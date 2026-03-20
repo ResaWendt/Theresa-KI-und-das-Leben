@@ -30,12 +30,13 @@
 
 | # | TODO | Bereich | Deadline | Status |
 |---|---|---|---|---|
-| 1.1 | Schulung Prompting für Michaela vorbereiten | KI-Projekt | 20.03.2026 | Konzept + Präsentation (36 Slides) überarbeitet, KIPA-Bilder eingearbeitet, Grafik nachgebaut. Schulung morgen! |
+| 1.1 | Schulung Michaela Nachbereitung: Feedback einholen, Materialien ggf. anpassen, Follow-up GPTs anbieten | KI-Projekt | nächste Session | Schulung war 20.03.2026, Prompting-Anleitungen (3 HTMLs) erstellt |
 | 1.3 | LinkedIn-Post "Neuanfang" finalisieren und veröffentlichen | LinkedIn | diese Woche | Entwurf 2 |
 | 1.4 | LinkedIn-Profil vervollständigen: Custom URL, Creator Mode, Featured Section | LinkedIn | diese Woche | offen (Berufserfahrung, Skills, Ausbildung, Sprachen erledigt) |
 | 1.5 | LinkedIn: Reiseveranstalter identifizieren, vernetzen, Ansprache mit Förderungs-Pitch | Akquise | laufend | offen |
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
-| 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | nächste Woche (Mi 19.03.) | Thema festgelegt, Beispiel noch offen |
+| 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
+| 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -66,7 +67,7 @@
 
 | # | Projekt | Beschreibung | Status |
 |---|---|---|---|
-| KI-1 | Schulung Prompting Michaela | Mini-Einschulung Prompting (siehe 1.1) | Präsentation + Konzept überarbeitet, Grafik erstellt, Schulung morgen 20.03.2026 |
+| KI-1 | Schulung Prompting Michaela | Mini-Einschulung Prompting (siehe 1.1) | Schulung durchgeführt 20.03.2026, 3 Prompting-Anleitungen als HTML erstellt, Nachbereitung offen |
 | KI-2 | Website Onepager | Onepager mit Heldenreise konzipieren (ehem. 2.7) | offen |
 | KI-3 | Trainerabrechnung | Automatisierung der Abrechnung | angefangen |
 | KI-4 | Vermögensübersicht | Automatisierte Aktualisierung | angefangen |
@@ -102,6 +103,10 @@
 - [x] Grafik "Wie KI-Modelle Fragen beantworten": Clean Rebuild der KIPA-Überblicksgrafik als SVG in Brandfarben, mit PNG-Export (2026-03-19)
 - [x] Schulungskonzept aktualisiert: Trainieren vs. Merken, Deep Research, Canvas, Sora, Agenten eingearbeitet (2026-03-19)
 - [x] Obsidian-KIPA-Notizen-Pfade in Memory gespeichert für zukünftige Sessions (2026-03-19)
+- [x] Schulung Michaela durchgeführt (2026-03-20)
+- [x] Prompting-Anleitung: Self Evaluation Prompting als HTML erstellt (2026-03-20)
+- [x] Prompting-Anleitung: Newsletter Prompt-Kette mit Self Evaluation als HTML erstellt (2026-03-20)
+- [x] Prompting-Anleitung: LinkedIn-Post Prompt-Kette (7 Schritte, AIDA) als HTML erstellt (2026-03-20)
 
 ### Meilensteine (mittelfristig)
 
