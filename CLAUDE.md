@@ -60,7 +60,8 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   ├── social-media.md        # Marco Bednarz: Content-Strategie, Wiederverwertung, Customer Journey
 │   ├── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
 │   ├── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö: KMU.DIGITAL, AIM AT, aws, FFG
-│   └── ki-llms-wissensbasis.md # KIPA-Ausbildungsinhalte: KI/LLMs/Prompting komplett
+│   ├── ki-llms-wissensbasis.md # KIPA-Ausbildungsinhalte: KI/LLMs/Prompting komplett
+│   └── claude-code-tutorial-nick-saraev.md # Nick Saraev Tutorial: 36 Kapitel, alle CC-Features, Best Practices
 ├── scripts/               # Automatisierungsskripte
 │   └── transcribe_audio.py    # Audio-Transkription mit Whisper (m4a, ogg, mp3, wav)
 └── Wie KI Modelle funktionieren/  # Überblicksgrafik + Sprachmemo (Erklärvideo KI-Modelle)

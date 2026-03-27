@@ -37,6 +37,8 @@
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
 | 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
+| 1.9 | **CC Workshop Garrit (28.03.):** n8n MCP Server installieren (DISABLED_TOOLS nutzen!), Vercel Account + CLI, Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | n8n MCP + Vercel noch offen |
+| 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -60,6 +62,21 @@
 | 3.4 | KIPA-Feedback an Garrit: Skool → Claude Code | KIPA | offen |
 | 3.5 | KIPA-Anregung an Garrit: Positionierung/Mindset erweitern auf EiS | KIPA | offen |
 | 3.6 | System-Wartung: Windows, n8n, ESET — monatlich | Wartung | laufend |
+
+### PRIO 4 — Claude Code Workspace Optimierung
+
+> Abgeleitet aus Nick Saraev Tutorial (reference/claude-code-tutorial-nick-saraev.md), 2026-03-27
+
+| # | TODO | Bereich | Priorität | Status |
+|---|---|---|---|---|
+| 4.1 | Verifikations-Loop in Workflows einbauen (Self-Review-Schritt in /implement für HTML-Outputs) | Workspace | hoch | offen |
+| 4.2 | Voice-Input direkt in Claude Code testen (Spracheingabe statt Tippen) | Workspace | hoch | offen |
+| 4.3 | Chrome DevTools MCP installieren (Browser steuern, Screenshots, Daten sammeln) | Workspace | hoch | offen |
+| 4.4 | Research Sub-Agent anlegen (.claude/agents/) — günstigeres Modell für breite Recherchen | Workspace | mittel | offen |
+| 4.5 | Globale CLAUDE.md anlegen (~/.claude/CLAUDE.md) — Sprache, Kommunikationsstil, workspace-übergreifende Regeln | Workspace | mittel | offen |
+| 4.6 | Netlify/Modal für Deployment einrichten (Onepager, Kunden-Tools) | Workspace | mittel | offen |
+| 4.7 | Status Line einrichten (Token-Verbrauch im Terminal sichtbar) | Workspace | niedrig | offen |
+| 4.8 | Agent Teams evaluieren (experimentell, erst bei großen parallelen Projekten) | Workspace | niedrig | offen |
 
 ### Geplante KI-Projekte
 
@@ -107,6 +124,10 @@
 - [x] Prompting-Anleitung: Self Evaluation Prompting als HTML erstellt (2026-03-20)
 - [x] Prompting-Anleitung: Newsletter Prompt-Kette mit Self Evaluation als HTML erstellt (2026-03-20)
 - [x] Prompting-Anleitung: LinkedIn-Post Prompt-Kette (7 Schritte, AIDA) als HTML erstellt (2026-03-20)
+- [x] Nick Saraev Claude Code Tutorial: Vollständiges Transkript (36 Kapitel, 4:10h) auf Deutsch zusammengefasst → `reference/claude-code-tutorial-nick-saraev.md` (2026-03-27)
+- [x] Workspace-Vergleich: Nicks Empfehlungen vs. unser Setup — Prioritätenliste erstellt (8 Punkte, PRIO 4 in TODOs) (2026-03-27)
+- [x] n8n MCP Server Security Assessment: GitHub-Repo analysiert, DISABLED_TOOLS Einschränkung dokumentiert (2026-03-27)
+- [x] Memory: Rules-Ordner-Trigger gespeichert (bei CLAUDE.md > 500 Zeilen aufmerksam machen) (2026-03-27)
 
 ### Meilensteine (mittelfristig)
 
