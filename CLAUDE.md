@@ -31,7 +31,7 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 .
 ├── CLAUDE.md              # Diese Datei — Kern-Kontext, immer geladen
 ├── .gitignore             # Schützt Secrets (.mcp.json, .env) vor Git
-├── .mcp.json              # MCP-Server-Konfiguration (n8n) — NICHT in Git
+├── # .mcp.json entfernt — MCP-Konfiguration (n8n) jetzt global in ~/.claude/settings.json
 ├── .claude/
 │   └── commands/          # Slash-Commands, die Claude ausführen kann
 │       ├── prime.md       # /prime — Session-Initialisierung
@@ -133,6 +133,7 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 | `outputs/anleitung-self-evaluation-prompting.html` | Prompting-Anleitung: Self Evaluation Technik (Checkliste → Erstellen → Bewerten → Verbessern), generisches Prompt-Template, Copy-Paste-ready | 2026-03-20 |
 | `outputs/anleitung-newsletter-self-evaluation.html` | Prompt-Kette: Newsletter mit Self Evaluation (6 Schritte, Conversational Prompting, Beispiel Leuchtturm1917) | 2026-03-20 |
 | `outputs/anleitung-linkedin-post-prompt-chain.html` | Prompt-Kette: LinkedIn-Post mit Self Evaluation (7 Schritte, Copywriting-Framework AIDA, Rolle, Post-Typ, Iteration) | 2026-03-20 |
+| `outputs/ufc-wien-turnier-anmeldung.html` | Anmeldeformular UFC Wien Jugendturnier (9.–10. Mai 2026): Multi-Slide, Validierung, Altersklassen-Automatik. n8n-Webhook-Anbindung noch offen (→ Google Sheets) | 2026-03-28 |
 
 ---
 

@@ -37,8 +37,9 @@
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
 | 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
-| 1.9 | **CC Workshop Garrit (28.03.):** n8n MCP Server installieren, Vercel Account + CLI, Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | n8n MCP + Vercel erledigt, Lead-Magnet offen |
+| 1.9 | **CC Workshop Garrit (28.03.):** Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | Workshop war heute, Lead-Magnet offen |
 | 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
+| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | n8n MCP bereinigt, Workflow noch nicht erstellt |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -91,6 +92,7 @@
 | KI-5 | Social Media Automatisierung PF + UFC Wien | Content-Planung und -Erstellung automatisieren | offen |
 | KI-6 | ChatBot UFC Wien | Anforderungen, Technologie, Prototyp | offen |
 | KI-7 | Mitgliedsanträge UFC Wien | Automatisierung: Anträge auf Mitgliedschaft → Übertrag in Excel-Tabelle | offen |
+| KI-9 | Turnieranmeldung UFC Wien | HTML-Formular → n8n Webhook → Google Sheets. Formular fertig, n8n-Workflow offen | Formular erstellt, n8n-Anbindung nächste Session |
 | KI-8 | KI-News Daily | Tägliche KI-News automatisiert, priorisiert nach Theresas Bedürfnissen/Interessen | offen |
 
 ### Erledigt
@@ -132,6 +134,10 @@
 - [x] .gitignore angelegt: .mcp.json, .env, settings.local.json geschützt (2026-03-28)
 - [x] n8n MCP Server installiert: .mcp.json konfiguriert, Member-Rolle + Permissions-Modus als Sicherheitskonzept (2026-03-28)
 - [x] Vercel CLI installiert (v50.37.3) + Account eingeloggt (2026-03-28)
+- [x] n8n MCP Konfiguration global verschoben (lokale .mcp.json → ~/.claude/settings.json), Workshop-Readiness bestätigt (2026-03-28)
+- [x] n8n MCP Konfiguration bereinigt: enabledMcpjsonServers-Referenz auf gelöschte .mcp.json entfernt, Permissions vereinfacht (Wildcards), API-Key aus Permissions entfernt (2026-03-28)
+- [x] UFC Wien Turnieranmeldung: HTML-Formular erstellt (Multi-Slide, Validierung, Altersklassen-Automatik, Degen/Florett, 15€ Startgeld) (2026-03-28)
+- [x] .DS_Store und __pycache__ aus heruntergeladenen Ordnern bereinigt (2026-03-28)
 
 ### Meilensteine (mittelfristig)
 
