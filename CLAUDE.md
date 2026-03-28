@@ -47,27 +47,26 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 │   └── leitplanken.md      # Persönliche Leitplanken für Business, Positionierung und Content
 ├── plans/                 # Implementierungspläne erstellt von /create-plan
 ├── outputs/               # Arbeitsergebnisse und Deliverables
-│   ├── linkedin-profil.md              # LinkedIn-Profiltexte + Banner-Anleitung + Checkliste (in Überarbeitung)
-│   ├── linkedin-content-strategie.md   # Content-Strategie "Theresa, KI und das Leben!"
-│   ├── linkedin-post-01-neuanfang.md   # LinkedIn-Post "Neuanfang" (Entwurf)
-│   ├── linkedin-post-02-kipa-recap.md  # LinkedIn-Post KIPA Recap (FINAL)
-│   ├── linkedin-post-03-perfekter-tag.md  # LinkedIn-Post "Mein perfekter Tag" (FINAL)
 │   ├── business-plan.md               # Business-Plan & TODOs
-│   ├── schulung-michaela-prompting.md # Schulungskonzept Prompting für Michaela (5 Blöcke, 90 Min)
-│   ├── schulung-michaela-praesentation.html # HTML-Präsentation zur Schulung (36 Slides, überarbeitet)
-│   └── grafik-wie-ki-fragen-beantwortet.html # SVG-Grafik: Wie KI Fragen beantwortet (Clean Rebuild KIPA-Grafik)
-├── reference/             # Vorlagen, Beispiele, wiederverwendbare Patterns
-│   ├── shell-aliases.md       # Shell-Aliase für Claude Code Start (cs/cr)
-│   ├── video-tools.md         # Video-Erstellungstools (Higgsfield, Kling, ElevenLabs etc.)
-│   ├── positionierung.md      # Adrian Kraft: Echtheit, Kernkompetenz, KI im Mittelstand
-│   ├── social-media.md        # Marco Bednarz: Content-Strategie, Wiederverwertung, Customer Journey
-│   ├── produktentwicklung.md  # Sophie Schenk: Wert x Preis, Touchpoints, Sichtbarkeit
-│   ├── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö: KMU.DIGITAL, AIM AT, aws, FFG
-│   ├── ki-llms-wissensbasis.md # KIPA-Ausbildungsinhalte: KI/LLMs/Prompting komplett
-│   └── claude-code-tutorial-nick-saraev.md # Nick Saraev Tutorial: 36 Kapitel, alle CC-Features, Best Practices
+│   ├── linkedin/                      # LinkedIn-Profil, Content-Strategie, Posts
+│   ├── prompt-schulung/             # Schulungskonzept, Präsentation, Prompting-Anleitungen
+│   └── ufc-wien/                      # Turnieranmeldung, Grafiken
+├── reference/             # Wissens-Dokumente (Markdown, PDF)
+│   ├── claude-code-tutorial-nick-saraev.md # Nick Saraev Tutorial-Zusammenfassung
+│   ├── ki-foerderungen-oesterreich.md  # KI-/Digitalisierungsförderungen Ö
+│   ├── ki-llms-wissensbasis.md         # KIPA-Ausbildungsinhalte
+│   ├── positionierung.md              # Adrian Kraft: Echtheit, Kernkompetenz
+│   ├── produktentwicklung.md          # Sophie Schenk: Wert x Preis, Touchpoints
+│   ├── prompt-engineering.pdf         # KIPA Prompt Engineering Unterlagen
+│   ├── shell-aliases.md               # Shell-Aliase für Claude Code Start
+│   ├── social-media.md               # Marco Bednarz: Content-Strategie
+│   └── video-tools.md                # Video-Erstellungstools
+├── assets/                # Binärdateien, Medien, externe Projekte (nicht in Git)
+│   ├── ufc-wien/logos/                # UFC Wien Logo-Dateien
+│   ├── prompt-schulung-rohdaten/       # Sprachmemo, Bilder, Transkript
+│   └── tutorials-nick-saraev/        # Nick Saraev Beispiel-Projekte
 ├── scripts/               # Automatisierungsskripte
-│   └── transcribe_audio.py    # Audio-Transkription mit Whisper (m4a, ogg, mp3, wav)
-└── Wie KI Modelle funktionieren/  # Überblicksgrafik + Sprachmemo (Erklärvideo KI-Modelle)
+│   └── transcribe_audio.py           # Audio-Transkription mit Whisper
 ```
 
 **Verzeichnisse:**
@@ -76,9 +75,10 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 | ------------ | --------------------------------------------------------------------------------------- |
 | `context/`   | Wer der User ist, seine Rolle, aktuelle Prioritäten, Strategien. Gelesen von `/prime`. |
 | `plans/`     | Detaillierte Implementierungspläne. Erstellt mit `/create-plan`, umgesetzt mit `/implement`. |
-| `outputs/`   | Deliverables, Analysen, Reports und Arbeitsergebnisse.                                 |
-| `reference/` | Hilfreiche Dokumentation, Vorlagen und Patterns für verschiedene Workflows.            |
-| `scripts/`   | Automatisierungsskripte (Trainerabrechnung, Vermögensübersicht, Chatbot UFC-Wien).     |
+| `outputs/`   | Deliverables, nach Projekt in Unterordner organisiert (linkedin/, prompt-schulung/, ufc-wien/). |
+| `reference/` | Wissens-Dokumente: Markdown und PDF. Keine Binärdateien.                               |
+| `assets/`    | Binärdateien, Medien, externe Projekte. Von Git ausgeschlossen (.gitignore).           |
+| `scripts/`   | Automatisierungsskripte (Audio-Transkription, weitere geplant).                        |
 
 ---
 
@@ -120,21 +120,38 @@ Workspace scannen, aufräumen, CLAUDE.md und Context-Dateien aktualisieren, comm
 
 ## Aktuelle Outputs
 
+### outputs/linkedin/
+
 | Datei | Inhalt | Stand |
 |---|---|---|
-| `outputs/linkedin-profil.md` | LinkedIn-Profiltexte: Banner, Headline, Info/Über mich (alle UMGESETZT), Berufserfahrung, Skills, Ausbildung, Sprachen (UMGESETZT), Checkliste | 2026-03-11 |
-| `outputs/linkedin-content-strategie.md` | Content-Strategie "Theresa, KI und das Leben!": 5 Säulen, 25+2 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan, Engagement-Strategie, Post-Ideen Pipeline | 2026-03-11 |
-| `outputs/linkedin-post-01-neuanfang.md` | LinkedIn-Post "Ende 40. Neuanfang." (Säule "Der Weg") — Entwurf 2, noch nicht final | 2026-02-28 |
-| `outputs/linkedin-post-02-kipa-recap.md` | LinkedIn-Post KIPA Live-Event Recap Berlin — FINAL, veröffentlicht | 2026-03-10 |
-| `outputs/linkedin-post-03-perfekter-tag.md` | LinkedIn-Post "Mein perfekter Tag" (Visionsarbeit, Genius Zone, Kinder/Jugendliche) — FINAL | 2026-03-10 |
-| `outputs/business-plan.md` | Business-Plan & TODOs: Prio 1–2, Akquise-Strategien, KI-Projekte, KIPA-Feedback, System-Wartung | 2026-03-11 |
-| `outputs/schulung-michaela-prompting.md` | Schulungskonzept Prompting für Michaela: 5 Blöcke, 90 Min, inkl. Prompt-Vorlage und Checkliste. Aktualisiert: KIPA-Slide-Inhalte eingearbeitet, Trainieren vs. Merken, Deep Research/Canvas/Sora/Agenten, Sora-Status korrigiert | 2026-03-19 |
-| `outputs/schulung-michaela-praesentation.html` | HTML-Präsentation zur Schulung: 36 Slides, Dark Theme, auf Michaela personalisiert. Überarbeitet: KIPA-Slide-Grafiken als CSS-Diagramme, Trainieren vs. Merken Slide, Stärken erweitert (Deep Research, Canvas, Sora, Agenten), Schwächen mit Pfeil-Zuordnung zu Lösungen, Prompt Dev Zyklus, GPTs-Ausblick mit Praktikant/Mitarbeiter-Vergleich | 2026-03-19 |
-| `outputs/grafik-wie-ki-fragen-beantwortet.html` | SVG-Grafik "Wie KI-Modelle Fragen beantworten" — Clean Rebuild der KIPA-Überblicksgrafik in Theresas Brandfarben, mit PNG-Export-Button | 2026-03-19 |
-| `outputs/anleitung-self-evaluation-prompting.html` | Prompting-Anleitung: Self Evaluation Technik (Checkliste → Erstellen → Bewerten → Verbessern), generisches Prompt-Template, Copy-Paste-ready | 2026-03-20 |
-| `outputs/anleitung-newsletter-self-evaluation.html` | Prompt-Kette: Newsletter mit Self Evaluation (6 Schritte, Conversational Prompting, Beispiel Leuchtturm1917) | 2026-03-20 |
-| `outputs/anleitung-linkedin-post-prompt-chain.html` | Prompt-Kette: LinkedIn-Post mit Self Evaluation (7 Schritte, Copywriting-Framework AIDA, Rolle, Post-Typ, Iteration) | 2026-03-20 |
-| `outputs/ufc-wien-turnier-anmeldung.html` | Anmeldeformular UFC Wien Jugendturnier (9.–10. Mai 2026): Multi-Slide, Validierung, Altersklassen-Automatik. n8n-Webhook-Anbindung noch offen (→ Google Sheets) | 2026-03-28 |
+| `linkedin-profil.md` | Profiltexte: Banner, Headline, Info/Über mich, Berufserfahrung, Skills, Ausbildung, Sprachen (UMGESETZT) | 2026-03-11 |
+| `linkedin-content-strategie.md` | Content-Strategie: 5 Säulen, 25+2 Post-Ideen, Tonalität-Guide, 4-Wochen-Startplan | 2026-03-11 |
+| `linkedin-post-01-neuanfang.md` | Post "Ende 40. Neuanfang." — Entwurf 2, noch nicht final | 2026-02-28 |
+| `linkedin-post-02-kipa-recap.md` | Post KIPA Live-Event Recap Berlin — FINAL, veröffentlicht | 2026-03-10 |
+| `linkedin-post-03-perfekter-tag.md` | Post "Mein perfekter Tag" — FINAL | 2026-03-10 |
+
+### outputs/prompt-schulung/
+
+| Datei | Inhalt | Stand |
+|---|---|---|
+| `schulung-michaela-prompting.md` | Schulungskonzept: 5 Blöcke, 90 Min, Prompt-Vorlage und Checkliste | 2026-03-19 |
+| `schulung-michaela-praesentation.html` | HTML-Präsentation: 36 Slides, Dark Theme, KIPA-Inhalte | 2026-03-19 |
+| `grafik-wie-ki-fragen-beantwortet.html` | SVG-Grafik "Wie KI Fragen beantworten" in Brandfarben | 2026-03-19 |
+| `anleitung-self-evaluation-prompting.html` | Prompting-Anleitung: Self Evaluation Technik | 2026-03-20 |
+| `anleitung-newsletter-self-evaluation.html` | Prompt-Kette: Newsletter mit Self Evaluation | 2026-03-20 |
+| `anleitung-linkedin-post-prompt-chain.html` | Prompt-Kette: LinkedIn-Post (AIDA, 7 Schritte) | 2026-03-20 |
+
+### outputs/ufc-wien/
+
+| Datei | Inhalt | Stand |
+|---|---|---|
+| `ufc-wien-turnier-anmeldung.html` | Anmeldeformular Jugendturnier (9.–10. Mai 2026), n8n-Webhook angebunden | 2026-03-28 |
+
+### outputs/ (Root)
+
+| Datei | Inhalt | Stand |
+|---|---|---|
+| `business-plan.md` | Business-Plan & TODOs: Prio 1–2, Akquise-Strategien, KI-Projekte | 2026-03-11 |
 
 ---
 

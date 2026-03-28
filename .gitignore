@@ -5,3 +5,9 @@
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Binary assets (zu groß für Git)
+assets/tutorials-nick-saraev/
+assets/prompt-schulung-rohdaten/
+assets/ufc-wien/logos/
+node_modules/

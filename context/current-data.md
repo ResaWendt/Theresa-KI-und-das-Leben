@@ -13,8 +13,9 @@
 - **Phase:** Aufbau — noch keine Kundengespräche
 - **LinkedIn:** Profil weitgehend umgesetzt (2026-03-11): Banner, Headline, Info/Über mich, Berufserfahrung, Skills, Ausbildung, Sprachen sind live. Offen: Custom URL, Creator Mode, Featured Section. KIPA-Recap-Post veröffentlicht (2026-03-10). Post "Neuanfang" Entwurf 2, noch nicht final. Posting-Rhythmus: Mittwoch, 8:30 Uhr.
 - **Positionierung:** Primär Reiseveranstalter, untergeordnet inhabergeführte Unternehmen allgemein. Mitgründerin von "Wir sind reisen" (wirsindreisen.at) als Credibility.
-- **Workshop-Insights:** Aufgelöst und verteilt nach `reference/` (positionierung.md, social-media.md, produktentwicklung.md). Leitplanken in eigener Datei `context/leitplanken.md` (5 Leitplanken inkl. Strategielose Authentizität). Offen: Alle Folien nochmal durchgehen.
-- **Automatisierungen (angefangen):** Trainerabrechnung, Aktualisierung Vermögensübersicht, Chatbot für UFC-Wien — alle noch fertigzustellen.
+- **Workshop-Insights:** Aufgelöst und verteilt nach `reference/` (positionierung.md, social-media.md, produktentwicklung.md). Leitplanken in eigener Datei `context/leitplanken.md` (5 Leitplanken inkl. Strategielose Authentizität).
+- **Automatisierungen:** Trainerabrechnung fertig. Offen: Vermögensübersicht, Chatbot UFC-Wien.
+- **UFC-Turnier:** n8n-Workflow gebaut + getestet (Webhook → Google Sheets). Vercel offline, Workflow deaktiviert — Security-Härtung vor Re-Deploy nötig.
 - **Akquise-Ansatz:** Potentialanalyse pitchen — vor dem Erstgespräch KI-Anwendungsfälle für die Branche recherchieren, dann konkret zeigen wo der Hebel liegt
 - **Website:** TODO — Onepager mit Heldenreise, um Kunden zu pitchen
 - **Angebotspakete:** Noch nicht entwickelt (kommt nach ersten Beratungen)
@@ -37,9 +38,7 @@
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
 | 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
-| 1.9 | **CC Workshop Garrit (28.03.):** Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | Workshop vorbei, Lead-Magnet offen |
-| 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
-| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | **n8n MCP Server korrekt registriert via `claude mcp add` (in ~/.claude.json), ✓ Connected.** Nächste Session: CC neu starten, MCP-Tools nutzen, Workflow erstellen |
+| 1.11 | UFC-Turnier: Security-Maßnahmen umsetzen, dann Vercel re-deploy + n8n-Workflow aktivieren | KI-Projekt | nächste Session | Workflow gebaut + getestet, aktuell offline/deaktiviert, 7 Security-Maßnahmen offen |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -49,7 +48,6 @@
 | 2.2 | Gewerbe-Erkundigungen: Wechsel auf Lehre & Training prüfen | Gewerbe | offen |
 | 2.3 | Gewerbe-Erkundigungen: Zweites Gewerbe IT-Umsetzung prüfen | Gewerbe | offen |
 | 2.4 | Business Development Phasenplan: Aufbau → erste Kunden → Standardisierung mit Meilensteinen | Strategie | offen |
-| 2.5 | Workshop-Folien durchgehen (Sophie, Marco, Adrian), Leitplanken vertiefen | Positionierung | offen |
 | 2.6 | Content-Wissensbasis aufbauen (Copywriting, Storytelling, Hooks) | Content | offen |
 | 2.7 | KMU.DIGITAL Beraterzertifizierung: Voraussetzungen prüfen, Hearing anstreben | Akquise | offen |
 
@@ -57,12 +55,11 @@
 
 | # | TODO | Bereich | Status |
 |---|---|---|---|
-| 3.1 | Automatisierungen fertigstellen: Trainerabrechnung, Vermögensübersicht | Automatisierung | angefangen |
+| 3.1 | Automatisierung fertigstellen: Vermögensübersicht | Automatisierung | angefangen |
 | 3.2 | Social Media Automatisierung: Partyfechten + UFC Wien | KI-Projekt | offen |
 | 3.3 | ChatBot für UFC Wien: Anforderungen, Technologie, Prototyp | KI-Projekt | offen |
-| 3.4 | KIPA-Feedback an Garrit: Skool → Claude Code | KIPA | offen |
 | 3.5 | KIPA-Anregung an Garrit: Positionierung/Mindset erweitern auf EiS | KIPA | offen |
-| 3.6 | System-Wartung: Linux, n8n — monatlich | Wartung | laufend |
+| 3.6 | System-Wartung: Linux, n8n — monatlich | Wartung | laufend, letzte Wartung 2026-03-28 |
 
 ### PRIO 4 — Claude Code Workspace Optimierung
 
@@ -87,12 +84,12 @@
 |---|---|---|---|
 | KI-1 | Schulung Prompting Michaela | Mini-Einschulung Prompting (siehe 1.1) | Schulung durchgeführt 20.03.2026, 3 Prompting-Anleitungen als HTML erstellt, Nachbereitung offen |
 | KI-2 | Website Onepager | Onepager mit Heldenreise konzipieren (ehem. 2.7) | offen |
-| KI-3 | Trainerabrechnung | Automatisierung der Abrechnung | angefangen |
+| KI-3 | Trainerabrechnung | Automatisierung der Abrechnung | **fertig** |
 | KI-4 | Vermögensübersicht | Automatisierte Aktualisierung | angefangen |
 | KI-5 | Social Media Automatisierung PF + UFC Wien | Content-Planung und -Erstellung automatisieren | offen |
 | KI-6 | ChatBot UFC Wien | Anforderungen, Technologie, Prototyp | offen |
 | KI-7 | Mitgliedsanträge UFC Wien | Automatisierung: Anträge auf Mitgliedschaft → Übertrag in Excel-Tabelle | offen |
-| KI-9 | Turnieranmeldung UFC Wien | HTML-Formular → n8n Webhook → Google Sheets. Formular fertig, n8n-Workflow offen | Formular erstellt, n8n-Anbindung nächste Session |
+| KI-9 | Turnieranmeldung UFC Wien | HTML-Formular → n8n Webhook → Google Sheets | Workflow gebaut + getestet, aktuell offline, Security-Härtung offen |
 | KI-8 | KI-News Daily | Tägliche KI-News automatisiert, priorisiert nach Theresas Bedürfnissen/Interessen | offen |
 
 ### Erledigt
@@ -143,6 +140,12 @@
 - [x] n8n MCP Root-Cause gefunden: MCP-Server müssen via `claude mcp add` registriert werden (→ ~/.claude.json), nicht manuell in ~/.claude/settings.json. Server jetzt ✓ Connected (2026-03-28)
 - [x] Alte MCP-Konfiguration aus ~/.claude/settings.json bereinigt (2026-03-28)
 - [x] .DS_Store und __pycache__ erneut bereinigt (Nick Saraev Ordner, umfangreich) (2026-03-28)
+- [x] UFC-Turnier n8n-Workflow gebaut + getestet: Webhook → Set → Google Sheets → Respond (2026-03-28)
+- [x] UFC-Turnier auf Vercel deployed + getestet, dann wieder offline genommen (Security-Härtung offen) (2026-03-28)
+- [x] CC Workshop Garrit (28.03.) teilgenommen (2026-03-28)
+- [x] Workspace aufgeräumt: outputs/ in Unterordner (linkedin/, prompt-schulung/, ufc-wien/), assets/ neu, Binärdateien aus reference/ verschoben (2026-03-28)
+- [x] Trainerabrechnung fertiggestellt (2026-03-28)
+- [x] Heruntergeladene Ordner eingeordnet (Nick Saraev, Prompt Engineering, KI Modelle) (2026-03-28)
 
 ### Meilensteine (mittelfristig)
 
