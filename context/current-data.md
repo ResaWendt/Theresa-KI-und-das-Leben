@@ -39,7 +39,7 @@
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
 | 1.9 | **CC Workshop Garrit (28.03.):** Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | Workshop vorbei, Lead-Magnet offen |
 | 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
-| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | n8n MCP neu installiert (global, Wrapper optimiert), MCP-Tools laden aber nicht in CC-Session — nächste Session testen. Workflow noch nicht erstellt |
+| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | **n8n MCP Server korrekt registriert via `claude mcp add` (in ~/.claude.json), ✓ Connected.** Nächste Session: CC neu starten, MCP-Tools nutzen, Workflow erstellen |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -140,6 +140,9 @@
 - [x] .DS_Store und __pycache__ aus heruntergeladenen Ordnern bereinigt (2026-03-28)
 - [x] n8n MCP env-Variablen-Bug gefixt: Wrapper-Skript erstellt, API-Keys in .env ausgelagert (2026-03-28)
 - [x] n8n MCP Server global neu installiert: npx→global install, Wrapper-Skript optimiert (stderr→/dev/null), MCP-Tools noch nicht in CC-Session geladen (2026-03-28)
+- [x] n8n MCP Root-Cause gefunden: MCP-Server müssen via `claude mcp add` registriert werden (→ ~/.claude.json), nicht manuell in ~/.claude/settings.json. Server jetzt ✓ Connected (2026-03-28)
+- [x] Alte MCP-Konfiguration aus ~/.claude/settings.json bereinigt (2026-03-28)
+- [x] .DS_Store und __pycache__ erneut bereinigt (Nick Saraev Ordner, umfangreich) (2026-03-28)
 
 ### Meilensteine (mittelfristig)
 

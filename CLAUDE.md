@@ -32,7 +32,7 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 ├── CLAUDE.md              # Diese Datei — Kern-Kontext, immer geladen
 ├── .gitignore             # Schützt Secrets (.mcp.json, .env) vor Git
 ├── .env                   # API-Keys (N8N_API_URL, N8N_API_KEY) — von .gitignore geschützt
-├── # MCP-Konfiguration: ~/.claude/settings.json → ~/.claude/n8n-mcp-wrapper.sh → .env
+├── # MCP-Konfiguration: ~/.claude.json (via `claude mcp add`), env-Variablen direkt eingebettet
 ├── .claude/
 │   └── commands/          # Slash-Commands, die Claude ausführen kann
 │       ├── prime.md       # /prime — Session-Initialisierung
