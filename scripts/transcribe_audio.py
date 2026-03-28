@@ -21,11 +21,8 @@ from pathlib import Path
 # --- Konfiguration ---
 WHISPER_MODEL = "medium"
 LANGUAGE = "de"
-FFMPEG_PATH = r"C:\ffmpeg\bin\ffmpeg.exe"
+FFMPEG_PATH = "ffmpeg"
 SUPPORTED_FORMATS = {".m4a", ".ogg", ".mp3", ".wav", ".webm", ".flac"}
-
-# ffmpeg muss im PATH sein, damit Whisper es findet
-os.environ["PATH"] = r"C:\ffmpeg\bin" + os.pathsep + os.environ.get("PATH", "")
 
 
 def convert_to_mp3(input_path, mp3_path):

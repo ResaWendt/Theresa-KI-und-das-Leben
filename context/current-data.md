@@ -37,7 +37,7 @@
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
 | 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
-| 1.9 | **CC Workshop Garrit (28.03.):** n8n MCP Server installieren (DISABLED_TOOLS nutzen!), Vercel Account + CLI, Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | n8n MCP + Vercel noch offen |
+| 1.9 | **CC Workshop Garrit (28.03.):** n8n MCP Server installieren, Vercel Account + CLI, Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | n8n MCP + Vercel erledigt, Lead-Magnet offen |
 | 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
 
 ### PRIO 2 — Kurzfristig (März/April)
@@ -61,7 +61,7 @@
 | 3.3 | ChatBot für UFC Wien: Anforderungen, Technologie, Prototyp | KI-Projekt | offen |
 | 3.4 | KIPA-Feedback an Garrit: Skool → Claude Code | KIPA | offen |
 | 3.5 | KIPA-Anregung an Garrit: Positionierung/Mindset erweitern auf EiS | KIPA | offen |
-| 3.6 | System-Wartung: Windows, n8n, ESET — monatlich | Wartung | laufend |
+| 3.6 | System-Wartung: Linux, n8n — monatlich | Wartung | laufend |
 
 ### PRIO 4 — Claude Code Workspace Optimierung
 
@@ -128,6 +128,10 @@
 - [x] Workspace-Vergleich: Nicks Empfehlungen vs. unser Setup — Prioritätenliste erstellt (8 Punkte, PRIO 4 in TODOs) (2026-03-27)
 - [x] n8n MCP Server Security Assessment: GitHub-Repo analysiert, DISABLED_TOOLS Einschränkung dokumentiert (2026-03-27)
 - [x] Memory: Rules-Ordner-Trigger gespeichert (bei CLAUDE.md > 500 Zeilen aufmerksam machen) (2026-03-27)
+- [x] Windows→Linux Migration: settings.local.json bereinigt, transcribe_audio.py ffmpeg-Pfad korrigiert, current-data.md aktualisiert (2026-03-28)
+- [x] .gitignore angelegt: .mcp.json, .env, settings.local.json geschützt (2026-03-28)
+- [x] n8n MCP Server installiert: .mcp.json konfiguriert, Member-Rolle + Permissions-Modus als Sicherheitskonzept (2026-03-28)
+- [x] Vercel CLI installiert (v50.37.3) + Account eingeloggt (2026-03-28)
 
 ### Meilensteine (mittelfristig)
 

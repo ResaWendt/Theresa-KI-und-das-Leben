@@ -8,7 +8,7 @@ Diese Datei gibt Claude Code (claude.ai/code) Anweisungen für die Arbeit in die
 
 Dies ist der **Workspace von Theresa Wendt** — Inhaberin von Intellenz Development, Prozess- & KI-Beraterin für inhabergeführte Unternehmen. Positionierung: Business-Problemlöserin, die KI als Turbo nutzt. Baut aktuell die Personenmarke "Theresa, KI und das Leben!" auf LinkedIn auf.
 
-Die Umgebung ist für die Arbeit mit Claude Code als Agenten-Assistenten über mehrere Sessions hinweg konzipiert. `/prime` zu Beginn jeder Session laden.
+Die Umgebung läuft auf **Linux** (Ubuntu) und ist für die Arbeit mit Claude Code als Agenten-Assistenten über mehrere Sessions hinweg konzipiert. `/prime` zu Beginn jeder Session laden.
 
 **Diese Datei (CLAUDE.md) ist das Fundament.** Sie wird automatisch am Anfang jeder Session geladen. Halte sie aktuell — sie ist die Single Source of Truth dafür, wie Claude diesen Workspace verstehen und darin arbeiten soll.
 
@@ -30,6 +30,8 @@ Claude sollte sich immer über `/prime` am Session-Start orientieren, dann mit v
 ```
 .
 ├── CLAUDE.md              # Diese Datei — Kern-Kontext, immer geladen
+├── .gitignore             # Schützt Secrets (.mcp.json, .env) vor Git
+├── .mcp.json              # MCP-Server-Konfiguration (n8n) — NICHT in Git
 ├── .claude/
 │   └── commands/          # Slash-Commands, die Claude ausführen kann
 │       ├── prime.md       # /prime — Session-Initialisierung
