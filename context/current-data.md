@@ -37,9 +37,9 @@
 | 1.6 | Wöchentlicher LinkedIn-Post: **Mittwoch, 8:30 Uhr** | LinkedIn | laufend | festgelegt |
 | 1.7 | LinkedIn-Post "KI ist mein Turbo. Aber nicht mein Gehirn. Und schon gar nicht mein Herz." ausarbeiten | LinkedIn | Mi 26.03. | Thema festgelegt, Beispiel noch offen |
 | 1.8 | Prompting-Anleitungen reviewen: 3 HTMLs (Self Evaluation, Newsletter, LinkedIn) + Anwendungen Automatisierung/Klassifizierung besprechen | Schulung | nächste Session | erstellt, Review offen |
-| 1.9 | **CC Workshop Garrit (28.03.):** Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | Workshop war heute, Lead-Magnet offen |
+| 1.9 | **CC Workshop Garrit (28.03.):** Lead-Magnet-Thema festlegen | Workshop | 28.03.2026 | Workshop vorbei, Lead-Magnet offen |
 | 1.10 | Heruntergeladene Ordner einordnen: "Claude Code Tutorial Nick Saraev/", "Prompt Engineering/", "Wie KI Modelle funktionieren/" → in Workspace-Struktur integrieren | Workspace | nächste Session | offen |
-| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | n8n MCP gefixt (Wrapper-Skript, .env), Workflow noch nicht erstellt |
+| 1.11 | UFC-Turnier n8n-Workflow: Webhook → Google Sheets Anbindung fertigstellen (Sheet: 1PABdvWCOFfXehjZM7-ciPXxgSsFJ3kHj7hz-xwdz0VE) | KI-Projekt | nächste Session | n8n MCP neu installiert (global, Wrapper optimiert), MCP-Tools laden aber nicht in CC-Session — nächste Session testen. Workflow noch nicht erstellt |
 
 ### PRIO 2 — Kurzfristig (März/April)
 
@@ -139,6 +139,7 @@
 - [x] UFC Wien Turnieranmeldung: HTML-Formular erstellt (Multi-Slide, Validierung, Altersklassen-Automatik, Degen/Florett, 15€ Startgeld) (2026-03-28)
 - [x] .DS_Store und __pycache__ aus heruntergeladenen Ordnern bereinigt (2026-03-28)
 - [x] n8n MCP env-Variablen-Bug gefixt: Wrapper-Skript erstellt, API-Keys in .env ausgelagert (2026-03-28)
+- [x] n8n MCP Server global neu installiert: npx→global install, Wrapper-Skript optimiert (stderr→/dev/null), MCP-Tools noch nicht in CC-Session geladen (2026-03-28)
 
 ### Meilensteine (mittelfristig)
 
